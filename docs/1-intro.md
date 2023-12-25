@@ -33,18 +33,6 @@ sidebar_position: 1
 - 新增史诗暗金, 掉落变量 MAX, 固定 2 孔, 并支持附魔
 - 新增技能书掉落, 支配护身符, 双倍掉落护身符等
 
-## 目录导航
-
-- [更新日志](/docs/2-changlog.md)
-- [技能调整](/docs/default/1-skill-change.md)
-- [新增暗金](/docs/default/2-new-unique-item.md)
-- [史诗暗金](/docs//default/4-epic-unique-item.md)
-- [新增符文之语](/docs/default/3-new-rune-word.md)
-- [护身符附魔](/docs/default/5-charm-enhance.md)
-- [常见问题](/docs/questions.md)
-- [原版神符之语查询](http://www.anhei3.net/diablo/runewords.html)
-- [赞助我们](/docs/6-credits.md)
-
 ## 现版本攻略
 
 - 开局合成新手武器去邪恶洞窟升级到 50 级,然后 PASS 地狱
@@ -230,6 +218,18 @@ sidebar_position: 1
 - 骑士的警戒 Knight's Vigil
 - 海妖之歌 Siren's Song
 - 战斗中的勇气 Prowess in Battle
+
+## 目录导航
+
+- [更新日志](/docs/2-changlog.md)
+- [技能调整](/docs/default/1-skill-change.md)
+- [新增暗金](/docs/default/2-new-unique-item.md)
+- [史诗暗金](/docs//default/4-epic-unique-item.md)
+- [新增符文之语](/docs/default/3-new-rune-word.md)
+- [护身符附魔](/docs/default/5-charm-enhance.md)
+- [常见问题](/docs/questions.md)
+- [原版神符之语查询](http://www.anhei3.net/diablo/runewords.html)
+- [赞助我们](/docs/6-credits.md)
 
 ## 其他
 

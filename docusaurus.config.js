@@ -10,7 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: '土鳖暗黑 1.13C 优化版',
   tagline: '土鳖暗黑, 匠心打造, 年度巨献, 基于暗黑 1.13C 纯净版做了适当优化, 经典怀旧, 微变, 全职业平衡, 经典设置, 欢迎体验.',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/icon-48x48.png',
 
   // Set the production url of your site here
   url: 'https://your-docusaurus-site.example.com',
@@ -69,7 +69,7 @@ const config = {
         title: '土鳖暗黑',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/icon-144x144.png',
         },
         items: [
           {
@@ -85,46 +85,46 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: '文档',
             items: [
               {
-                label: 'Tutorial',
+                label: '战网介绍',
                 to: '/docs/intro',
               },
             ],
           },
           {
-            title: 'Community',
+            title: '社区',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'd2mods.info',
+                href: 'https://d2mods.info/',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: '暗黑破坏神 163 WIKI',
+                href: 'https://wiki.d.163.com/diablo/index.htm',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'BBS IMPK',
+                href: 'https://bbs.impk.cc/',
               },
             ],
           },
           {
-            title: 'More',
+            title: '更多',
             items: [
               {
-                label: 'Blog',
+                label: '博客',
                 to: '/blog',
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} TuBie Mod. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,

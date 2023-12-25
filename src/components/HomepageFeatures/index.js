@@ -25,7 +25,7 @@ const FeatureList = [
     ),
   },
   {
-    title: '更多物品',
+    title: '更多特性',
     Svg: require('@site/static/assets/feature3.jpg').default,
     description: (
       <>
