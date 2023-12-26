@@ -6,6 +6,47 @@ sidebar_position: 3
 
 下面 40 个符文之语均为北方暴雪于 2001 ~ 2005 年预制作
 
+- 惩罚 Punishment
+- 知识 Knowledge
+- 恐怖/恐惧 Terror
+- 欺暪 Deception
+- 憎恨 Hatred
+- 星光 Starlight
+- 夜晚 Night
+- 希望之翼 Wings of Hope
+- 大自然的国王/天然的王国 Nature's Kingdom
+- 饥饿 Hunger
+- 机会 Chance
+- 欲望 Lust
+- 刺伤 Sting
+- 影子 Shadow
+- 危害 Peril
+- 诱惑 Temptation
+- 湮没 Oblivion
+- 鲜红 Red
+- 战争 War
+- 祈祷 Prayer
+- 美貌 Beauty
+- 荣誉 Glory
+- 神秘 Mystery
+- 疫病 Pestilence
+- 白天/日光 Daylight
+- 颂扬 Praise
+- 时间 Time
+- 英勇 Valor
+- 闪电 Lightning
+- 疯狂 Madness
+- 爱情 Love
+- 毁天灭地 Armageddon
+- 神圣之泪 Holy Tears
+- 迷雾 Mist
+- 虚无 Void
+- 雷电 Thunder
+- 寂静之水 Still Water
+- 骑士的警戒 Knight's Vigil
+- 海妖之歌 Siren's Song
+- 战斗中的勇气 Prowess in Battle
+
 ## 1 惩罚 Punishment
 
 > 故事: 无需多言, 审判后惩罚一切罪恶之源
