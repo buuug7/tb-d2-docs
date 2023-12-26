@@ -118,7 +118,11 @@ const config = {
               },
               {
                 label: "GitHub",
-                href: "https://github.com",
+                href: "https://github.com/buuug7/tb-d2-site",
+              },
+              {
+                label: "Gitee",
+                href: "https://gitee.com/buuug7/tb-d2-site",
               },
             ],
           },
