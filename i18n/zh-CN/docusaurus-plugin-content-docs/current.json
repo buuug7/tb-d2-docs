@@ -1,0 +1,10 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.basicConfig": {
+    "message": "基本设置",
+    "description": "The label for category basicConfig in sidebar tutorialSidebar"
+  }
+}
