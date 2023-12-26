@@ -10,7 +10,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 const config = {
   title: "土鳖暗黑 1.13C 优化版",
   tagline:
-    "土鳖暗黑, 匠心打造, 年度巨献, 基于暗黑 1.13C 纯净版做了适当优化, 经典怀旧, 微变, 全职业平衡, 经典设置, 欢迎体验.",
+    "土鳖暗黑, 微变经典怀旧, 各职业平衡, 基于暗黑 1.13C 纯净版做了大量优化, 修复原版中很多不合理的设定, 在保持暗黑 II 原汁原味玩法的同时简化玩家操作, 明确清晰的人物装备成长路线, 有乐趣的 MF, 还有更多有趣的东西期等待你们的探索.",
   favicon: "img/icon-48x48.png",
 
   // Set the production url of your site here
