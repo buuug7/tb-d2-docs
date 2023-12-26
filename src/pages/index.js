@@ -21,7 +21,7 @@ function HomepageHeader() {
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <p className="hero__">
           <span>QQ 群号 1016899678</span>{" "}
-          <span className="margin-horiz--sm">网站: d2.yoursoups.com</span>
+          <span className="margin-horiz--sm">d2.yoursoups.com</span>
         </p>
         <hr />
         <div className={styles.buttons}>
