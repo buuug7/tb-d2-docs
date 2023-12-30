@@ -24,6 +24,8 @@ sidebar_position: 1
 
 #### 冰冷系
 
+- 支配冰冷(Cold Mastery)
+  - 支配冰冷修改为增加冰系法术伤害
 - 霜之新星(Frost Nova)
   - 关联技能增加 `冰弹 +10%`
 - 冰封球(Frozen Orb)

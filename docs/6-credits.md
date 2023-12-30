@@ -10,11 +10,17 @@ sidebar_position: 6
 ## VIP 护身符
 
 ![vip1](/assets/item-vip1.png)
+
 ![vip2](/assets/item-vip2.png)
+
 ![vip3](/assets/item-vip3.png)
+
 ![vip4](/assets/item-vip4.png)
+
 ![vip5](/assets/item-vip5.png)
 
 ## 双倍掉落护身符
 
 角色佩戴后杀死怪物掉落双倍的物品数量
+
+![dt](/assets/item-dt.png)

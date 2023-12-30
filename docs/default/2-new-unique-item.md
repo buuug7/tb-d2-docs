@@ -8,7 +8,7 @@ sidebar_position: 2
 
 装备后杀死怪物会 100% 触发二次掉落, 在 Act3 残破神庙中小概率掉落
 
-![item-double-drop-charm](/assets/item-double-drop-charm.png)
+![DT](/assets/item-dt.png)
 
 ## 传承箭袋 inherited
 

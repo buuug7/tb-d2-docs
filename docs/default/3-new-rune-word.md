@@ -531,7 +531,7 @@ sidebar_position: 3
 - +3 致 狂犬病(Rabies)(限德鲁伊使用)
 - -30~-50% 敌人的毒素系抗性(-PR)
 
-## 25 日光 Daylight
+## 25 白天/日光 Daylight
 
 > 故事: 一道天使之光吓的怪物四处逃窜
 
@@ -545,7 +545,7 @@ sidebar_position: 3
 - 被击中时有 5% 机会施展等级 40 天堂之拳(Fist of the Heavens)
 - 被击中时有 5% 机会施展等级 5 降低抵抗(Lower Resist)
 - 被击中时有 2% 机会施展等级 20 寒冰装甲(Chilling Armor)
-- 赋予等级 3~12 信念(Conviction)灵气
+- 赋予等级 5~10 信念(Conviction)灵气
 - +30~40% 快速施法速度(FCR)
 - +50% 增强伤害(ED)
 - 25% 机率撕开敌人伤口(OW)

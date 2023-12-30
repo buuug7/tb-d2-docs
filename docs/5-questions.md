@@ -36,3 +36,25 @@ sidebar_position: 5
 ## 非高清模式下 调整分辨率报错
 
 请手动重置 `D2HD.ini` 文件中 `Resolution Mode` 为 0， 再次进入游戏重新设置分辨率。
+
+## 为了兼容性, 客户端默认高分辨率插件是 D2HD.dll
+
+#### 上古高清补丁, 针对有些使用不了高清客户端的用户
+
+> 客户端已经内置补丁, 使用 D2Loader-high.exe 创建快捷方式启动即可
+
+- D2MultiRes.dll
+- D2MultiRes.mpq
+- D2Loader-high.exe
+
+使用 D2Loader-high.exe 创建快捷方式, 在目标中添加 `-w -direct -pdir map`
+
+#### 新版高分辨率补丁
+
+> 客户端已经内置补丁, 只需要修改配置文件即可
+
+- SGD2FreeRes.dll
+- SGD2FreeRes.mpq
+- SGD2FreeResolution.json
+
+如果默认的 D2HD.dll 有问题, 可以用这个最新的高分辨率补丁, 编辑 d2gl.ini, 在 load_dlls_late 后面把 D2HD.dll 更换为 SGD2FreeRes.dll 即可
