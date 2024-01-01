@@ -73,11 +73,17 @@ const config = {
         items: [
           {
             type: "docSidebar",
-            sidebarId: "tutorialSidebar",
+            sidebarId: "tubieDocs",
             position: "left",
-            label: "siteSummary",
+            label: "siteIntro",
           },
           { to: "/blog", label: "blog", position: "left" },
+          {
+            type: "docSidebar",
+            sidebarId: "diablo2knowledge",
+            position: "left",
+            label: "diablo2knowledge",
+          },
         ],
       },
       footer: {

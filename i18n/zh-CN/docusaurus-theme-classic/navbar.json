@@ -7,12 +7,16 @@
     "message": "土鳖暗黑 LOGO",
     "description": "The alt text of navbar logo"
   },
-  "item.label.siteSummary": {
+  "item.label.siteIntro": {
     "message": "战网介绍",
     "description": "Navbar item with label intro"
   },
   "item.label.blog": {
     "message": "博客",
     "description": "Navbar item with label 博客"
+  },
+  "item.label.diablo2knowledge": {
+    "message": "暗黑 II 资料库",
+    "description": "Navbar item with label 暗黑 II 资料库"
   }
 }
