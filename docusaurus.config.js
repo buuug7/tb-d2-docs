@@ -94,7 +94,7 @@ const config = {
             items: [
               {
                 label: "siteIntro",
-                to: "/docs/intro",
+                to: "/docs/tubieDocs/intro",
               },
             ],
           },

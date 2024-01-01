@@ -33,7 +33,7 @@ function HomepageHeader() {
           </Link>
           <Link
             className="button button--secondary button--outline2 button--lg2 margin-horiz--sm"
-            to="/docs/intro"
+            to="/docs/tubieDocs/intro"
           >
             快速开始
           </Link>

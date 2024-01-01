@@ -35,16 +35,16 @@ sidebar_position: 1
 
 ## 目录导航
 
-- [更新日志](/docs/2-changlog.md)
-- [技能调整](/docs/default/1-skill-change.md)
-- [物品合成](/docs/default/1-skill-change.md)
-- [新增暗金](/docs/default/2-new-unique-item.md)
-- [史诗暗金](/docs//default/4-epic-unique-item.md)
-- [新增符文之语](/docs/default/3-new-rune-word.md)
-- [护身符附魔](/docs/default/5-charm-enhance.md)
-- [常见问题](/docs/5-questions.md)
+- [更新日志](2-changlog.md)
+- [技能调整](basicSettings/1-skill-change.md)
+- [物品合成](basicSettings/2-cube-change.md)
+- [新增暗金](basicSettings/3-new-unique-item.md)
+- [新增符文之语](basicSettings/4-new-rune-word.md)
+- [史诗暗金](basicSettings/5-epic-unique-item.md)
+- [护身符附魔](basicSettings/6-charm-enhance.md)
+- [常见问题](4-questions.md)
 - [原版神符之语查询](http://www.anhei3.net/diablo/runewords.html)
-- [赞助我们](/docs/6-credits.md)
+- [赞助我们](5-credits.md)
 
 ## 现版本攻略
 
