@@ -52,3 +52,18 @@
   align-items: center;
   justify-content: center;
 }
+
+.charList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1.2rem;
+  overflow-x: auto;
+}
+
+.charList img {
+  width: 64px;
+  padding: 4px 4px;
+}
+
+

@@ -11,7 +11,7 @@ const config = {
   title: "土鳖暗黑 1.13C 优化版",
   tagline:
     "基于暗黑 1.13C 纯净版做了大量优化, 微变经典怀旧, 各职业平衡, 长久耐玩, 修复原版中诸多不合理的设定, 在保持暗黑 II 原汁原味玩法的同时简化了玩家操作, 更清晰明确的人物装备成长路线, 更有乐趣的 MF, 还有更多有趣的东西期等待你的探索.",
-  favicon: "img/icon-48x48.png",
+  favicon: "img/ama-64x64.PNG",
 
   // Set the production url of your site here
   url: "https://your-docusaurus-site.example.com",
@@ -68,7 +68,7 @@ const config = {
         title: "土鳖暗黑",
         logo: {
           alt: "土鳖暗黑 LOGO",
-          src: "img/icon-144x144.png",
+          src: "img/ama-128x128.png",
         },
         items: [
           {

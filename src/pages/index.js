@@ -55,6 +55,15 @@ export default function Home() {
 
       </div>
       <main>
+        <div className={styles.charList}>
+          <img src="/img/sor.gif" />
+          <img src="/img/nec.gif" />
+          <img src="/img/nec.gif" />
+          <img src="/img/pal.gif" />
+          <img src="/img/druid.gif" />
+          <img src="/img/ass.gif" />
+          <img src="/img/bar.gif" />
+        </div>
         <HomepageFeatures />
       </main>
     </Layout>
