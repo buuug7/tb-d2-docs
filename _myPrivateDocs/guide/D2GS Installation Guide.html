@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)https://pvpgn.pro/d2gs_installation.html -->
+<html lang="en" data-redeviation-bs-uid="17880"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>D2GS Installation Guide</title>
+<meta name="Description" content="PvPGN is open source Battle.net server emulator">
+
+<style>
+.z {
+	background: whitesmoke;
+}
+.x {
+	background: #e1e1e1;
+}
+.y, .a {
+	background: #DAEABB;
+}
+.b {
+	background: #D6E7F8;
+}
+.c {
+	background: #F4E29B;
+}
+.d {
+	background: #EFCABF;
+}
+.e {
+	background: #eee;
+}
+
+
+
+</style>
+
+<style>hcfy-result.__hcfy__result__loaded__.__hcfy__result__both__{border: 1px dotted}</style><style class="redeviation-bs-style" data-name="content">/*! (c) Philipp König under GPL-3.0 */
+body>div#redeviation-bs-indicator>div{opacity:0;pointer-events:none}body>#redeviation-bs-sidebar.redeviation-bs-visible,body>#redeviation-bs-overlay.redeviation-bs-visible{opacity:1;pointer-events:auto}body.redeviation-bs-noscroll{overflow:hidden !important}body>div#redeviation-bs-indicator>div{position:absolute;transform:translate3d(-24px, 0, 0);top:0;left:0;width:24px !important;height:100%;background:rgba(0,0,0,0.5);border-radius:0 10px 10px 0;transition:opacity 0.3s, transform 0.3s;z-index:2}body>div#redeviation-bs-indicator>div>span{-webkit-mask:no-repeat center/24px;-webkit-mask-image:url(chrome-extension://jdbnofccmhefkmjbkkdkfiicjkgofkdh/img/icon-bookmark.svg);background-color:#ffffff;position:absolute;display:block;top:0;left:0;width:100%;height:100%}body>div#redeviation-bs-indicator[data-pos='right']{left:auto;right:0}body>div#redeviation-bs-indicator[data-pos='right']>div{transform:translate3d(24px, 0, 0);left:auto;right:0;border-radius:10px 0 0 10px}body>div#redeviation-bs-indicator.redeviation-bs-fullHeight>div{border-radius:0}body>div#redeviation-bs-indicator.redeviation-bs-hover>div{transform:translate3d(0, 0, 0);opacity:1}body>div#redeviation-bs-indicator[data-pos='left'].redeviation-bs-has-lsb{height:100% !important;top:0 !important}body>div#redeviation-bs-indicator[data-pos='left'].redeviation-bs-has-lsb>div{background:transparent}body>div#redeviation-bs-indicator[data-pos='left'].redeviation-bs-has-lsb>div>span{-webkit-mask-position-y:20px}body>#redeviation-bs-sidebar{width:350px;max-width:none;height:0;z-index:2147483646;background-color:rgba(255,255,255,0.8) !important;color-scheme:normal !important;speak:none;border:none;display:block !important;transform:translate3d(-350px, 0, 0);transition:width 0s 0.3s, height 0s 0.3s, opacity 0.3s, transform 0.3s}body>#redeviation-bs-sidebar[data-pos='right']{left:auto;right:0;transform:translate3d(350px, 0, 0)}body>#redeviation-bs-sidebar.redeviation-bs-visible{width:calc(100% + 350px);height:100%;transform:translate3d(0, 0, 0);transition:opacity 0.3s, transform 0.3s}body>#redeviation-bs-sidebar.redeviation-bs-hideMask{background:none !important}body>#redeviation-bs-sidebar.redeviation-bs-hideMask:not(.redeviation-bs-hover){width:calc(350px + 50px)}body>#redeviation-bs-overlay{width:100%;max-width:none;height:100%;z-index:2147483647;border:none;speak:none;background:rgba(0,0,0,0.5) !important;transition:opacity 0.3s}
+</style></head>
+<body>
+<article>
+← <a href="https://pvpgn.pro/">Back to the site</a>
+<header>
+	<h1>D2GS Installation Guide</h1>
+	<div class="byline">
+		<address class="author">By <a rel="author" href="http://harpywar.com/">HarpyWar</a></address> 
+		on <time pubdate="" datetime="2017-06-05" title="July 5th, 2017">5/06/17</time>
+	</div>
+</header>
+
+<h2>Understanding Connectivity Between Services</h2>
+
+<p>
+<b>PvPGN</b> — Battle.net server emulator (it was called "bnetd" before) 
+<br><b>D2CS</b> — Diablo 2 Game Control Server, used as a controller between PvPGN and D2GS
+<br><b>D2DBS</b> — Diablo 2 DataBase Server, it manage of game character files (var/charsave, var/charinfo)
+<br><b>D2GS</b> — Diablo 2 Game Server, emulator of Diablo 2 gameplay
+</p>
+
+<p>
+Each of 4 services can be run on different machines or on a single server machine.
+</p>
+<p>
+By looking on a diagram below you can see that PvPGN and D2GS must be available from the internet. 
+<br>When D2CS and D2DBS can be run within internal network, and no need to expose their ports to the internet.
+<br>Players are contacted only with PvPGN and D2GS.
+</p>
+
+<img src="./D2GS Installation Guide_files/d2gs_connections.png" border="0" alt="D2GS Connections">
+
+<h2>Download PvPGN, D2CS, D2DBS</h2>
+
+<p>
+Use preferred method <a href="https://pvpgn.pro/pvpgn_installation.html">to obtain PvPGN</a>. 
+</p>
+
+<h2>Download D2GS</h2>
+<p>
+<a href="https://github.com/pvpgn/pvpgn-magic-builder/releases">Download Magic Builder</a> and run d2gs_build.bat
+</p>
+<p>
+In the selection window choose a preffered D2GS version. In most cases 1.13c is a default choice for the latest working stable version. 
+<br>If you like older versions then select one of others available.
+<br><i>Installation of <a href="https://github.com/pvpgn/pvpgn-magic-builder/issues/17">D2GS 1.13c multithreaded</a> is not covered in this article.</i>
+</p>
+
+<p>
+On finish a new directory "d2gs" should be created. Copy this directory to a permanent location where D2GS server will be running.
+<br>It must contain the following files (D2GS will not start without at least one file from the list):
+</p><pre>   d2data.mpq
+   d2exp.mpq
+   d2sfx.mpq
+   d2speech.mpq
+   Patch_D2.mpq
+   D2Client.dll
+   D2CMP.dll
+   D2Common.dll
+   D2Game.dll
+   D2gfx.dll
+   D2Lang.dll
+   D2MCPClient.dll
+   D2Net.dll
+   D2sound.dll
+   D2Win.dll
+   Fog.dll
+   ijl11.dll
+   Storm.dll
+</pre>
+
+<p></p>
+
+<h2>Setup</h2>
+<p>
+For the moment you should have two directories: one with d2gs and another with pvpgn server.
+</p>
+<p>
+Edit the following config files in accordance with the picture at the beginning.
+</p>
+
+<ol>
+	<li>var/<b>d2cs.conf</b>
+	<pre>realmname = "MyRealm" <i>(the same as in realm.conf)</i>
+gameservlist = <span class="d">d.d.d.d</span>
+bnetdaddr = <span class="a">a.a.a.a</span>:6112
+d2gs_password = "<span class="e">pvpgnrocks</span>"
+	</pre>
+	</li>
+	
+	<li>var/<b>d2dbs.conf</b>
+	<pre>gameservlist = <span class="d">d.d.d.d</span>
+	</pre>
+	</li>
+	
+	<li>var/<b>realm.conf</b>
+	<pre>"MyRealm"	"PvPGN Closed Realm"	<span class="b">b.b.b.b</span>:6113
+	</pre>
+	</li>
+	
+	<li><b>d2gs.reg</b>
+	<pre>"D2CSIP"="<span class="b">b.b.b.b</span>"
+"D2DBSIP"="<span class="c">c.c.c.c</span>"
+"D2CSSecrect"="<span class="e">pvpgnrocks</span>"
+	</pre>
+	</li>
+		
+	<li><b>d2server.ini</b>
+	<pre>;actually <a href="https://forums.pvpgn.pro/viewtopic.php?id=1315">warden is deprecated</a> cause it does not properly, and it will kill you for no reason. So, disable it.
+EnableWarden=0
+	</pre>
+	</li>
+</ol>
+
+
+<p>
+a.a.a.a, b.b.b.b, c.c.c.c, d.d.d.d - are IP addresses of your servers.
+<br>If all services are running on a single machine then use a single IP address instead of many.
+</p>
+<p>
+<i>Optionally, you can specify "servaddrs" option in bnetd.conf, d2cs.conf, d2dbs.conf, but it's not necessary in most cases. Just leave it default to listen all network interfaces.</i>
+</p>
+<p>
+<i>"AdminPassword" in d2gs.reg was updated by Magic Builder during the installation. Use <a href="http://harpywar.pvpgn.pl/?do=hash">harpywar.pvpgn.pl</a> to generate a hash from a new password.
+<br>
+This password can be used to control D2GS from telnet connection on port 8888.
+<br><br>
+For the security reason you should change d2gs_password and D2CSSecrect, this password is used for handshake between D2CS and D2GS.
+</i>
+</p>
+
+<p>
+Let's consider two most common installation examples.
+</p>
+
+<ul>
+<li>
+	<b>D2GS + PvPGN both on Windows + Home Router (<a href="http://www.networkwebcams.co.uk/blog/2012/06/11/what-is-nat-loopback/">NAT</a>)</b>
+	<p>
+	A computer with internal IP <span class="x">x.x.x.x</span> on Windows and a router with external IP <span class="y">y.y.y.y</span>. 
+	<br>
+	1) Replace all a.a.a.a, b.b.b.b, c.c.c.c, d.d.d.d → <span class="x">x.x.x.x</span>, and forward ports 6112 and 4000 on a router to this local IP.
+	</p>
+	<p>
+	2) In addition uncomment <a href="https://github.com/pvpgn/pvpgn-server/issues/381#issuecomment-485501065">two lines</a> in address_translation.conf:
+	</p><pre>  ################################################################################
+  # Diablo II Character Server translation (d2cs)
+  #
+  x.x.x.x:6113   y.y.y.y:6113       x.x.x.0/24        ANY
+  
+  ################################################################################
+  # Diablo II Game Server Translation (d2gs)
+  #
+  x.x.x.x:4000   y.y.y.y:4000       NONE              ANY
+	</pre>
+	<p></p>
+	<p>You can play with friends from the same computer where the server is running. 
+	<br>They have to connect to <span class="y">y.y.y.y</span> while you can connect to <span class="x">x.x.x.x</span>.
+</p></li>
+<li>
+	<b>D2GS on Windows + PvPGN on Linux</b>
+	<p>
+	Two different servers: one with D2GS <span class="x">x.x.x.x</span> and another PvPGN/D2CS/D2DBS <span class="y">y.y.y.y</span>. Both IPs are external and without NAT.
+	<br>
+	No problem. Replace d.d.d.d → <span class="x">x.x.x.x</span>, and a.a.a.a, b.b.b.b, c.c.c.c → <span class="y">y.y.y.y</span>
+	</p>
+</li>
+</ul>
+
+<h2>Start Service</h2>
+
+To complete the D2GS installation you have to run d2gs_install.bat inside d2gs directory. It's important to run the script "as Administrator"!<br>
+<i>(instead you can manually execute d2gs.reg and run "D2GSSVC.exe -i" to install a Windows Service.)</i>
+
+<p>
+D2GS was designed for old Windows platforms and the service will infinitely crash/restart on newest Windows with growing D2SVC.LOG size.
+<br>It can be fixed by setup a compatibility mode in properties of file D2GS.exe.
+</p>
+<p>
+By default Windows service is running under "LOCAL SERVICE" or "SYSTEM" accounts. But a compatibility mode that 
+<br>you set for D2GS.exe is only for a current user that logged in. Setting up a compatibility mode for all users solves the problem. 
+</p>
+<img src="./D2GS Installation Guide_files/d2gs_compatibility.png" border="0" alt="D2GS Windows XP Compatibility">
+
+<p>
+You can also install PvPGN/D2CS/D2DBS as a Windows Service by starting each of them with a parameter "-s install" (or uninstall with "-s uninstall"):
+</p><pre>   PvPGNConsole.exe -s install
+   D2CSConsole.exe -s install
+   D2DBSConsole.exe -s install
+</pre>
+<p></p>
+
+<p>
+<i>
+It's possible to <a href="https://forums.pvpgn.pro/viewtopic.php?id=1298">run D2GS on Wine</a>, but you may run into a <a href="https://forums.pvpgn.pro/viewtopic.php?pid=9010">problem with Wine sockets</a>. So it's recommended to use Windows for D2GS.
+</i>
+</p>
+
+<h2>Running Multiple D2GS Realms</h2>
+
+<a href="https://pvpgn.pro/images/d2gs_multirealm.png"><img src="./D2GS Installation Guide_files/d2gs_multirealm_small.png" border="0" alt="D2GS Multiple Realms"></a>
+
+<p>
+It's possible to add as many D2GS realms as you need, even with different D2GS versions.
+<br>Unfortunatelly, we can not run many D2GS instances on a single machine, because port 4000 is used by Diablo II game client and it can not be changed neither on a client nor a server side.
+<br><i>(but it's possible to run both 1.11b + 1.13c at the same time on <a href="https://github.com/pvpgn/pvpgn-magic-builder/issues/29#issuecomment-315624484">multithreaded version of D2GS</a></i>
+</p>
+<p>
+D2GS listen all interfaces and there is no way to bind a specific IP address (if your machine has sevaral IPs).
+<br>You can use Virtual Machine or Docker to run multiple instances with different IPs.
+</p>
+
+<p>
+It's better to run PvPGN and D2CS/D2DBS on a single machine, and D2GS on many others machines.
+<br>In this case all characters will be stored in one place, and this solution is simpler to setup and backup.
+</p><p>
+To achieve this goal you can copy/paste as many d2cs/d2dbs directories as you need, and set different
+<br>port numbers for "servaddrs" option in d2cs.conf and d2dbs.conf.
+</p><p>
+For example (0.0.0.0, 1.1.1.1, 2.2.2.2, 3.3.3.3 indicate different server machines):
+
+</p><pre>   0.0.0.0
+   PvPGN - 6112
+   D2CS1 - 6113, D2DBS1 - 6114
+   D2CS2 - 6115, D2DBS2 - 6116
+   D2CS3 - 6117, D2DBS3 - 6118
+   
+   1.1.1.1
+   D2GS1 4000
+   
+   2.2.2.2
+   D2GS2 4000
+   
+   3.3.3.3
+   D2GS3 4000
+</pre>
+<p></p>
+
+<p>
+Setup is very similar to a single realm. In additional you have to add all your D2GS servers in realm.conf.
+</p>
+
+
+<h2>Modify Diablo II Server Drop Rates</h2>
+
+<p>
+All available D2GS settings are in d2server.ini and ItemConfig.dat (it should be researched).
+<br>All others settings, like drop rates, includiong images, are in a game client MPQ files. It called game modding.
+<br>You can create your own mod in Patch_D2.mpq, but remember that this file must match on a client and a server side. You should distribute it between your players manually.
+</p>
+<p>
+<a href="https://forums.pvpgn.pro/viewtopic.php?pid=8878#p8878">Read more on forums...</a>
+</p>
+
+<h2>Diagnosis of problems</h2>
+
+First of all you have to examine logs for errors content:
+<pre>   d2gs/*.log
+   d2gs/log/*
+   pvpgn/var/bnetd.log
+   pvpgn/var/d2cs.log
+   pvpgn/var/d2dbs.log
+</pre>
+
+<p>
+One of the most common problems when a game can not be created with a message "<big><b>Your position in line is : 1</b></big>".<br>
+Usually this means that there is no a connection between PvPGN/D2CS/D2GS (look at the first picture above). Or D2GS is not running (look at the compatibility issue above).
+<br>Also it may occurs when value of "MaxGames" is too small in HKEY_LOCAL_MACHINE\SOFTWARE\D2Server\D2GS (you can change it in d2gs.reg and then execute the file to update the registry).
+</p>
+
+<p>
+Another comon error is "<big><b>Failed to join game"</b></big>.<br>
+a) This may mean block of UDP traffic on a client side or on a server side.
+<br>b) By different reasons sometimes character files can be corrupted. You can restore them from var/bak/ directory. But from time to time this directory overwrites by actual files, 
+<br>and you may find that there is also a corrupted character.
+<br>So, it's highly recommended to backup directories var/charsave/ and var/charinfo/ with an external tool by a schedule.
+</p>
+
+<p>
+If your server periodically crashes without a reason, it may be caused by a vulnerability that can be exploited by bad guys.
+<br>In this case D2GS logs should contain the following error: <b>D2GSErrorHandle: Unhandled exception occurred</b>.
+<br>Couple of tips and a solution how to protect your D2GS from this attack:
+</p><ul>
+<li><a href="https://forums.pvpgn.pro/viewtopic.php?id=1819">https://forums.pvpgn.pro/viewtopic.php?id=1819</a></li>
+<li><a href="https://forums.pvpgn.pro/viewtopic.php?id=1820">https://forums.pvpgn.pro/viewtopic.php?id=1820</a></li>
+</ul>
+<p></p>
+
+<br>
+
+<p>
+Could not resolve an issue by yourself? Welcome to <a href="https://forums.pvpgn.pro/">forums.pvpgn.pro</a>. 
+<br>Attach all configs, logs, screenshot with the error to a new post. Describe the issue in details and what did you try to solve it. 
+</p>
+
+<hr>
+<h2>Connect with Diablo II</h2>
+
+<p>
+Use <a href="https://github.com/pvpgn/battle.net-gateway-installer">Battle.net Gateway Installer</a> to add a new server into Windows registry.
+</p>
+
+<p>
+Connection to PvPGN from Diablo II client does not require any special loaders — you can use an original game client.
+<br>Only requirement is a client version must match on a server version.
+</p>
+
+<p>
+There are two game types are available to choose in main game menu:
+</p><ul>
+<li><b>BATTLE.NET</b>
+<p>
+Closed Game Server which described above. All game characters are stored on a remote server. All game traffic goes through D2GS server.
+</p>
+</li>
+<li><b>OTHER MULTIPLAYER &gt; OPEN BATTLE.NET</b>
+<p>
+Open Game Server needs only PvPGN without D2CS/D2DBS/D2GS. All game characters are stored on local players computers with 
+<br>a high possibility of cheating. All game traffic goes through a player-host. <a href="http://harpywar.com/?a=articles&amp;b=1&amp;d=27&amp;lang=ru">Read more...</a>
+</p>
+</li>
+
+</ul>
+<p></p>
+
+<br><br>
+
+
+
+</article><app-frame-17880 id="redeviation-bs-sidebar" class="notranslate" aria-hidden="true" data-theme="default" data-pos="left"></app-frame-17880><div id="redeviation-bs-indicator" data-theme="default" class="redeviation-bs-fullHeight" style="height: 100%; top: 0%;"></div></body><div style="all: initial;"><div id="__hcfy__" style="all: initial;"></div></div></html>

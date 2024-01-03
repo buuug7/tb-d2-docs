@@ -1,0 +1,566 @@
+AI 194 (wake of destruction)
+P1 casting rate percentage
+P2 delay if locked on enemy
+P3 delay if not locked on enemy
+P4 line of sight (radius)
+x
+
+AI 195 (charged bolt sentry)
+P1 casting rate percentage
+P2 delay if locked on enemy
+P3 delay if not locked on enemy
+P4 line of sight (radius)
+x
+
+AI 196 (lightning sentry)
+P1 casting rate percentage
+P2 delay if locked on enemy
+P3 delay if not locked on enemy
+P4 line of sight (radius)
+x
+
+AI 197 (blade creeper)
+x
+x
+x
+x
+x
+
+AI 198 (invisible summon)
+P1 line of sight (radius)
+P2 delay
+x
+x
+x
+
+AI 199 (inferno sentry)
+P1 casting rate percentage
+P2 delay if locked on enemy
+P3 delay if not locked on enemy
+P4 line of sight (radius)
+x
+
+AI 200 (death sentry)
+P1 distance from corpse
+x
+P3 delay
+P4 line of sight (radius)
+x
+
+AI 201 (shadow warrior)
+P1 line of sight (radius)
+P2 distance before following character
+x
+x
+x
+
+AI 202 (shadow warrior)
+P1 line of sight (radius)
+P2 distance before following character
+x
+x
+x
+
+AI 203 (druid raven)
+P1 maximum distance from player
+P2 radius around player in which it can attack
+P3 delay between attacks
+P4 chance to attack
+P5 maximum distance from target
+
+AI 204 (druid wolf)
+P1 delay
+P2 chance to random walk
+P3 distance from player
+P4 maximum distance from potential target
+P5 chance to run back to target
+
+AI 204 (dire wolf) (dire wolf row only!)
+P1 delay
+P2 chance to random walk
+P3 chance to eat corpse
+P4 maximum distance from potential target
+P5 chance to run back to target
+
+AI 205 (druid spirit)
+P1 chance to random walk
+P2 chance to follow
+P3 teleport range
+P4 range to run back
+x
+
+AI 206 (druid poison vine)
+P1 delay between attacks
+P2 attack range
+P3 delay
+P4 distance to random walk
+P5 teleport range
+
+AI 207 (druid life vine)
+P1 delay between attacks
+P2 attack range
+P3 delay
+P4 distance to random walk
+P5 teleport range
+
+AI 208 (druid vine)
+P1 delay between attacks
+P2 attack range
+P3 delay
+P4 distance to random walk
+P5 teleport range
+
+AI 209 (druid bear)
+P1 delay
+P2 chance to random walk
+P3 chance to use knockback attack
+x
+x
+
+AI 210 DRUID SHAPE
+x
+x
+x
+x
+x
+
+AI 211 DRUID SHAPE
+x
+x
+x
+x
+x
+
+AI 212 DRUID SHAPE
+x
+x
+x
+x
+x
+
+AI 213 (door)
+x
+x
+x
+x
+x
+
+AI 214 (prison door)
+x
+x
+x
+x
+x
+
+AI 215 (tower)
+x
+x
+x
+x
+x
+
+AI 216 (reanimated horde)
+P1 delay before self ressurection
+P2 chance to attack
+P3 chance to self ressurect
+P4 chance to charge
+x
+
+AI 217 (siege beast)
+P1 health percentage to go into escape mode
+P2 chance to attack
+P3 chance to stomp
+P4 distance from player
+x
+
+AI 218 (yeti)
+P1 attack frequency if in attack mode (number of swings before delay)
+P2 chance to do attack 2 if in attack mode
+x
+x
+x
+
+AI 219 (wolf rider)
+P1 to do
+P2 to do
+P3 to do
+x
+x
+
+AI 220 (minion)
+P1 chance to attack
+P2 delay between attacks
+P3 chance to walk
+P4 delay
+x
+
+AI 221 (suicide minion)
+P1 boolean setting hardcoded to line: Type 1 set to 0=Normal Explosion
+P2 delay
+P3 chance to walk
+P4 explosion radius
+P5 explosion timer
+
+AI 221 (suicide minion)
+P1 boolean setting hardcoded to line: Type 2 set to 1=Fire Explosion
+P2 delay
+P3 chance to walk
+P4 explosion radius
+P5 explosion timer
+
+AI 221 (suicide minion)
+P1 boolean setting hardcoded to line: Type 3 freeze time for ice explosion
+P2 delay
+P3 chance to walk
+P4 explosion radius
+P5 explosion timer
+
+AI 222 (succubus melee)
+P1 chance to attack
+P2 chance to approach
+P3 chance to curse
+P4 range at which cursing is possible
+x
+
+AI 223 (mage succubus)
+P1 chance to attack
+P2 chance to approach
+P3 chance to curse
+P4 range at which cursing is possible
+x
+
+AI 224 (overseer)
+P1 delay
+P2 chance to cast healing vortex
+P3 chance to bloodlust and suiccide
+P4 distance from player
+P5 chance to random walk
+
+AI 225 (minion spawner) (AI is broken, it will not work)
+x
+P2 delay between spawning
+P3 maximum monsters to spawn
+x
+x
+
+AI 226 (imp) (very hardcoded)
+P1 health percentage to trigger escape
+P2 teleport radius
+P3 chance to teleport
+P4 chance to random walk
+x
+
+AI 226 (imp) (very hardcoded)
+P1 distance from tower before teleport
+P2 range to fire from tower
+P3 chance to cast fireballs while on tower
+P4 tower error range
+x
+
+AI 226 (imp) (very hardcoded)
+P1 range to escape
+P2 chance to escape
+P3 range to cast fireballs (outside)
+P4 chance to cast fireballs (outside)
+x
+
+AI 226 (imp) (very hardcoded)
+P1 range to escape
+P2 chance to escape
+P3 range to cast fireballs (inside)
+P4 chance to cast fireballs (inside)
+x
+
+AI 226 (imp) (very hardcoded)
+x
+x
+x
+x
+x
+
+AI 227 (catapult)
+x
+x
+x
+x
+x
+
+AI 228 (frozen horror)
+P1 chance to attack
+P2 chance to walk
+P3 chance to cast
+P4 delay
+x
+
+AI 229 (blood lord)
+P1 chance to attack
+P2 chance to walk
+P3 chance to use frenzy
+P4 delay
+x
+
+AI 230 NPC
+x
+x
+x
+x
+x
+
+AI 231 NPC
+x
+x
+x
+x
+x
+
+AI 232 NPC
+x
+x
+x
+x
+x
+
+AI 233 NPC
+x
+x
+x
+x
+x
+
+AI 234 NPC
+x
+x
+x
+x
+x
+
+AI 235 (catapult spotter)
+P1 chance to attack
+P2 delay between attacks
+P3 attack radius
+P4 random radius
+P5 maximum shots to use per skill
+
+AI 236 NPC
+x
+x
+x
+x
+x
+
+AI 237 NPC
+x
+x
+x
+x
+x
+
+AI 238 (barbarian figher one handed)
+P1 delay
+P2 chance to run to enemy
+P3 line of sight (aka range at which they consider a enemy as a potential target IIRC)
+x
+x
+
+AI 239 (barbarian figher one handed)
+P1 delay
+P2 chance to run to enemy
+P3 line of sight (aka range at which they consider a enemy as a potential target IIRC)
+x
+x
+
+AI 240 (wall)
+x
+x
+x
+x
+x
+
+AI 241 (nihlathak enemy)
+P1 chance to teleport
+P2 teleport radius
+P3 chance to cast corpse explosion
+P4 chance to cast bloodlust / suiccide
+P5 distance to trigger escape
+
+AI 242 NPC
+x
+x
+x
+x
+x
+
+AI 243 (demon hut)
+P1 frames between spawnings
+x
+P2 maximum monsters to spawn
+x
+x
+
+AI 244 (death mauler)
+P1 chance to attack
+P2 chance to walk
+P3 range at which they consider using their spike skill
+P4 chance to use spike skill
+x
+
+AI 245 NPC
+x
+x
+x
+x
+x
+
+AI 246 NPC
+x
+x
+x
+x
+x
+
+AI 247 NPC
+x
+x
+x
+x
+x
+
+AI 248 (ancients 1)
+P1 whirlwind distance
+P2 chance to use whirlwind
+P3 chance to attack
+P4 distance to cast at behind player (to use WW correctly!)
+x
+
+AI 248 (ancients 2)
+P1 distance to throw axes at
+P2 chance to throw axes
+P3 chance to cast shout
+P4 chance to escape
+P5 distance to escape
+
+AI 248 (ancients)
+P1 leap attack distance
+P2 chance to use leap attack
+P3 chance to attack
+x
+x
+
+AI 249 (baal in the throne room)
+P1 chance to cast curses
+x
+x
+x
+x
+
+AI 250 (baal)
+x
+x
+x
+x
+x
+
+AI 251 (baal taunt) (this is the poison/lightning thing)
+P1 approach distance
+P2 time player is in NU before it gets triggered
+P3 teleport distance
+x
+x
+
+AI 252 (putrid defiler)
+P1 range player can approach before it escapes
+P2 distance to escape too
+x
+x
+x
+
+AI 253 (pain worm)
+x
+x
+x
+x
+x
+
+AI 254 CRITTER
+x
+x
+x
+x
+x
+
+AI 255 (council member 2)
+P1 chance to attack
+P2 chance to heal others
+P3 chance to cast spells
+P4 percentage of health left to trigger escape
+x
+
+AI 256 (balrog 2)
+P1 chance to attack (uncertain)
+P2 chance to do attack 2 if in attack mode (uncertain)
+x
+x
+P5 delay (uncertain)
+
+AI 257 (baal crab dummy)
+P1 range to walk into portal
+x
+x
+x
+x
+
+AI 258 HIRELING
+P1 boolean 1=melee
+x
+x
+x
+x
+
+AI 259 (baal tentacle)
+P1 chance to attack
+P2 delay
+P3 time before death
+x
+x
+
+AI 260 NPC
+x
+x
+x
+x
+x
+
+AI 261 NPC
+x
+x
+x
+x
+x
+
+AI 262 NPC
+x
+x
+x
+x
+x
+
+AI 263 (baal clone)
+x
+x
+x
+x
+x
+
+AI 264 (baals minion)
+P1 chance to attack
+P2 chance to walk
+P3 chance to use smite
+P4 delay
+x
+
+AI 265 (worldstone effect)
+x
+x
+x
+x
+x

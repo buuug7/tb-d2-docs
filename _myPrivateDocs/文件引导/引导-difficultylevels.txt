@@ -1,0 +1,29 @@
+Name 难度的名称，不用改，改了也没用。
+
+ResistPenalty 每种难度下四防（火、冰、毒、电）所减少的数值。
+
+DeathExpPenalty 每种难度下死亡一次所损失的经验值。
+
+UberCodeOddsNormal 未使用的参数（对应Uniqueitems.txt文件中的Uber参数。）
+
+UberCodeOddsGood 未使用的参数（对应Uniqueitems.txt文件中的Uber参数。）
+
+UltraCodeOddsNormalUltraCodeOddsGood 1.07版以后均未使用此参数。
+
+MonsterSkillBonus 每种难度下针对怪物额外附加的技能点数，对应MonStats.txt中对怪物技能的描述；不过对于“弓”系魔法无效。
+
+MonsterFreezeDivisorMonsterColdDivisor 每中难度下怪物冰冻魔法的除数（既然是除数，就不能为0）。 
+
+AiCurseDivisorLifeStealDivisorManaStealDivisor 每种难度下怪物“诅咒”、“偷血”、“偷魔法”技能的除数，同样不能为0。
+
+UniqueDamageBonusChampionDamageBonus 对于高级和独有怪物的额外损伤数值。
+
+HireableBossDamagePercent 针对每一关中的BOSS级别怪物，你的佣兵所做的损伤百分比；比如：在“地狱”难度下的数值为25，意思就是对于BOSS级别的怪物只做1/4的伤害。
+
+MonsterCEDamagePercent 怪物“暴尸"技能的百分比限制；说明一下，通常的“暴尸”伤害率都是根据游戏中角色的数量决定的，这列数值的意思就是限制过大的暴尸”伤害率。 
+
+StaticFieldMin 静态攻击对于怪物的最小伤害值；如果三种难度下均设定为0的话，就以非资料片的默认值为准。
+
+GambleRareGambleSetGambleUniqueGambleUberGambleUltra 在HardCore模式下各种赌博物品的出现机率。
+
+ 

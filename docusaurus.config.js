@@ -44,13 +44,13 @@ const config = {
           sidebarPath: "./sidebars.js",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://gitee.com/buuug7/tb-d2-site/tree/main",
+          editUrl: "https://gitee.com/buuug7/tb-d2-docs/tree/main",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://gitee.com/buuug7/tb-d2-site/tree/main",
+          editUrl: "https://gitee.com/buuug7/tb-d2-docs/tree/main",
         },
         theme: {
           customCss: "./src/css/custom.css",
@@ -124,11 +124,11 @@ const config = {
               },
               {
                 label: "GitHub",
-                href: "https://github.com/buuug7/tb-d2-site",
+                href: "https://github.com/buuug7/tb-d2-docs",
               },
               {
                 label: "Gitee",
-                href: "https://gitee.com/buuug7/tb-d2-site",
+                href: "https://gitee.com/buuug7/tb-d2-docs",
               },
             ],
           },

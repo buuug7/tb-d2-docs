@@ -1,0 +1,50 @@
+Index: 
+The ID pointer that is referenced by the game in TreasureClassEx.txt and CubeMain.txt, this also controls the string that will be used to display the item's name in-game.
+
+Version: 
+What game version was this unique item added in, 0 referes to real classic Diablo II (1.00-1.06), 1 refers to new classic Diablo II (1.07-1.11) and 100 refers to the Expansion Set, items with 100 will be unable to drop in Classic Diablo II.
+
+Ladder: 
+Is this item available only in Ladder and Single Player games? (boolean, 0 = available in all game types, 1 = available only in single player and ladder gaes).
+
+Rarity: 
+Chance to pick this unique item if more then one unique item of the same base item exist, this uses the common rarity/total_rarity formula, so if you have two unique rings, one with a rarity of 100 the other with a rarity of 1, then the first will drop 100/101 percent of the time (99%) and the other will drop 1/101 percent of the time (1%), rarity can be anything between 0 and 255.
+
+NoLimit: 
+Can this item drop more then once per game? (boolean, 0 = can drop only once per game, 1 = can drop more then once per game). Basically when the game drops a unique item it sets a check mark in a table it holds in memory of what unique items were dropped, when, should you be lucky enough to get the same item again, it will check whenever this item has been dropped already, and if NoLimit is false, it will drop a rare item with enhanced durability instead.
+
+Lvl: The quality level of this unique item, monsters, cube recipes, vendors, objects and the like most be at least this level or higher to be able to drop this item, otherwise they would drop a rare item with enhanced durability.
+
+Lvl Req: The character level required to use this unique item.
+
+Code: The code of the base form of this unique item, this is an ID pointer from Weapons.txt, Armor.txt or Misc.txt.
+
+Carry1: Is the player only permitted to hold a single copy of this item at a time? (in reality this just prevents the player from picking up the item when it is dropped on the floor and it prevents the player from putting this item in the trading window). (boolean, 0 = allow the player to hold as many of this item as he wants, 1 = allow the player to hold a single copy only).
+
+Cost Mult: The base item's price is multiplied by this value when sold, repaired or bought from a vendor.
+
+Cost Add: After the price has been multiplied, this amount of gold is added to the price on top.
+
+ChrTransform: Palette shift to apply to the the DCC component-file and the DC6 flippy-file (whenever or not the color shift will apply is determined by Weapons.txt, Armor.txt or Misc.txt). This is an ID pointer from Colors.txt.
+
+InvTransform: Palette shift to apply to the the DC6 inventory-file (whenever or not the color shift will apply is determined by Weapons.txt, Armor.txt or Misc.txt). This is an ID pointer from Colors.txt.
+
+FlippyFile: Overrides the flippyfile specified in Weapons.txt, Armor.txt or Misc.txt for the base item. This field contains the file name of the DC6 flippy animation.
+
+InvFile: Overrides the invfile and uniqueinvfile specified in Weapons.txt, Armor.txt or Misc.txt for the base item. This field contains the file name of the DC6 inventory graphic.
+
+DropSound: Overrides the dropsound (the sound played when the item hits the ground) specified in Weapons.txt, Armor.txt or Misc.txt for the base item. This field contains an ID pointer from Sounds.txt.
+
+DropSfxFrame: How many frames after the flippy animation starts playing will the associated drop sound start to play. This overrides the values in Weapons.txt, Armor.txt or Misc.txt.
+
+UseSound: Overrides the usesound (the sound played when the item is consumed by the player) specified in Weapons.txt, Armor.txt or Misc.txt for the base item. This field contains an ID pointer from Sounds.txt.
+
+Prop1-12: An ID pointer of a property from Properties.txt, these columns control each of the 12 different modifiers a unique item can grant you at most. (In a-lay-mens-terms: "the stat that can spawn on the unique item.")
+
+Par1-12: The parameter passed on to the associated property, this is used to pass skill IDs, state IDs, monster IDs, montype IDs and the like on to the properties that require them, these fields support calculations.
+
+Min1-12: Minimum value to assign to the associated property. (In a-lay-man's-terms: "minimum value of the stat.")
+
+Max1-12: Maximum value to assign to the associated property. (In a-lay-man's-terms: "maximum value of the stat.")
+
+*EoL, *Type and *Uber are of course not loaded.

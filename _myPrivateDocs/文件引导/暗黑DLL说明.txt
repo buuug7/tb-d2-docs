@@ -1,0 +1,22 @@
+To understand the dll's you need to understand the architecture of a D2 game, and how that fits into Bnet/mp/sp games. The very simplified version is something along these lines:
+
+D2Game.dll contains the game server,
+D2Client.dll mirrors everything needed for the visual representation plus communication to the game server. 
+D2Server.dll was accidentally packaged with D2 v1.00, there is only one public version of it; it runs the realm server and supporting services together with D2Game.dll, which allows it to host multiple games for clients to connect to. 
+game.exe glues everything together, and runs D2Launch for the main menus, D2Multi for BNet Menus, D2Client for in-game and D2Server for the realm. 
+D2Common.dll contains code that is used by the client and the game server (but not the realm server), to deduplicate work, then the rest of the dll's are supporting code.
+
+storm => a massive collection of Blizzards standard libraries carried through many of their older games up till WC3; contains the input manager and MPQ code most notably, and many OS or CRT functions
+fog => very similar to storm, and in many cases wraps a lot of storms code into another API (I believe this dll was used for OS abstraction between Windows & Mac), contains the networking layer of D2, the memory manager, the file system layer and other misc functions.
+D2GFX => the graphics interface/driver, loads D2GDI/D2DDraw/D2Direct3D/D2OpenGL(not public)/D2Glide for the OS graphics API chosen through D2VidTest
+D2Win => contains a lot of supporting code for UI elements, text drawing, and various odds and ends like MPQ loading
+D2Sound => The sound driver
+D2Lang => does all the string work in D2, and manages the string tables for localization
+D2Net => contains a thin network layer around fog.dll
+D2CMP => this contains all the code related to sprites and tiles (DC6, DCC & DT1 files), as well as all the palette handling code and internal format conversion and encoding tools
+Smack32 and Bink => the are codecs from RAD Tools for movies/sound
+ijl11 => lib from Intel used for jpeg compression of screenshots
+
+The rest of the Dll's are used for various BattleNet stuff which I will omit.
+
+In 1.14x all the dll's got statically compiled into game.exe to produce a monolith binary, that contains everything.

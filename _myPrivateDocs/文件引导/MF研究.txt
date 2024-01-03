@@ -1,0 +1,731 @@
+来自于: https://www.91d2.cn/changjingditu/2018-10-03/446.html
+
+简单说一下物品生成的方式，这个资料区里面有，我就不详细讲了，用自己的话描述一下
+
+A 每个怪固定一个数值，就是最多能够掉落东西的数量
+
+比方说劳模是7。
+
+这个数值是固定的，你没有办法改变
+
+B 对于每一次，系统首先判定是 Drop 还是 No Drop
+
+每个怪物的No Drop率都不一样，No Drop当然就是不掉任何东西了
+
+No Drop率 跟怪物本身属性 还有房间人数有关
+
+房间人数越多， No Drop率就越低
+
+也就是说房间人数越多，怪物掉东西的可能性就越大
+
+No Drop跟MF没有任何关系
+
+ 
+
+C 如果系统判定这一次是Drop了，然后再看Drop率
+
+怪物的drop率可以在www.d2data.net查询
+
+简单的说，就是判断这一次是金钱，还是箭矢，还是装备，还是rune
+
+ 
+
+比如r27(Rune/[27/Ohm]) 0.00009369 
+
+说明安mm掉27#的几率是0.00009369%
+
+ 
+
+armo60(Armor/[Lv.60]) 0.35358170 
+
+表示Qlvl58-60的东西的掉落率为0.35358170%
+
+Qlvl是每种物品的固有属性，比如军帽，Qlvl就是58
+
+物品Qlvl一览
+
+ 
+
+至于是什么颜色的，就不是这一步考虑的问题
+
+ 
+
+Bug KB，影响的正是Drop率
+
+ 
+
+BAAL失身前的Drop率：
+
+no_drop(No Drop/) 21.42857143 
+
+weap3(Weapons/[Lv.3]) 0.19598495 
+
+weap6(Weapons/[Lv.6]) 0.82313680 
+
+weap9(Weapons/[Lv.9]) 2.33614063 
+
+weap12(Weapons/[Lv.12]) 2.92879912 
+
+weap15(Weapons/[Lv.15]) 3.33751398 
+
+weap18(Weapons/[Lv.18]) 3.75698826 
+
+weap21(Weapons/[Lv.21]) 3.73581210 
+
+weap24(Weapons/[Lv.24]) 2.73278045 
+
+weap27(Weapons/[Lv.27]) 2.13459398 
+
+weap30(Weapons/[Lv.30]) 2.17725874 
+
+weap33(Weapons/[Lv.33]) 2.71237016 
+
+weap36(Weapons/[Lv.36]) 2.56643602 
+
+weap39(Weapons/[Lv.39]) 1.71185461 
+
+weap42(Weapons/[Lv.42]) 1.26231708 
+
+weap45(Weapons/[Lv.45]) 1.34938095 
+
+weap48(Weapons/[Lv.48]) 1.43395554 
+
+weap51(Weapons/[Lv.51]) 1.14329039 
+
+weap54(Weapons/[Lv.54]) 1.31534983 
+
+weap57(Weapons/[Lv.57]) 1.56276612 
+
+weap60(Weapons/[Lv.60]) 1.64487086 
+
+weap63(Weapons/[Lv.63]) 1.35087484 
+
+weap66(Weapons/[Lv.66]) 1.44182802 
+
+weap69(Weapons/[Lv.69]) 1.22499458 
+
+weap72(Weapons/[Lv.72]) 1.32060704 
+
+weap75(Weapons/[Lv.75]) 1.34186213 
+
+weap78(Weapons/[Lv.78]) 0.69430134 
+
+weap81(Weapons/[Lv.81]) 0.93346503 
+
+weap84(Weapons/[Lv.84]) 0.75680459 
+
+weap87(Weapons/[Lv.87]) 0.09487320 
+
+armo3(Armor/[Lv.3]) 0.09799248 
+
+armo6(Armor/[Lv.6]) 0.41156840 
+
+armo9(Armor/[Lv.9]) 1.16807031 
+
+armo12(Armor/[Lv.12]) 1.46439956 
+
+armo15(Armor/[Lv.15]) 1.66875699 
+
+armo18(Armor/[Lv.18]) 1.87849413 
+
+armo21(Armor/[Lv.21]) 1.86790605 
+
+armo24(Armor/[Lv.24]) 1.36639022 
+
+armo27(Armor/[Lv.27]) 1.06729699 
+
+armo30(Armor/[Lv.30]) 0.86568909 
+
+armo33(Armor/[Lv.33]) 0.74571938 
+
+armo36(Armor/[Lv.36]) 1.37052128 
+
+armo39(Armor/[Lv.39]) 0.85592731 
+
+armo42(Armor/[Lv.42]) 0.63115854 
+
+armo45(Armor/[Lv.45]) 0.67469048 
+
+armo48(Armor/[Lv.48]) 0.71697777 
+
+armo51(Armor/[Lv.51]) 0.57164519 
+
+armo54(Armor/[Lv.54]) 0.65767491 
+
+armo57(Armor/[Lv.57]) 0.78138306 
+
+armo60(Armor/[Lv.60]) 0.82243543 
+
+armo63(Armor/[Lv.63]) 0.67543742 
+
+armo66(Armor/[Lv.66]) 0.72091401 
+
+armo69(Armor/[Lv.69]) 0.61249729 
+
+armo72(Armor/[Lv.72]) 0.66030352 
+
+armo75(Armor/[Lv.75]) 0.67093107 
+
+armo78(Armor/[Lv.78]) 0.34715067 
+
+armo81(Armor/[Lv.81]) 0.46673252 
+
+armo84(Armor/[Lv.84]) 0.37840230 
+
+armo87(Armor/[Lv.87]) 0.04743660 
+
+rin(Rings/) 0.79120879 
+
+amu(Amulets/) 0.39560440 
+
+cm1(Charms/[S]) 0.19780220 
+
+cm2(Charms/[L]) 0.19780220 
+
+cm3(Charms/[G]) 0.19780220 
+
+jew(Jewel/) 0.19780220 
+
+gcv(Amethyst/[C]) 0.01978022 
+
+gfv(Amethyst/[Fed]) 0.04945055 
+
+gsv(Amethyst/[N]) 0.06923077 
+
+gzv(Amethyst/[Fless]) 0.13846154 
+
+gcw(Diamond/[C]) 0.01978022 
+
+gfw(Diamond/[Fed]) 0.04945055 
+
+gsw(Diamond/[N]) 0.06923077 
+
+glw(Diamond/[Fless]) 0.13846154 
+
+gcg(Emerald/[C]) 0.01978022 
+
+gfg(Emerald/[Fed]) 0.04945055 
+
+gsg(Emerald/[N]) 0.06923077 
+
+glg(Emerald/[Fless]) 0.13846154 
+
+gcr(Ruby/[C]) 0.01978022 
+
+gfr(Ruby/[Fed]) 0.04945055 
+
+gsr(Ruby/[N]) 0.06923077 
+
+glr(Ruby/[Fless]) 0.13846154 
+
+gcb(Sapphire/[C]) 0.01978022 
+
+gfb(Sapphire/[Fed]) 0.04945055 
+
+gsb(Sapphire/[N]) 0.06923077 
+
+glb(Sapphire/[Fless]) 0.13846154 
+
+gcy(Topaz/[C]) 0.01978022 
+
+gfy(Topaz/[Fed]) 0.04945055 
+
+gsy(Topaz/[N]) 0.06923077 
+
+gly(Topaz/[Fless]) 0.13846154 
+
+skc(Skull/[C]) 0.01318681 
+
+skf(Skull/[Fed]) 0.03296703 
+
+sku(Skull/[N]) 0.04615385 
+
+skl(Skull/[Fless]) 0.09230769 
+
+r01(Rune/[1/El]) 0.09945812 
+
+r02(Rune/[2/Eld]) 0.06630542 
+
+r03(Rune/[3/Tir]) 0.05525451 
+
+r04(Rune/[4/Nef]) 0.03683634 
+
+r05(Rune/[5/Eth]) 0.03867816 
+
+r06(Rune/[6/Ith]) 0.02578544 
+
+r07(Rune/[7/Tal]) 0.03223180 
+
+r08(Rune/[8/Ral]) 0.02148787 
+
+r09(Rune/[9/Ort]) 0.02256226 
+
+r10(Rune/[10/Thul]) 0.01504151 
+
+r11(Rune/[11/Amn]) 0.01378805 
+
+r12(Rune/[12/Sol]) 0.00919203 
+
+r13(Rune/[13/Shael]) 0.00727703 
+
+r14(Rune/[14/Dol]) 0.00485135 
+
+r15(Rune/[15/Hel]) 0.00373958 
+
+r16(Rune/[16/Io]) 0.00249305 
+
+r17(Rune/[17/Lum]) 0.00189576 
+
+r18(Rune/[18/Ko]) 0.00126384 
+
+r19(Rune/[19/Fal]) 0.00095446 
+
+r20(Rune/[20/Lem]) 0.00063631 
+
+r21(Rune/[21/Pul]) 0.00047889 
+
+r22(Rune/[22/Um]) 0.00031926 
+
+r23(Rune/[23/Mal]) 0.00027413 
+
+r24(Rune/[24/Ist]) 0.00018275 
+
+r25(Rune/[25/Gul]) 0.00015680 
+
+r26(Rune/[26/Vex]) 0.00010453 
+
+r27(Rune/[27/Ohm]) 0.00008965 
+
+r28(Rune/[28/Lo]) 0.00005977 
+
+r29(Rune/[29/Sur]) 0.00005125 
+
+r30(Rune/[30/Ber]) 0.00003416 
+
+r31(Rune/[31/Jah]) 0.00002929 
+
+r32(Rune/[32/Cham]) 0.00001953 
+
+r33(Rune/[33/Zod]) 0.00000558 
+
+ 
+
+失身后的：
+
+no_drop(No Drop/) 18.75000000 
+
+weap3(Weapons/[Lv.3]) 0.17148683 
+
+weap6(Weapons/[Lv.6]) 0.72024470 
+
+weap9(Weapons/[Lv.9]) 2.04412305 
+
+weap12(Weapons/[Lv.12]) 2.56269923 
+
+weap15(Weapons/[Lv.15]) 2.92032473 
+
+weap18(Weapons/[Lv.18]) 3.28736472 
+
+weap21(Weapons/[Lv.21]) 3.26883559 
+
+weap24(Weapons/[Lv.24]) 2.39118289 
+
+weap27(Weapons/[Lv.27]) 1.86776973 
+
+weap30(Weapons/[Lv.30]) 1.90510140 
+
+weap33(Weapons/[Lv.33]) 2.37332389 
+
+weap36(Weapons/[Lv.36]) 2.24563152 
+
+weap39(Weapons/[Lv.39]) 1.49787279 
+
+weap42(Weapons/[Lv.42]) 1.10452744 
+
+weap45(Weapons/[Lv.45]) 1.18070833 
+
+weap48(Weapons/[Lv.48]) 1.25471109 
+
+weap51(Weapons/[Lv.51]) 1.00037909 
+
+weap54(Weapons/[Lv.54]) 1.15093110 
+
+weap57(Weapons/[Lv.57]) 1.36742036 
+
+weap60(Weapons/[Lv.60]) 1.43926200 
+
+weap63(Weapons/[Lv.63]) 1.18201549 
+
+weap66(Weapons/[Lv.66]) 1.26159951 
+
+weap69(Weapons/[Lv.69]) 1.07187026 
+
+weap72(Weapons/[Lv.72]) 1.15553116 
+
+weap75(Weapons/[Lv.75]) 1.17412937 
+
+weap78(Weapons/[Lv.78]) 0.60751367 
+
+weap81(Weapons/[Lv.81]) 0.81678190 
+
+weap84(Weapons/[Lv.84]) 0.66220402 
+
+weap87(Weapons/[Lv.87]) 0.08301405 
+
+armo3(Armor/[Lv.3]) 0.08574342 
+
+armo6(Armor/[Lv.6]) 0.36012235 
+
+armo9(Armor/[Lv.9]) 1.02206152 
+
+armo12(Armor/[Lv.12]) 1.28134962 
+
+armo15(Armor/[Lv.15]) 1.46016237 
+
+armo18(Armor/[Lv.18]) 1.64368236 
+
+armo21(Armor/[Lv.21]) 1.63441779 
+
+armo24(Armor/[Lv.24]) 1.19559145 
+
+armo27(Armor/[Lv.27]) 0.93388487 
+
+armo30(Armor/[Lv.30]) 0.75747795 
+
+armo33(Armor/[Lv.33]) 0.65250446 
+
+armo36(Armor/[Lv.36]) 1.19920612 
+
+armo39(Armor/[Lv.39]) 0.74893639 
+
+armo42(Armor/[Lv.42]) 0.55226372 
+
+armo45(Armor/[Lv.45]) 0.59035417 
+
+armo48(Armor/[Lv.48]) 0.62735555 
+
+armo51(Armor/[Lv.51]) 0.50018954 
+
+armo54(Armor/[Lv.54]) 0.57546555 
+
+armo57(Armor/[Lv.57]) 0.68371018 
+
+armo60(Armor/[Lv.60]) 0.71963100 
+
+armo63(Armor/[Lv.63]) 0.59100774 
+
+armo66(Armor/[Lv.66]) 0.63079976 
+
+armo69(Armor/[Lv.69]) 0.53593513 
+
+armo72(Armor/[Lv.72]) 0.57776558 
+
+armo75(Armor/[Lv.75]) 0.58706468 
+
+armo78(Armor/[Lv.78]) 0.30375683 
+
+armo81(Armor/[Lv.81]) 0.40839095 
+
+armo84(Armor/[Lv.84]) 0.33110201 
+
+armo87(Armor/[Lv.87]) 0.04150702 
+
+rin(Rings/) 0.69230769 
+
+amu(Amulets/) 0.34615385 
+
+cm1(Charms/[S]) 0.17307692 
+
+cm2(Charms/[L]) 0.17307692 
+
+cm3(Charms/[G]) 0.17307692 
+
+jew(Jewel/) 0.17307692 
+
+aqv(Arrows/) 0.78125000 
+
+cqv(Bolts/) 0.78125000 
+
+gld;mul=2048(Gold/[*2048]) 6.25000000 
+
+isc(Identify Scroll/) 0.36057692 
+
+tsc(TownPortal Scroll/) 0.36057692 
+
+key(Key/) 0.36057692 
+
+hp1(Healing Potion/[minor]) 0.00007580 
+
+hp2(Healing Potion/[light]) 0.00093283 
+
+hp3(Healing Potion/[normal]) 0.05395816 
+
+hp4(Healing Potion/[greater]) 0.71750571 
+
+hp5(Healing Potion/[super]) 0.92818704 
+
+mp1(Mana Potion/[minor]) 0.00000882 
+
+mp2(Mana Potion/[light]) 0.00003437 
+
+mp3(Mana Potion/[normal]) 0.00047654 
+
+mp4(Mana Potion/[greater]) 0.11092017 
+
+mp5(Mana Potion/[super]) 0.59501826 
+
+rvs(Rejuvenate Potion/[S]) 0.11964507 
+
+yps(Antidote Potion/) 0.23930026 
+
+wms(Thawing Potion/) 0.11964330 
+
+vps(Stamina Potion/) 0.23929366 
+
+ops(Exploding Potion/[S]) 0.23741690 
+
+opm(Exploding Potion/[M]) 0.00293107 
+
+opl(Exploding Potion/[L]) 0.00003664 
+
+gps(Gas Potion/[S]) 0.23741690 
+
+gpm(Gas Potion/[M]) 0.00293107 
+
+gpl(Gas Potion/[L]) 0.00003664 
+
+gcv(Amethyst/[C]) 0.01730769 
+
+gfv(Amethyst/[Fed]) 0.04326923 
+
+gsv(Amethyst/[N]) 0.06057692 
+
+gzv(Amethyst/[Fless]) 0.12115385 
+
+gcw(Diamond/[C]) 0.01730769 
+
+gfw(Diamond/[Fed]) 0.04326923 
+
+gsw(Diamond/[N]) 0.06057692 
+
+glw(Diamond/[Fless]) 0.12115385 
+
+gcg(Emerald/[C]) 0.01730769 
+
+gfg(Emerald/[Fed]) 0.04326923 
+
+gsg(Emerald/[N]) 0.06057692 
+
+glg(Emerald/[Fless]) 0.12115385 
+
+gcr(Ruby/[C]) 0.01730769 
+
+gfr(Ruby/[Fed]) 0.04326923 
+
+gsr(Ruby/[N]) 0.06057692 
+
+glr(Ruby/[Fless]) 0.12115385 
+
+gcb(Sapphire/[C]) 0.01730769 
+
+gfb(Sapphire/[Fed]) 0.04326923 
+
+gsb(Sapphire/[N]) 0.06057692 
+
+glb(Sapphire/[Fless]) 0.12115385 
+
+gcy(Topaz/[C]) 0.01730769 
+
+gfy(Topaz/[Fed]) 0.04326923 
+
+gsy(Topaz/[N]) 0.06057692 
+
+gly(Topaz/[Fless]) 0.12115385 
+
+skc(Skull/[C]) 0.01153846 
+
+skf(Skull/[Fed]) 0.02884615 
+
+sku(Skull/[N]) 0.04038462 
+
+skl(Skull/[Fless]) 0.08076923 
+
+r01(Rune/[1/El]) 0.08702586 
+
+r02(Rune/[2/Eld]) 0.05801724 
+
+r03(Rune/[3/Tir]) 0.04834770 
+
+r04(Rune/[4/Nef]) 0.03223180 
+
+r05(Rune/[5/Eth]) 0.03384339 
+
+r06(Rune/[6/Ith]) 0.02256226 
+
+r07(Rune/[7/Tal]) 0.02820282 
+
+r08(Rune/[8/Ral]) 0.01880188 
+
+r09(Rune/[9/Ort]) 0.01974198 
+
+r10(Rune/[10/Thul]) 0.01316132 
+
+r11(Rune/[11/Amn]) 0.01206454 
+
+r12(Rune/[12/Sol]) 0.00804303 
+
+r13(Rune/[13/Shael]) 0.00636740 
+
+r14(Rune/[14/Dol]) 0.00424493 
+
+r15(Rune/[15/Hel]) 0.00327213 
+
+r16(Rune/[16/Io]) 0.00218142 
+
+r17(Rune/[17/Lum]) 0.00165879 
+
+r18(Rune/[18/Ko]) 0.00110586 
+
+r19(Rune/[19/Fal]) 0.00083515 
+
+r20(Rune/[20/Lem]) 0.00055677 
+
+r21(Rune/[21/Pul]) 0.00041903 
+
+r22(Rune/[22/Um]) 0.00027935 
+
+r23(Rune/[23/Mal]) 0.00023986 
+
+r24(Rune/[24/Ist]) 0.00015991 
+
+r25(Rune/[25/Gul]) 0.00013720 
+
+r26(Rune/[26/Vex]) 0.00009147 
+
+r27(Rune/[27/Ohm]) 0.00007844 
+
+r28(Rune/[28/Lo]) 0.00005230 
+
+r29(Rune/[29/Sur]) 0.00004484 
+
+r30(Rune/[30/Ber]) 0.00002989 
+
+r31(Rune/[31/Jah]) 0.00002563 
+
+r32(Rune/[32/Cham]) 0.00001709 
+
+r33(Rune/[33/Zod]) 0.00000488 
+
+ 
+
+可以看出，BUG KB的机理是提高的DROP率
+
+比方说提高了出33#的概率，提高了各种装备出现的可能性（是不是暗金或者说绿色还不知道）
+
+所以BUG KB 并不是说提高了MF
+
+ 
+
+这一步，跟MF无关
+
+ 
+
+D 判定成色
+
+比方说在上一步判定出是军帽，这一步再来判定是什么颜色
+
+详细的见：物品成色的判断
+
+这一步主要由怪物的属性和MF决定
+
+每一种怪物对应的 暗金几率/绿色几率。。。都不一样
+
+系统先会判定是不是暗金，怪物暗金几率和MF共同起作用，这两个数值越高，成功地可能性越大
+
+如果成功，就会生成一个暗金的军帽
+
+如果失败，就会判定是不是绿色，怪物绿色几率和MF共同起作用，这两个数值越高，成功地可能性越大
+
+以此类推
+
+关于MF，以前写过一篇帖子的：链接
+
+ 
+
+所以MF在这一步起作用
+
+ 
+
+MF在什么地方起作用？做什么事情不需要MF？游戏人越多对MF是好还是不好？打钱属性对于MF有影响吗？BUG KB跟MF有关系吗？ 
+
+ 
+
+回答问题：
+
+ 
+
+a MF只在判断物品成色的时候起作用，再提高MF，也不影响物品的Drop率，也不可能让你在墨菲那里打出次元
+
+ 
+
+b KC、打钱这种主要用来k 符文/charm等跟MF没有关系
+
+因为 符文/charm/gold这些只跟drop率有关
+
+MF只影响物品的成色
+
+不过高MF kc，出soj啊、马拉啊、7+啊这些东西的可能性就高多了，不过大家kc主要为了符文还有charm
+
+那样MF就没有必要很高，效率第一
+
+ 
+
+c 人多只影响No drop率，人越多，No Drop率就越低，不影响MF值
+
+对于单一的怪物，这个影响是微乎其微的。
+
+所以你MF固定的怪物，比如ka km kp，大可不必为了提高Drop率去增加游戏难度
+
+不过对于很多怪物，比如KC，比如100头牛
+
+如果1pp，可能60头掉东西，如果4pp，就有90头要掉东西
+
+其他条件相同的情况下，90个东西中有好东西的概率当然比60个要高
+
+就跟理论上说
+
+你km 900盘，肯定要比km 600盘出的东西多一样。
+
+ 
+
+d 没有任何影响
+
+出不出金钱，只是在C步中判断
+
+打钱装备只是在判定 这一次 是 GOLD的前提下
+
+增加GOLD的数量，跟这一次是不是金钱没有任何关系
+
+是不是金钱，只跟怪物的DROP率有关
+
+增加GOLD数量装备，对成色判断也没有任何影响
+
+所以以前看到的增加GOLD装备，对于MF是没有任何坏的影响的
+
+ 
+
+e 前面也说了，Bug KB只影响BAAL的DROP率
+
+跟MF值没有关系，也就是说BUG KB会提高BAAL的drop率
+
+变相提高了baal出好东西的几率
+
+不过他并不是以提高MF为手段
+
+跟物品的成色判定没有关系
+
+所以认为用BUG KB就不需要MF的观点是错误的
+
+BUG KB也许让你看到次元碎片，漆甲的可能性大大增加
+
+但是MF不够，你也许看到的就是黄色的次元、蓝色的漆甲

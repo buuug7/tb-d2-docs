@@ -1,0 +1,57 @@
+Success :mrgreen: ! I finally figured out how to create a working Skill Book that adds a permanent skill to your character for you to distribute and also a Stat Point Elixer that adds 5 permanent stat points to your character for you to distribute, which both work when inserted into an MPQ file.
+
+
+
+Heres how it's done:
+
+Files you will need:
+itemtypes.txt
+misc.txt
+treasureclassex.txt (if you want to make them dropable by monsters)
+
+
+First open up itemtypes.txt. Copy the "elixir" line to an empty space at the bottom of the file, change the "ItemType" column to whatever you want to use for this new item type (I chose "Stat Booster"), change the "Code" column to something not used by any of the other itemtypes (I used "stup"), put 1 in the "Normal" column (column Q), and put a 0 in the "Beltable" column (column T).
+
+Save itemtypes.txt, and load misc.txt.
+
+Here there are 2 rows we want to copy, the first one is the "elixir" row, copy that to an empty space at the bottom, then copy the "Book of Skill" row below that. Once copied, do the following:
+
+In the copied "elixir" row, do the following:
+Change the Name to whatever you want (I used Stat Pot).
+Change the "Level" column and "Rarity" column to whatever you like.
+Put 1 in the "Spawnable" column.
+Change the "Cost" Column to whatever you like (if you plan on making it sellable, you will want to make it very expensive to keep from unbalancing the game).
+Put a code for this item in the "Code" column (I used "sp0", make sure the code isn't used by another item, weapon, or armor), leave the 2 columns next to this like they are (unless you want to change the name, if you do then put then change the "NameStr" column and add that to your string.tbl along with your description).
+In the "Type" column (column AG) put the itemtype code you made in itemtypes.txt in here (in my case I put "stup").
+In the "pSpell" column (column AZ), put 4.
+Leave "state", "cstate1", "cstate2", and "len" columns empty.
+In "stat1" put "statpts" (without quotations).
+In "calc1" put 5.
+In the following columns for the vendors (columns BS through EY) specify if you want any of the vendors to sell the potion by putting how many you want them to sell in the "VendorNormalMin" and "VendorNormalMax" columns (like if I wanted Akara to sell just 1 of these each time I load the game or come back from outside of town, I would put 1 in "AkaraNormalMin" and "AkaraNormalMax").
+Finally, if you want this item to be a permanent store item (i.e. if you want to be able to buy one and it not dissapear from the vendor screen), put a 1 in the "PermStoreItem" column (column FI).
+
+
+Now, in the copied Book of Skill row:
+Change the "Name" to whatever you want (I used Skill Book).
+Change the "Level" and "Rarity" columns to your liking.
+Put 1 in the "Spawnable" column.
+Change the "Cost" Column to your liking (as with the elixir, if you plan on having this item sold, make it expensive).
+Put a code in the "Code" column (I used "sbk", make sure the code isn't used by anything else), leave the other 2 columns next to this like they are (unless you want to change the name, if you do then put then change the "NameStr" column and add that to your string.tbl along with your description).
+In the "Type" column (column AG) put the same itemtyp code you used for the elixir (in my case, "stup").
+Put 0 in the "Unique" column (column AL).
+Delete the contents of the "Quest" and "QuestDiffCheck" columns (columns AV, and AW).
+In the "pSpell" column (column AZ), put 4.
+Leave "state", "cstate1", "cstate2", and "len" colums empty.
+In "stat1" put "newskills" (without the quotes).
+In "calc1" put 1.
+In the following columns for the vendors (columns BS through EY) specify if you want any of the vendors to sell the potion by putting how many you want them to sell in the "VendorNormalMin" and "VendorNormalMax" columns (like if I wanted Akara to sell just 1 of these each time I load the game or come back from outside of town, I would put 1 in "AkaraNormalMin" and "AkaraNormalMax").
+inally, if you want this item to be a permanent store item (i.e. if you want to be able to buy one and it not dissapear from the vendor screen), put a 1 in the "PermStoreItem" column (column FI).
+
+
+Once done with that, save and make changes to treasureclassex.txt if you want to make monsters drop these items and then load up the game.
+
+Now comes the most important part. Once you get this done, and run the game in -direct -txt mode, be sure to insert the files: itemtypes.bin, itemscode.bin, misc.bin, and treasureclassex.bin (if you edited TcEX). The main reason why these wouldn't work when I inserted them was that I didn't know about itemscode.bin, which has to be inserted when you add new items.
+
+Oddly enough, pSpell 4 is never used in misc.txt, I have tested it out, though, and it works for these items (I've tried all of the pSpells from 1 to 9 in deperation, and in wanting to learn what they all do, when trying to make these 2 items work).
+
+I have tested these 2 items myself and I can varify that they do indeed work, without a hitch in fact. I've not encountered any bugs, and they work like a dream :).

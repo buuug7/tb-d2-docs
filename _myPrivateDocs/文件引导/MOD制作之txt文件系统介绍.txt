@@ -1,0 +1,48 @@
+MOD制作之txt文件系统介绍
+
+其实一开始D2中的TXT文件作用很小,种类也不多.但是随着补丁的升级,越来越多的功能赋予了TXT文件,同时也因为越来越多的功能,而增加了不少种类的TXT文件.由于TXT文件和DLL相比较而言,便于测试和调整,以至于现在的TXT文件和DLL文件形成了各占半壁江山,甚至TXT占了一多半江山的局面,基本上MPQ文件中的绝大多数文件,都被TXT调度指挥着.
+
+由于TXT简单易懂,便于查看和修改.所以对于D2理论的挖掘,基本上都是参照自此.对于疑问的测试,也是在修改TXT的基础上得出结论的.以至于大量复杂庞大的MOD,还是以修改TXT,补充其调用的子文件为主.不过TXT文件也有不足的地方,比如文本错位BUG;各种硬代码(定义于DLL等非文本文件的内容)充斥其中等等问题,影响的TXT文件使用的可靠性和灵活性,但是TXT对D2的繁荣和多样性是功不可没的.
+
+TXT文件由于种类繁多,查阅寻找起来也是相当麻烦的,所以人为的为其划分了一些类型,把TXT归为其中,方便记忆和查阅:
+【TXT分类】
+人物属性类:   charstats.txt         experience.txt           CharTemplate.txt
+              PlayerClass.txt       PlrType.txt
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+怪物属性类:   monai.txt             monequip.txt             MonLvl.txt
+              MonMode.txt           MonPlace.txt             MonPreset.txt
+              MonProp.txt           monseq.txt               monsounds.txt
+              monstats.txt          monstats2.txt            MonType.txt
+              monumod.txt           SuperUniques.txt         UniqueAppellation.txt
+              UniquePrefix.txt      UniqueSuffix.txt         UniqueTitle.txt
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+技能/missiles:ElemTypes.txt         misscalc.txt             Missiles.txt
+              PlrMode.txt           skillcalc.txt            skilldesc.txt
+              skills.txt            states.txt               HitClass.txt
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+装备杂物类:   armor.txt             books.txt                compcode.txt
+              gems.txt              itemratio.txt            ItemTypes.txt
+              MagicPrefix.txt       MagicSuffix.txt          misc.txt
+              Runes.txt             SetItems.txt             Sets.txt
+              UniqueItems.txt       weapons.txt              Composit.txt
+              gamble.txt            lowqualityitems.txt      qualityitems.txt
+              RarePrefix.txt        RareSuffix.txt           automagic.txt
+              colors.txt            WeaponClass.txt
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+地图/objects: Levels.txt            LvlMaze.txt              LvlPrest.txt
+              LvlSub.txt            LvlTypes.txt             objects.txt
+              shrines.txt           AutoMap.txt              LvlWarp.txt
+              objgroup.txt          ObjType.txt
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+随从NPC类:    hireling.txt          npc.txt                  pettype.txt
+              hiredesc.txt          StorePage.txt
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+音乐音效类:   SoundEnviron.txt      Sounds.txt
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+合成公式类:   cubemain.txt          cubemod.txt              cubetype.txt
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+注释调用类:   events.txt            difficultylevels.txt     inventory.txt
+              ItemStatCost.txt      Overlay.txt              Properties.txt
+              TreasureClass.txt     TreasureClassEx.txt
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+如需要查询文件参数含义,详见TXT文件Guides.

@@ -1,0 +1,335 @@
+DESCRIPTION                            CODE        PARAM1   PARAM2   PARAM3 BUGS
+
+TERMINOLOGY:
+min      = minimum value
+max      = maximum value
+1/0      = Boolean
+#sec     = number of seconds
+#fpsdur  = number of frames duration
+skillID  = Skill ID number from Skills.txt
+tab#     = Skill Tab ID number
+chance   = chance to cast
+slvl     = skill level
+#charges = number of charges
+---      = nothing
+#sock    = number of sockets
+value    = number increased per level
+#time    = Time of Day effects are at their maximum
+
+
+Skills
+---------------------------------------------------------------------------------------------------------------------------------------
++ to Amazon Skills                    ama                    min       max
++ to Assassin Skills                  asn                    min       max
++ to Barbarian Skills                 bar                    min       max
++ to Druid Skills                     dru                    min       max
++ to Necromancer Skills               nec                    min       max
++ to Paladin Skills                   pal                    min       max
++ to Sorceress                        sor                    min       max
++ to All Skills                       allskills              min       max  Bugged (1.07+) (gives random +class skills if your minimum and maximum values are different)
++ to Fire Skills                      fireskill              min       max
++ to Single Skills                    skill        skillID   min       max  Bugged (1.07+) (columns stack if you use it in socket items and set boni)
++ to Single Skill Tabs                skilltab     tab#      min       max  Bugged (1.07+) (columns stack if you use it in socket items and set boni)
+Chance to cast X when attacking       att-skill    skillID   chance    slvl Bugged (1.07+) (doesn't work with ranged attacks)
+Chance to cast X when hitting         hit-skill    skillID   chance    slvl Bugged (1.09D) (only graphical effects since 1.09D)
+Chance to cast X when getting hit     gethit-skill skillID   chance    slvl Bugged (1.09D) (only graphical effects since 1.09D)
+Skill Charges                         charged      skillID   #charges  slvl Bugged (1.07+) (columns stack if you use it in socket items and set boni)
+
+Armor Class (Basic)
+---------------------------------------------------------------------------------------------------------------------------------------
++ to AC                                ac                    min       max
++% to AC                               ac%                   min       max
++AC vs Melee                           ac-hth                min       max
++AC vs Missiles                        ac-miss               min       max
+
+Durability & Quantity
+---------------------------------------------------------------------------------------------------------------------------------------
++ to Dur                               dur                   min       max Bugged (1.00+) (if you exceed 255 durability on the item you will have to repair it whenever you start a game, this is so because durability is stored in a single byte, modifier has no description)
++% to Dur                              dur%                  min       max Bugged (1.00+) (if you exceed 255 durability on the item you will have to repair it whenever you start a game, this is so because durability is stored in a single byte)
+Indestructible                         indestruct            1/0       1/0 Bugged (1.07+) (breaks items with +% and + dur if added thru sockets)
+Repair 1 Dur per X seconds             rep-dur     #sec      ---       --- Bugged (1.07+) (breaks items with +% and + dur if added thru sockets, does not work if applied to the item post generation in a cube recipe!)
+Repair 1 Qnt per X Seconds             rep-quant   #sec      ---       ---
+Increase Stack by X                    stack                 min       max Bugged (1.07+) (does not work if applied to the item post generation in a cube recipe!)
+
+Attack Rating (Basic)
+---------------------------------------------------------------------------------------------------------------------------------------
++ to AR                                att                   min       max
++% to AR                               att%                  min       max
++ to AR vs Demons                      att-demon             min       max
++ to AR vs Undead                      att-undead            min       max
+
+Damage Enhancements (Basic)
+---------------------------------------------------------------------------------------------------------------------------------------
++% to Damage                           dmg%                  min       max
++ to Maximum Damage                    dmg-min               min       max
++ to Minimum Damage                    dmg-max               min       max
++ to Maxmimum & Minimum Damage         dmg-norm              min       max
++% damage vs Demons                    dmg-demon             min       max Bugged ( 1.08) (too high values may cause a rollover that will make you deal less damage)
++% damage vs Undead                    dmg-undead            min       max Bugged ( 1.08) (too high values may cause a rollover that will make you deal less damage)
++% crushing blow                       crush                 min       max
++% deadly strike                       deadly                min       max
++ to Damage                            dmg                   min       max
++ throw damage                         dmg-throw             min       max Bugged (1.07+) (modifier has no description)
+
+Special Damage Effects (Basic)
+---------------------------------------------------------------------------------------------------------------------------------------
+Ignores Target Defense (ITD)           ignore-ac             1/0       1/0
++% pierce (missiles only)              pirece                min       max
+knockback                              knock                 1/0       1/0
++% life stolen                         lifesteal             min       max
++% mana stolen                         manasteal             min       max 
+heal mana by # mana after each kill    mana-kill             min       max             
+heal life by # after each demon kill   demon-heal            min       max
+prevents monster healing               noheal                1/0       1/0
++% chance to cause open wounds         openwounds            min       max Bugged (1.00+) (the damage the enemy takes from bleeding will only show after you hit them a second time)
+Enemy Is slowed by X%                  slow                  min       max Bugged (1.07+) (every value is the same as 100%)
+Chance to Blind Target                 stupidity             min       max
+Chance to Freeze Target                freeze                min       max
+Reduce AC by X%                        reduce-ac             min       max Bugged (1.07+) (works in PVP, stacks and hence works like ITD)
+Reduce AC by X                         dmg-ac                min       max
++ to Kicking Damage                    kick                  min       max
++% chance to reanimate target          reanimate             min       max Bugged (1.00+) (the raise skeleton skill is casted while the enemy is in mode DT ratter then DD, making this do nothing, to make it useful change the skillID used by the modifier in d2game.dll)
+
+Special Defense Effects (Basic)
+---------------------------------------------------------------------------------------------------------------------------------------
+X% damage taken goes to mana           dmg-to-mana           min       max
+reduces damage taken by X              red-dmg               min       max
+reduces damage taken by X%             red-dmg%              min       max
+reduces magic damage taken by X        red-mag               min       max
+Attacker takes X damage when hitting   thorns                min       max
+Attacker takes X ltng dmg when hitting light-torns           min       max
+
+Elemental Damage
+---------------------------------------------------------------------------------------------------------------------------------------
+Cold Damage                            dmg-cold    #fpsdur   min       max
+Minimum Cold Damage                    cold-min              min       max
+Maximum Cold Damage                    cold-max              min       max
+Cold Duration (# of frames, 25=1Sec)   cold-len              min       max
+Poison Damage                          dmg-pois    #fpsdur   min       max
+Minimum Poison Damage                  pois-min              min       max
+Maximum Poison Damage                  pois-max              min       max
+Poison Duration (# of frames, 25=1Sec) pois-len              min       max
+Fire Damage                            dmg-fire              min       max
+Minimum Fire Damage                    fire-min              min       max
+Maximum Fire Damage                    fire-max              min       max
+Lightning Damage                       dmg-ltng              min       max
+Minimum Lightning Damage               ltng-min              min       max
+Maximum Lightning Damage               ltng-max              min       max
+Magic Damage                           dmg-mag               min       max
+
+Resistances and Such (Basic)
+---------------------------------------------------------------------------------------------------------------------------------------
++ to Cold Absorb                        abs-cold              min       max
++% to Cold Absorb                       abs-cold%             min       max
++ to Lightning Absorb                   abs-ltng              min       max
++% to Lightning Absorb                  abs-ltng%             min       max
++ to Magic Absorb                       abs-mag               min       max
++% to Magic Absorb                      abs-mag%              min       max
++ to Fire Absorb                        abs-fire              min       max
++% to Fire Absorb                       abs-fire%             min       max
+Half Freeze Duration                    half-freeze           1/0       1/0
+Cannot be Frozen                        nofreeze              1/0       1/0
++% to Resist All                        res-all               min       max Bugged (1.00) (minor, it will display "+-" infront of the value if you use negative values)
++% to Resist Cold                       res-cold              min       max
++% to Resist Fire                       res-fire              min       max
++% to Resist Lightning                  res-ltng              min       max
++% to Resist Poison                     res-pois              min       max
++% to Resist Magic                      res-mag               min       max
++% to Maximum Resist All                res-all-max           min       max
++% to Maximum Resist Cold               res-cold-max          min       max
++% to Maximum Resist Fire               res-fire-max          min       max
++% to Maximum Resist Lightning          res-ltng-max          min       max
++% to Maximum Resist Poison             res-poison-max        min       max
++% to Maximum Resist Magic              res-mag-max           min       max
+Reduce Poison Duration (slows duration) res-pois-len          min       max
+
+Stat Bonus (Basic)
+---------------------------------------------------------------------------------------------------------------------------------------
++ to Dexteriry                         dex                   min       max
++ to Strength                          str                   min       max
++ to Vitality                          vit                   min       max
++ to Energy                            enr                   min       max
+
+Health and Mana (Basic)
+---------------------------------------------------------------------------------------------------------------------------------------
++ to Health                            hp                    min       max
++ to Mana                              mana                  min       max
++% to Health                           hp%                   min       max Bugged (1.07+) (if you have -hp items equipped this will "boost" your life to 1 hp if you re-equip your items after death)
++% to Mana                             mana%                 min       max Bugged (1.07+) (if you have -mp items equipped this will "boost" your mana to 1 mp if you re-equip your items after death)
++ to Replenish Life / Drain Life       regen                 min       max
++% to Mana Regeneration                regen-mana            min       max
+
+Movement Speed and Stamina (Basic)
+---------------------------------------------------------------------------------------------------------------------------------------
++% run/walk speed                      move1                 min       max
++% run/walk speed                      move2                 min       max
++% run/walk speed                      move3                 min       max
++ to stamina                           stam                  min       max
++% reduce stamina drain                stamdrain             min       max
++% stamina regeneration                regen-stam            min       max
+
+Attack Speed
+---------------------------------------------------------------------------------------------------------------------------------------
++% attack speed                        swing1                min       max
++% attack speed                        swing2                min       max
++% attack speed                        swing3                min       max
+
+Blocking
+---------------------------------------------------------------------------------------------------------------------------------------
++% chance to block                     block                 min       max
++% block speed                         block1                min       max
++% block speed                         block2                min       max
++% block speed                         block3                min       max
+
+Cast Rating
+---------------------------------------------------------------------------------------------------------------------------------------
++% cast speed                          cast1                 min       max
++% cast speed                          cast2                 min       max
++% cast speed                          cast3                 min       max
+
+Hit Recovery
+---------------------------------------------------------------------------------------------------------------------------------------
++% hit recovery speed                  balance1              min       max
++% hit recovery speed                  balance2              min       max
++% hit recovery speed                  balance3              min       max
+
+Light Radius
+---------------------------------------------------------------------------------------------------------------------------------------
++ to Light Radius                      light                 min       max Bugged (1.00) (if you equip too much of negative light radius items the game will attempt to draw a negative radius and crash)
+
+Missile Modifiers
+---------------------------------------------------------------------------------------------------------------------------------------
+Fire Magic Arrows                      magicarrow            1/0       1/0
+Fire Explosive Arrows                  explosivearrow        1/0       1/0
+
+Treasure (Basic)
+---------------------------------------------------------------------------------------------------------------------------------------
++% chance to find magic items          mag%                  min       max
++% increased gold drops                gold%                 min       max
+
+Other Stuff
+---------------------------------------------------------------------------------------------------------------------------------------
+Altered Item Requirements              ease                  min       max
+Chance to make enemies flee            howl                  min       max
+Add X Sockets to an Item               sock        #sock     ---       ---
+Makes any item throwable               throw                 1/0       1/0
+
+Modifiers increasing per clvl (value/8)
+---------------------------------------------------------------------------------------------------------------------------------------
++ X to AC per clvl                     ac/lvl         value     ---       ---
++ %X to AC per clvl                    ac%/lvl        value     ---       ---
++ to HP per clvl                       hp/lvl         value     ---       ---
++ to MANA per clvl                     mana/lvl       value     ---       ---
++ to Maximum damage per clvl           dmg/lvl        value     ---       ---
++ % to Maximum damage per clvl         dmg%/lvl       value     ---       ---
++ Dexterity per level                  dex/lvl        value     ---       ---
++ Strength per level                   str/lvl        value     ---       ---
++ Vitality per level                   vit/lvl        value     ---       ---
++ Energy per level                     enr/lvl        value     ---       ---
++ % AR per level                       att%/lvl       value     ---       ---
++ % res cold per level                 res-cold/lvl   value     ---       ---
++ % res fire per level                 res-fire/lvl   value     ---       ---
++ % res ltng per level                 res-ltng/lvl   value     ---       ---
++ % res pois per level                 res-pois/lvl   value     ---       ---
+Attacker takes X damage per level      thorns/lvl     value     ---       ---
++% More Gold Per Level                 gold%/lvl      value     ---       ---
++% Magic Find Per Level                mag%/lvl       value     ---       ---
+Absorb X Fire Damage per level         abs-fire/lvl   value     ---       ---
+Absorb X Cold Damage per level         abs-cold/lvl   value     ---       ---
+Absorb X Ltng Damage per level         abs-ltng/lvl   value     ---       ---
++ maximum cold damage per level        dmg-cold/lvl   value     ---       ---
++ maximum fire damage per level        dmg-fire/lvl   value     ---       ---
++ maximum ltng damage per level        dmg-ltng/lvl   value     ---       ---
++ maximum poison damage per level      dmg-pois/lvl   value     ---       ---
++ Kick damage per level                kick/lvl       value     ---       ---
++% damage to demons per level          dmg-dem/lvl    value     ---       --- Bugged ( 1.08) (too high values may cause a rollover that will make you deal less damage)
++% damage to undead per level          dmg-und/lvl    value     ---       --- Bugged ( 1.08) (too high values may cause a rollover that will make you deal less damage)
++ stamina per level                    stam/lvl       value     ---       ---
++% regenerate stamina per level        regen-stam/lvl value     ---       ---
++% open wounds per level               wounds/lvl     value     ---       ---
++% crushing blow per level             crush/lvl      value     ---       --- Bugged (1.07+) (displays as chance to make enemy flee per level)
++% deadly strike per level             deadly/lvl     value     ---       ---
+
+Modifiers with static increase per clvl
+---------------------------------------------------------------------------------------------------------------------------------------
++ Attack Rating per level              att/lvl      value     ---       ---
++ Attack Rating Against Undead per lvl att-und/lvl  value     ---       ---
++ Attack Rating Against Demons per lvl att-dem/lvl  value     ---       ---
+
+Stats based on time (0=day, 1=dusk, 2=night, 3=dawn)
+---------------------------------------------------------------------------------------------------------------------------------------
++ AC per time                          ac/time         #time     min       max
++ %AC per time                         ac%/time        #time     min       max
++ HP per time                          hp/time         #time     min       max
++ MANA per time                        mana/time       #time     min       max
++ Damage per time                      dmg/time        #time     min       max Bugged (1.07+) (uses maximum damage twice)
++ % Damage per time                    dmg%/time       #time     min       max
++ Strength per time                    str/time        #time     min       max
++ Dexterity per time                   dex/time        #time     min       max
++ Vitality per time                    vit/time        #time     min       max
++ Energy per time                      enr/time        #time     min       max
++ AR per time                          att/time        #time     min       max
++ % AR per time                        att%/time       #time     min       max Bugged (1.07+) (uses + instead of +%)
++ Max Cold Damage per time             dmg-cold/time   #time     min       max
++ Max Fire Damage per time             dmg-fire/time   #time     min       max
++ Max LTNG Damage per time             dmg-ltng/time   #time     min       max
++ Max Pois Damage per time             dmg-pois/time   #time     min       max
++ Cold Resist per time                 res-cold/time   #time     min       max
++ Fire Resist per time                 res-fire/time   #time     min       max
++ LTNG Resist per time                 res-ltng/time   #time     min       max
++ Pois Resist per time                 res-pois/time   #time     min       max
++ Cold Absorb per time                 abs-cold/time   #time     min       max
++ Fire Absorb per time                 abs-fire/time   #time     min       max
++ LTNG Absorb per time                 abs-ltng/time   #time     min       max
++ Pois Absorb per time                 abs-pois/time   #time     min       max Bugged (1.07+) (uses random strings)
++% more gold per time                  gold%/time      #time     min       max
++% magic find per time                 mag%/time       #time     min       max
++stamina per time                      stam/time       #time     min       max
++stamina regeneration per time         regen-stam/time #time     min       max
++% damage to demons per time           dmg-dem/time    #time     min       max
++% damage to undead per time           dmg-und/time    #time     min       max
++attack rating to demons per level     att-dem/time    #time     min       max
++attack rating to undead per level     att-und/time    #time     min       max
++%deadly strike per time               deadly/time     #time     min       max
++%crushing blow per time               crush/time      #time     min       max
++%open wounds per time                 wounds/time     #time     min       max
++kick damage per time                  kick/time       #time     min       max
+
+
+Unused Codes (Never Implemented)
+---------------------------------------------------------------------------------------------------------------------------------------
+abs-pois/lvl = "Absorb Poison Damage Per Level"
+color        = "Change the color of the chars light radius"
+bloody       = "Monster bleeds more"
+time         = "Magic Effect Duration"
+herb         = "Increased Herb Duration"
+gems%/lvl    = "More gems dropped per level"
+passives     = "Gives the player passive skills"
+gems%/time   = "more gems drop per time"
+pierce-cold  = "ignore targets cold resistance"
+pierce-fire  = "ignore tragets fire resistance"
+pierce-ltng  = "ignore targets ltng resistance"
+pierce-pois  = "ignore targets pois resistance"
+dmg-mon      = "damage to specific monster"
+dmg%-mon     = "% damage to a specific monster"
+att-mon      = "AR to a specific monster"
+att%-mon     = "AR% to a specific monster"
+ac-mon       = "AC towards a specific monster"
+ac%-mon      = "%AC towards a specific monster"
+item%        = "better chance of getting X item type"
+dmg-slash    = "+slash damage"
+dmg-slash%   = "+% slash damage"
+dmg-crush    = "+crushing damage"
+dmg-crush%   = "+%crushing damage"
+dmg-thrust   = "+thrust damage"
+dmg-thrust%  = "+% thrust damage"
+abs-slash    = "absorb slashing damage"
+abs-crush    = "absorb crush damage"
+abs-thrust   = "absorb thrust damage"
+abs-slash%   = "%absorb slashing damage"
+abs-crush%   = "%absorb crush damage"
+abs-thrust%  = "%absorb thrust damage"
+gembonus     = "% better chance to find gems"
+regen-dur    = "regenerate #dur per second"
+fire-fx      = "fire graphic overlay"
+ltng-fx      = "ltng graphic overlay"

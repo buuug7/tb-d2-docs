@@ -1,0 +1,71 @@
+https://d2mods.info/forum/viewtopic.php?f=8&t=62109
+
+
+Injection Methods
+Here you will find various injection methods, that will allow you to load your compiled template in-game. You're welcome to post your own, and have it added to this post.
+
+PlugY 10.00 By Yohann
+
+Version: 1.09D to 1.13c
+Type: External Plugin
+
+For more information & downloading, see this thread
+The source code for this plugin is also available. (see the previously linked thread)
+
+Once you have PlugY installed, you can have it load your compiled code, via the configuration file, PlugY.ini.
+See the setting named "DllToLoad" under the [GENERAL] section of the configuration file, and add your dll there:
+Code: Select all
+
+[GENERAL]
+//...
+DllToLoad=D2Template.dll
+//...
+------------------------------------------------------------------------------
+
+D2Mod By SVR
+
+Version: 1.10F
+Type: External Plugin
+
+To download D2Mod, click here
+For information, installation instructions, see this thread
+
+Once you have D2Mod installed and configured, all you have to do is add the following to your D2Mod.ini configuration file, under the [D2MOD] section
+Code: Select all
+
+D2Template=D2Template.dll
+------------------------------------------------------------------------------------
+
+D2SE By SeltSamuel
+
+Version: 1.09 to 1.13c
+Type: Launcher Replacement
+
+To download and get more information about D2SE, see this thread
+Once you have installed D2SE and got your mod plugin ready to go, open up your mod's configuration file, D2SE.ini, and under the [Protected] section, add the following:
+Code: Select all
+
+ModDll1=D2Template.dll
+---------------------------------------------------------------------------------------
+
+Modified D2Win By Kidpaddle94
+
+Version: 1.13c
+Type: Game Library Replacement
+
+Click here to download
+
+This one replaces D2Win.dll with a modified one. This one has been patched to load D2Template.dll. The patch is done at the end of the MPQ loading routine, D2Win.#10086. This one is meant to be used on 1.13c only as it is a 1.13c D2Win.dll
+
+
+---------------------------------------------------------------------------------------
+
+Modified Fog By Kidpaddle94
+
+Version: 1.13c
+Type: Game Library Replacement
+
+Click here to download
+
+This one replaces Fog.dll with a modified one. This one has been patched to load D2Template.dll. The patch replaces an unused Fog ordinal, Fog.#10082. This is one of the very first calls in game.exe. This one is meant to be used on 1.13c only as it is a 1.13c Fog.dll
+Last edited by kidpaddle94 on Thu Mar 30, 2017 9:40 pm, edited 7 times in total.
