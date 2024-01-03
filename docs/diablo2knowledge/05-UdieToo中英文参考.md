@@ -31,7 +31,7 @@ sidebar_position: 3
 - Min 2-handed Dmg 增加双手最小伤害
 - Max 2-handed Dmg 增加双手最大伤害
 - Damage % nv 伤害增加百分比 Regenerate Mana % nv 法力再生
-- Regenerate Mana Plus % 法力再生（隐藏）
+- Regenerate Mana Plus % 法力再生(隐藏)
 - Heal Stemina Plus % 耐力恢复
 - lastexp 没用
 - nextexp 没用
@@ -71,8 +71,8 @@ sidebar_position: 3
 - Stamina Drain Min 没用
 - Stamina Drain Max 没用
 - Stun Length 使目标眩晕的时间
-- Run/Walk Speed % nv 跑步速率增加百分比（隐藏）
-- Attack Speed % nv 攻击速率增加百分比（隐藏）
+- Run/Walk Speed % nv 跑步速率增加百分比(隐藏)
+- Attack Speed % nv 攻击速率增加百分比(隐藏)
 - other_animrate 没用
 - quantity 没用
 - value 没用
@@ -94,7 +94,7 @@ sidebar_position: 3
 - Reduced prices 降低商人价格%
 - Double Herb Duration (未测试)
 - Light Radius 增加光照范围
-- Light Color nv 光照范围（隐藏）
+- Light Color nv 光照范围(隐藏)
 - Requirements % 物品对基本属性的需求
 - Level Require 没用
 - Increased Attack Speed 提升攻击速度%
@@ -196,7 +196,7 @@ sidebar_position: 3
 - Unused191 …
 - Unused192 …
 - Unused193 …
-- Increased Sockets 增加凹槽（需先激活）
+- Increased Sockets 增加凹槽(需先激活)
 - Skill On Attack 攻击时释放特定魔法
 - Skill On Kill 杀死怪物时释放特定魔法
 - Skill On Death 自己死亡时放特定魔法
@@ -335,7 +335,7 @@ sidebar_position: 3
 - passive_ltng_mastery ……闪电技能伤害
 - passive_cold_mastery ……寒冷技能伤害
 - passive_pois_mastery 百分比转为毒素伤害
-- passive_fire_pierce 减敌人对火技能抗性（测试效果为增加元素伤害上限）
+- passive_fire_pierce 减敌人对火技能抗性(测试效果为增加元素伤害上限)
 - passive_ltng_pierce ……对闪电技能抗性
 - passive_cold_pierce ……对寒冷技能抗性
 - passive_pois_pierce ……对毒素技能抗性
