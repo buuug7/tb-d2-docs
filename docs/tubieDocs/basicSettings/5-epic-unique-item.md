@@ -22,7 +22,9 @@
 - 致命攻击 DS (每次附魔 +1%)
 - 压碎性打击 CB (每次附魔 +1%)
 
-最多附魔 20 次, 附魔公式: 史诗祖父 + 祖父 + 26#
+:::note
+99+ 场景掉落, 最多附魔 20 次, 附魔公式: 史诗祖父 + 祖父 + 26#
+:::
 
 ![epic-the-grandfather](/assets/item-epic-the-grandfather.png)
 
@@ -34,7 +36,7 @@
 - 快打恢复 FHR (每次附魔 +3%)
 - 增强防御 ED (每次附魔 +20%)
 
-最多附魔 20 次, 附魔公式: 史诗暴风之盾 + 暴风之盾 + 26#
+95+ 场景掉落, 最多附魔 20 次, 附魔公式: 史诗暴风之盾 + 暴风之盾 + 26#
 
 ![epic-Stormshield](/assets/item-epic-Stormshield.png)
 
@@ -46,7 +48,7 @@
 - 压碎性打击 CB (每次附魔 +1%)
 - 对恶魔怪物的伤害(每次附魔 +5%)
 
-最多附魔 20 次, 附魔公式: 史诗风之力 + 风之力 + 26#
+99+ 场景掉落, 最多附魔 20 次, 附魔公式: 史诗风之力 + 风之力 + 26#
 
 ![epic-Windforce](/assets/item-epic-Windforce.png)
 
@@ -58,7 +60,7 @@
 - 压碎性打击 CB(每次附魔 +1%)
 - 最大伤害值 MAX(每次附魔 角色等级 x2.5)
 
-最多附魔 20 次, 附魔公式: 史诗死亡之刀 + 死亡之刀
+99+ 场景掉落, 最多附魔 20 次, 附魔公式: 史诗死亡之刀 + 死亡之刀
 
 ![epic-Deathcleaver](/assets/item-epic-Deathcleaver.png)
 
@@ -70,7 +72,7 @@
 - 增加生命上限(每次附魔 +1%)
 - 精力 (每次附魔 +4)
 
-最多附魔 20 次, 附魔公式: 史诗深度死亡 + 深度死亡 + 26#
+99+ 场景掉落, 最多附魔 20 次, 附魔公式: 史诗深度死亡 + 深度死亡 + 26#
 
 ![epic-Death's Fathom](/assets/item-epic-Death-Fathom.png)
 
@@ -82,7 +84,7 @@
 - 增强防御 (每次附魔 +8%)
 - 自动恢复生命 (每次附魔 +1)
 
-最多附魔 20 次, 附魔公式: 史诗谐角之冠 + 谐角之冠 + 26#
+95+ 场景掉落, 最多附魔 20 次, 附魔公式: 史诗谐角之冠 + 谐角之冠 + 26#
 
 ![epic Harlenquin Crest](/assets/item-epic-Harlenquin-Crest.png)
 
@@ -90,13 +92,13 @@
 
 - 原版年纪之冠所有属性, 变量都是 MAX, 固定 2 孔, 加所有技能从 1 调整为 2
 - 灵气狂热赋予 (每次附魔 +1)
-- 攻击速度 IAS (每次附魔 +3%)
-- 法术伤害减伤 (每次附魔 +1)
+- 攻击速度 IAS (每次附魔 +2%)
+- 法术伤害减少 (每次附魔 +1)
 - 自动恢复生命 (每次附魔 +1)
 
-最多附魔 20 次, 附魔公式: 史诗年纪之冠 + 年纪之冠 + 26#
+99+ 场景掉落, 最多附魔 20 次, 附魔公式: 史诗年纪之冠 + 年纪之冠 + 26#
 
-![epic Harlenquin Crest](/assets/item-epic-Harlenquin-Crest.png)
+![epic Harlenquin Crest](/assets/item-epic-Crown-of-Ages.png)
 
 ## 格利风之眼 Epic Griffon's Eye【史詩】
 
@@ -106,21 +108,21 @@
 - 增强防御 (每次附魔 +8%)
 - 自动恢复生命 (每次附魔 +1)
 
-最多附魔 20 次, 附魔公式: 史诗格利风之眼 + 格利风之眼 + 26#
+99+ 场景掉落, 最多附魔 20 次, 附魔公式: 史诗格利风之眼 + 格利风之眼 + 26#
 
-![epic Harlenquin Crest](/assets/item-epic-Harlenquin-Crest.png)
+![epic Harlenquin Crest](/assets/item-Epic-Griffon-Eye.png)
 
 ## 碎钢 Steelrend【史詩】
 
-- 原版碎钢所有属性, 变量都是 MAX, 增加 5% 生命偷取
-- 攻击时 1% 机会施展等级 30 伤害加深 PLUS (每次附魔 +1% 概率)
+- 原版碎钢所有属性, 变量都是 MAX, 增加 8% 生命偷取, 增加 8% 魔法偷取
+- 击中时 1% 机会施展等级 30 伤害加深 PLUS (每次附魔 +1% 概率)
 - 攻击速度(每次附魔 +1%)
 - 生命每杀死一个敌人(每次附魔 +1)
 - 对不死怪物的伤害(每次附魔 +5%)
 
-最多附魔 20 次, 附魔公式: 史诗碎钢 + 碎钢 + 26#
+105+ 场景掉落, 最多附魔 20 次, 附魔公式: 史诗碎钢 + 碎钢 + 26#
 
-![epic Harlenquin Crest](/assets/item-epic-Harlenquin-Crest.png)
+![epic Harlenquin Crest](/assets/item-epic-Steelrend.png)
 
 ## 泰瑞尔的力量 Tyrael's Might【史詩】
 
@@ -130,6 +132,6 @@
 - 快打恢复 FHR (每次附魔 +1%)
 - 物理伤害减少 DR (每次附魔 +1%)
 
-最多附魔 20 次, 附魔公式: 史诗泰瑞尔的力量 + 泰瑞尔的力量 + 26#
+105+ 场景掉落, 最多附魔 20 次, 附魔公式: 史诗泰瑞尔的力量 + 泰瑞尔的力量 + 26#
 
-![epic Harlenquin Crest](/assets/item-epic-Harlenquin-Crest.png)
+![epic Harlenquin Crest](/assets/item-epic-Tyrael-Might.png)
