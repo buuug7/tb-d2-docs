@@ -59,6 +59,7 @@
   align-items: center;
   padding-top: 1.2rem;
   overflow-x: auto;
+  margin: auto 2rem;
 }
 
 .charList img {

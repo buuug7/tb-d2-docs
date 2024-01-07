@@ -26,13 +26,13 @@ function HomepageHeader() {
         <hr />
         <div className={styles.buttons}>
           <Link
-            className="button button--secondary button--outline2  button--lg2 margin-horiz--sm"
+            className="button button--secondary button--outline2  button--lg margin-horiz--sm"
             href={qqLink}
           >
             添加 QQ 群
           </Link>
           <Link
-            className="button button--secondary button--outline2 button--lg2 margin-horiz--sm"
+            className="button button--secondary button--outline2 button--lg margin-horiz--sm"
             to="/docs/tubieDocs/intro"
           >
             快速开始
@@ -56,13 +56,13 @@ export default function Home() {
       </div>
       <main>
         <div className={styles.charList}>
-          <img src="/img/sor.gif" />
-          <img src="/img/nec.gif" />
-          <img src="/img/nec.gif" />
-          <img src="/img/pal.gif" />
-          <img src="/img/druid.gif" />
-          <img src="/img/ass.gif" />
-          <img src="/img/bar.gif" />
+          <img src="/img/char-ama.gif" />
+          <img src="/img/char-sor.gif" />
+          <img src="/img/char-nec.gif" />
+          <img src="/img/char-pal.gif" />
+          <img src="/img/char-bar.gif" />
+          <img src="/img/char-druid.gif" />
+          <img src="/img/char-ass.gif" />
         </div>
         <HomepageFeatures />
       </main>
