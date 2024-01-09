@@ -39,12 +39,13 @@ sidebar_position: 1
 - [技能调整](basicSettings/1-skill-change.md)
 - [物品合成](basicSettings/2-cube-change.md)
 - [新增符文之语](basicSettings/3-new-rune-word.md)
-- [新增暗金](basicSettings/4-new-unique-item.md)
+- [新增暗金](basicSettings/4-new-unique-item.mdx)
 - [史诗暗金](basicSettings/5-epic-unique-item.md)
 - [护身符附魔](basicSettings/6-charm-enhance.md)
 - [常见问题](4-questions.md)
 - [原版神符之语查询](http://www.anhei3.net/diablo/runewords.html)
-- [赞助我们](5-credits.md)
+- [赞助我们](5-credits.mdx)
+-
 
 ## 现版本攻略
 

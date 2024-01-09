@@ -211,10 +211,6 @@ sidebar_position: 2
   - 攻击速度 30-50
   - 致命攻击 15-20
 
-![Constricting](/assets/item-Constricting.png)
-
-![epic-the-grandfather](/assets/item-epic-the-grandfather.png)
-
 ## 2023/12/11
 
 - 地穴 2 增加技能书掉落
