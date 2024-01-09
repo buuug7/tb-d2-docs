@@ -150,6 +150,8 @@ const config = {
       },
     ],
   ],
+
+  plugins: ['docusaurus-plugin-sass'],
 };
 
 export default config;
