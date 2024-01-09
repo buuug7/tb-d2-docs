@@ -8,6 +8,9 @@ export default function ItemTooltip({ itemInfo, width = "400px" }) {
           <div className={styles.name}>{itemInfo.name}</div>
           <div className={styles.baseName}>{itemInfo.baseName}</div>
         </div>
+        <div className={styles.other}>
+          {itemInfo.other}
+        </div>
         <div className={styles.require}>
           <div>需要等级: {itemInfo.require.level}</div>
         </div>
