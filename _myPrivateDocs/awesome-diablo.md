@@ -1,6 +1,9 @@
 ## knowledge base of diablo
 
 - [Create your own custom portals (by Kingpin)](https://d2mods.info/forum/kb/viewarticle?a=291)
+- Cubemain.txt Code Reference
+  - https://d2mods.info/forum/kb/viewarticle?a=49
+  - https://d2mods.info/forum/kb/viewarticle?a=177
 
 ## PVPGN 清理角色数据
 
