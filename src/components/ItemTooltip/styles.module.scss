@@ -22,9 +22,13 @@
     .name {
       letter-spacing: 2px;
     }
-    
+
     .baseName {
       letter-spacing: -1px;
+    }
+
+    .runes {
+      // color: orange;
     }
   }
 
@@ -57,10 +61,18 @@
     > div.enchant {
       color: #72ca9b;
     }
+
+    > div.dc {
+      color: white;
+      opacity: 0.5;
+      font-weight: lighter;
+    }
   }
 
   .range {
-    color: #565555;
-    // font-weight: lighter;
+    font-size: 0.9rem;
+    color: #fff;
+    opacity: 0.5;
+    font-weight: lighter;
   }
 }
