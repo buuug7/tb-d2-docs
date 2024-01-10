@@ -18,6 +18,14 @@
   .title {
     color: #cebc86;
     text-align: center;
+
+    .name {
+      letter-spacing: 2px;
+    }
+    
+    .baseName {
+      letter-spacing: -1px;
+    }
   }
 
   .other {
@@ -44,6 +52,10 @@
 
     > div {
       text-wrap: nowrap;
+    }
+
+    > div.enchant {
+      color: #72ca9b;
     }
   }
 

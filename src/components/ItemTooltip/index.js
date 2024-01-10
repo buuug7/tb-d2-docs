@@ -16,7 +16,7 @@ export default function ItemTooltip({ itemInfo, width = "400px" }) {
         </div>
         <div className={styles.properties}>
           {itemInfo.properties.map((it) => (
-            <div key={it.text}>
+            <div key={it.text} className={it.enchant ? styles.enchant: ''}>
               {it.text} {it.range ? <span className={styles.range}>({it?.range})</span> : ""}
             </div>
           ))}
