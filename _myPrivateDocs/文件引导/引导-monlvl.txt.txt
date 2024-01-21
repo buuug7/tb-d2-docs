@@ -1,0 +1,85 @@
+MonLvl.txt中各参数的含义：
+Level：怪物级别
+
+AC：   普通难度的防御值比例参数
+AC(N)：非天梯模式噩梦难度的防御值比例参数
+AC(H)：非天梯模式地狱难度的防御值比例参数
+
+L-AC(N)：单机及天梯模式噩梦难度的防御值比例参数
+L-AC(H)：单机及天梯模式地狱难度的防御值比例参数
+TH：普通难度的攻击准确率比例参数
+TH(N)：非天梯模式噩梦难度的攻击准确率比例参数
+TH(H)：非天梯模式地狱难度的攻击准确率比例参数
+L-TH(N)：单机及天梯模式噩梦难度的攻击准确率比例参数
+L-TH(H)：单机及天梯模式地狱难度的攻击准确率比例参数
+HP：普通难度的生命值比例参数
+HP(N)：非天梯模式噩梦难度的生命值比例参数
+HP(H)：非天梯模式地狱难度的生命值比例参数
+L-HP(N)：单机及天梯模式噩梦难度的生命值比例参数
+L-HP(H)：单机及天梯模式地狱难度的生命值比例参数
+DM：普通难度的伤害值比例参数
+DM(N)：非天梯模式噩梦难度的伤害值比例参数
+DM(H)：非天梯模式地狱难度的伤害值比例参数
+L-DM(N)：单机及天梯模式噩梦难度的伤害值比例参数
+L-DM(H)：单机及天梯模式地狱难度的伤害值比例参数
+XP：普通难度的经验值比例参数
+XP(N)：非天梯模式噩梦难度的经验值比例参数
+XP(H)：非天梯模式地狱难度的经验值比例参数
+L-XP(N)：单机及天梯模式噩梦难度的经验值比例参数
+L-XP(H)：单机及天梯模式地狱难度的经验值比例参数
+
+
+
+
+
+
+
+
+AC:    盔甲(AC 防御) (普通),连同 monstats.txt 列 (s) 一并计算 {(MonLvl.txt Ac*Monstats.txt AC)/100},封闭式战网；
+AC:(N) 盔甲(AC 防御) (恶梦),连同 monstats.txt 列 (s) 一并计算 {(MonLvl.txt Ac*Monstats.txt AC)/100},封闭式战网；
+AC:(H) 盔甲(AC 防御) (地狱),连同 monstats.txt 列 (s) 一并计算 {(MonLvl.txt Ac*Monstats.txt AC)/100},封闭式战网；
+
+L-AC:    盔甲(AC 防御) (普通),连同 monstats.txt 列 (s) 一并计算{(MonLvl.txt Ac*Monstats.txt AC)/100}, Ladder模式/单人游戏/tcp- ip；
+L-AC:(N) 盔甲(AC 防御) (恶梦),连同 monstats.txt 列 (s) 一并计算{(MonLvl.txt Ac*Monstats.txt AC)/100}, Ladder模式/单人游戏/tcp- ip；
+L-AC:(H) 盔甲(AC 防御) (地狱),连同 monstats.txt 列 (s) 一并计算{(MonLvl.txt Ac*Monstats.txt AC)/100}, Ladder模式/单人游戏/tcp- ip；
+
+TH:    to hit(应该指攻击等级) (普通),连同 monstats.txt 列 (s) 一并计算{(MonLvl.txt TH*Monstats.txt A1TH 和 MonLvl.txt TH*Monstats.txt A2TH)/100},封闭式战网；
+TH:(N) to hit(应该指攻击等级) (恶梦),连同 monstats.txt 列 (s) 一并计算{( MonLvl.txt TH* Monstats.txt A1TH 和 MonLvl.txt TH*Monstats.txt A2TH)/100}, 封闭式战网；
+TH:(H) to hit(应该指攻击等级) (地狱),连同 monstats.txt 列 (s) 一并计算{(MonLvl.txt TH*Monstats.txt A1TH 和 MonLvl.txt TH*Monstats.txt A2TH)/100},封闭式战网；
+
+L-TH:    to hit(应该指攻击等级) (普通),连同 monstats.txt 列 (s) 一并计算{(MonLvl.txt TH*Monstats.txt A1TH 和 MonLvl.txt TH*Monstats.txt A2TH)/100},Ladder模式/单人游戏/tcp- ip；
+L-TH:(N) to hit(应该指攻击等级) (恶梦),连同 monstats.txt 列 (s) 一并计算 {( MonLvl.txt TH* Monstats.txt A1TH 和MonLvl.txt TH*Monstats.txt A2TH)/100}, Ladder模式/ 单人游戏/ tcp- ip；
+L-TH:(H) to hit(应该指攻击等级) (地狱),连同 monstats.txt 列 (s) 一并计算{(MonLvl.txt TH*Monstats.txt A1TH 和 MonLvl.txt TH*Monstats.txt A2TH)/100},Ladder模式/单人游戏/tcp- ip；HP: 生命值(普通),连同 monstats.txt 列 (s) 一并计算 {( MonLvl.txt HP*Monstats.txt minHP)/100 和MonLvl.txt HP*Monstats.txt maxHP)/100}, 封闭式战网；
+
+HP:(N) 生命值(恶梦),连同 monstats.txt 列 (s) 一并计算{(MonLvl.txt HP*Monstats.txt minHP)/100 和 MonLvl.txt HP*Monstats.txt maxHP)/100},封闭式战网；
+HP:(H) 生命值(地狱),连同 monstats.txt 列 (s) 一并计算{(MonLvl.txt HP*Monstats.txt minHP)/100 和 MonLvl.txt HP*Monstats.txt maxHP)/100)}, 封闭式战网；
+
+L-HP:    生命值(普通),连同 monstats.txt 列 (s) 一并计算{( MonLvl.txt HP*Monstats.txt minHP)/100 和 MonLvl.txt HP*Monstats.txt maxHP)/100)}, Ladder模式/ 单人游戏/ tcp- ip；
+L-HP:(N) 生命值(恶梦),连同 monstats.txt 列 (s) 一并计算{(MonLvl.txt HP*Monstats.txt minHP)/100 和 MonLvl.txt HP*Monstats.txt maxHP)/100)/100},Ladder模式/单人游戏/tcp- ip；
+L-HP:(H) 生命值(地狱),连同 monstats.txt 列 (s) 一并计算{( MonLvl.txt HP*Monstats.txt minHP)/100 和 MonLvl.txt HP*Monstats.txt maxHP)/100)}, Ladder模式/ 单人游戏/ tcp- ip；
+
+DM: 损害 (普通),连同 monstats.txt 列 (s) 一并计算 {( MonLvl.txt DM*Monstats.txt A1MinD)/100 和MonLvl.txt DM*Monstats.txt A1MaxD)/100 和 MonLvl.txt DM*Monstats.txt A2MinD)/100 和 MonLvl.txt DM*Monstats.txt A2MaxD)/100}, 封闭式战网；
+DM:(N)损害 (恶梦),连同 monstats.txt 列 (s) 一并计算{(MonLvl.txt DM*Monstats.txt A1MinD)/100 和 MonLvl.txt DM*Monstats.txt A1MaxD)/100 和 MonLvl.txt DM*Monstats.txt A2MinD)/100 和 MonLvl.txt DM*Monstats.txt A2MaxD)/100},封闭式战网；
+
+DM: 损害 (普通),连同 monstats.txt 列 (s) 一并计算 {( MonLvl.txt DM*Monstats.txt A1MinD)/100 和MonLvl.txt DM*Monstats.txt A1MaxD)/100 和 MonLvl.txt DM*Monstats.txt A2MinD)/100 和 MonLvl.txt DM*Monstats.txt A2MaxD)/100}, 封闭式战网；
+
+DM:(H) 损害 (地狱),连同 monstats.txt 列 (s) 一并计算 {DM:损害 (普通) 连同 monstats.txt ac 列一并计算{(MonLvl.txt DM*Monstats.txt A1MinD)/100 和 MonLvl.txt DM*Monstats.txt A1MaxD)/100 和 MonLvl.txt DM*Monstats.txt A2MinD)/100 和 MonLvl.txt DM*Monstats.txt A2MaxD)/100},只封闭式战网；
+
+
+DM:损害 (普通),连同 monstats.txt 列 (s) 一并计算{(MonLvl.txt DM*Monstats.txt A1MinD)/100 和 MonLvl.txt DM*Monstats.txt A1MaxD)/100 和 MonLvl.txt DM*Monstats.txt A2MinD)/100 和 MonLvl.txt DM*Monstats.txt A2MaxD)/100},Ladder模式/单人游戏/tcp- ip；
+DM: 损害 (普通),连同 monstats.txt 列 (s) 一并计算 {( MonLvl.txt DM*Monstats.txt A1MinD)/100 和MonLvl.txt DM* Monstats.txt A1MaxD)/100 和 MonLvl.txt DM*Monstats.txt A2MinD)/100 和 MonLvl.txt DM*Monstats.txt A2MaxD)/100},Ladder模式/单人游戏/tcp- ip；
+DM: 损害 (普通) 连同 monstats.txt ac 列一并计算 {( MonLvl.txt DM*Monstats.txt A1MinD)/100 和MonLvl.txt DM*Monstats.txt A1MaxD)/100 和 MonLvl.txt DM*Monstats.txt A2MinD)/100 和 MonLvl.txt DM*Monstats.txt A2MaxD)/100},Ladder模式/单人游戏/tcp- ip；
+
+
+L-DM:    损害(普通),连同 monstats.txt 列 (s) 一并计算{(MonLvl.txt DM*Monstats.txt A1MinD)/100 和 MonLvl.txt DM*Monstats.txt A1MaxD)/100 和 MonLvl.txt DM*Monstats.txt A2MinD)/100 和 MonLvl.txt DM*Monstats.txt A2MaxD)/100},只封闭式战网；
+L-DM:(N) 损害(恶梦),连同 monstats.txt 列 (s) 一并计算{(MonLvl.txt DM*Monstats.txt A1MinD)/100 和 MonLvl.txt DM*Monstats.txt A1MaxD)/100 和 MonLvl.txt DM*Monstats.txt A2MinD)/100 和 MonLvl.txt DM*Monstats.txt A2MaxD)/100},Ladder模式/单人游戏/tcp- ip；
+L-DM:(H) 损害(地狱),连同 monstats.txt 列 (s) 一并计算{(MonLvl.txt DM*Monstats.txt A1MinD)/100 和 MonLvl.txt DM*Monstats.txt A1MaxD)/100 和 MonLvl.txt DM*Monstats.txt A2MinD)/100 和 MonLvl.txt DM*Monstats.txt A2MaxD)/100},Ladder模式/单人游戏/tcp- ip；
+
+
+XP:    经验点 (普通),连同 monstats.txt 列 (s) 一并计算 {( MonLvl.txt XP* Monstats.txt Exp)/100}, 封闭式战网；
+XP:(N) 经验点 (恶梦),连同 monstats.txt 列 (s) 一并计算 {(MonLvl.txt XP*Monstats.txt Exp)/100},只封闭式战网；
+XP:(H) 经验点 (地狱),连同 monstats.txt 列 (s) 一并计算 {( MonLvl.txt XP* Monstats.txt Exp)/100}, 封闭式战网；
+
+L-XP:    经验点 (普通),连同 monstats.txt 列 (s) 一并计算 {( MonLvl.txt XP* Monstats.txt Exp)/100}, Ladder模式/ 单人游戏/ tcp- ip；
+L-XP:(N) 经验点 (恶梦),连同 monstats.txt 列 (s) 一并计算 {(MonLvl.txt XP*Monstats.txt Exp)/100},Ladder模式/单人游戏/tcp- ip；
+L-XP:(H) 经验点 (地狱),连同 monstats.txt 列 (s) 一并计算 {( MonLvl.txt XP* Monstats.txt Exp)/100},Ladder模式/单人游戏/tcp-ip。

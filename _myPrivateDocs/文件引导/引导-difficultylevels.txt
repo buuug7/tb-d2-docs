@@ -1,29 +1,37 @@
-Name 难度的名称，不用改，改了也没用。
+前言：本文件用来定义一些基于游戏难度等级的，全游戏中起作用的参数
 
-ResistPenalty 每种难度下四防（火、冰、毒、电）所减少的数值。
-
-DeathExpPenalty 每种难度下死亡一次所损失的经验值。
-
-UberCodeOddsNormal 未使用的参数（对应Uniqueitems.txt文件中的Uber参数。）
-
-UberCodeOddsGood 未使用的参数（对应Uniqueitems.txt文件中的Uber参数。）
-
-UltraCodeOddsNormalUltraCodeOddsGood 1.07版以后均未使用此参数。
-
-MonsterSkillBonus 每种难度下针对怪物额外附加的技能点数，对应MonStats.txt中对怪物技能的描述；不过对于“弓”系魔法无效。
-
-MonsterFreezeDivisorMonsterColdDivisor 每中难度下怪物冰冻魔法的除数（既然是除数，就不能为0）。 
-
-AiCurseDivisorLifeStealDivisorManaStealDivisor 每种难度下怪物“诅咒”、“偷血”、“偷魔法”技能的除数，同样不能为0。
-
-UniqueDamageBonusChampionDamageBonus 对于高级和独有怪物的额外损伤数值。
-
-HireableBossDamagePercent 针对每一关中的BOSS级别怪物，你的佣兵所做的损伤百分比；比如：在“地狱”难度下的数值为25，意思就是对于BOSS级别的怪物只做1/4的伤害。
-
-MonsterCEDamagePercent 怪物“暴尸"技能的百分比限制；说明一下，通常的“暴尸”伤害率都是根据游戏中角色的数量决定的，这列数值的意思就是限制过大的暴尸”伤害率。 
-
-StaticFieldMin 静态攻击对于怪物的最小伤害值；如果三种难度下均设定为0的话，就以非资料片的默认值为准。
-
-GambleRareGambleSetGambleUniqueGambleUberGambleUltra 在HardCore模式下各种赌博物品的出现机率。
-
+相关联的txt文件：本文件与其它txt文件没有什么关联，仅仅是一份独立的参数表
  
+各列功能说明如下：
+
+Name：难度名称，该列最好不要添加其他内容
+
+ResistPenalty：该值是角色进入当前难度所受到的抗性惩罚
+
+DeathExpPenalty：该值是角色在当前难度死亡后会丢失的经验值百分比
+
+UberCodeOddsNormal：无用参数，1.07版以前该值是扩展级劣质/普通/超强物品在当前难度的掉落几率
+
+UberCodeOddsGood：无用参数，1.07版以前该值是扩展级蓝色/黄金/套装/暗金物品在当前难度的掉落几率
+
+UltraCodeOddsNormal：无用参数，1.07版以前无此列
+
+UltraCodeOddsNormal：无用参数，1.07版以前无此列
+
+MonsterSkillBonus：于当前难度下对MonStats.txt文件中定义的怪物技能等级的加成值，对于飞射物的伤害值并无提升效果
+
+MonsterFreezeDivisor，MonsterColdDivisor：对当前难度下的怪物被冰冻/冻结时间的惩罚因子，此值不能为0
+
+AiCurseDivisor，LifeStealDivisor，ManaStealDivisor：
+当前难度下对可转化AI类诅咒持续时间，生命偷取效果，法力偷取效果的惩罚因子；
+1.10以后版本中该值不能为0，1.10版中该值为0将导致转化AI类诅咒/生命偷取/法力偷取等属性失效
+
+UniqueDamageBonus，ChampionDamageBonus：对当前难度下的金怪及其仆从，以及冠军级怪物拥有的伤害和准确率加成效果进行百分比惩罚
+
+HireableBossDamagePercent：决定当前难度下你的雇佣兵/召唤物等仆从会对每幕最终Boss造成的伤害百分比，例如地狱难度此值为25，则你的雇佣兵对Boss造成的伤害只是原始伤害的1/4
+
+MonsterCEDamagePercent：当前难度下怪物的尸体爆炸技能所能造成的伤害百分比：多人难度下怪物的生命值会增加，与此同时其尸体爆炸所造成的伤害也会提升，但这类伤害都将受到此列值所规定的限制
+
+StaticFieldMin：当前难度下静电力场技能能够使怪物生命降低到的下限值，这里值设定为0将导致各个难度下法师均能利用静电力场技能将怪物的生命无限降低，如D2原版那样
+
+GambleRare，GambleSet，GambleUnique，GambleUber，GambleUltra：硬代码所规定的函数中将用到这些参数，用以决定赌博时各个难度下出现黄金、套装、暗金、扩展级物品和精华级物品的几率

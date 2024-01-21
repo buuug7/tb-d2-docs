@@ -23,51 +23,6 @@
 | gem3 | 无暇宝石 |
 | gem4 | 完美宝石 |
 
-## levels.txt
-
-- Act 5 - Hell 1 第一个红门
-- Act 5 - Hell 2 第二个红门
-- Act 5 - Hell 3 第三个红门
-
-- Act 1 - Wilderness 1 鲜血荒地
-- Act 1 - Wilderness 2 冰冷之原
-- Act 1 - Wilderness 3 石墨旷野
-- Act 1 - Wilderness 4 黑暗森林
-- Act 1 - Wilderness 5 黑色荒地
-- Act 1 - Wilderness 6 泰摩高地
-- Act 1 - Cave 1 邪恶洞窟
-- Act 1 - Cave 2 洞窟第一层
-- Act 1 - Cave 2 Treasure 洞窟第二层
-- Act 1 - Cave 3 地底通道第一层
-- Act 1 - Cave 3 Treasure 地底通道第二层
-- Act 1 - Cave 4 地洞第一层
-- Act 1 - Cave 4 Treasure 地洞第二层
-- Act 1 - Cave 5 地穴第一层
-- Act 1 - Cave 5 Treasure 地穴第二层
-- Act 1 - Graveyard 埋骨之地
-- Act 1 - Crypt 1 A 埋骨之地 - 基地
-- Act 1 - Crypt 2 A 埋骨之地 - 大陵寝
-- Act 1 - Tower 2 遗忘之塔
-- Act 1 - Crypt 3 A 高塔地牢第一层
-- Act 1 - Crypt 3 B 高塔地牢第二层
-- Act 1 - Crypt 3 C 高塔地牢第三层
-- Act 1 - Crypt 3 D 高塔地牢第四层
-- Act 1 - Crypt 3 E 高塔地牢第五层
-- Act 1 - Monastery 僧院大门
-- Act 1 - Courtyard 1 外侧回廊
-- Act 1 - Barracks 军营
-- Act 1 - Jail 1 监牢第一层
-- Act 1 - Jail 2 监牢第二层
-- Act 1 - Jail 3 监牢第三层
-- Act 1 - Courtyard 2 内侧回廊
-- Act 1 - Cathedral 大教堂
-- Act 1 - Catacombs 1 地下墓穴第一层
-- Act 1 - Catacombs 2 地下墓穴第二层
-- Act 1 - Catacombs 3 地下墓穴第三层
-- Act 1 - Catacombs 4 地下墓穴第四层
-- Act 1 - Tristram 崔斯特瑞姆
-- Act 1 - Moo Moo Farm 秘密母牛关卡
-
 ## 其他资源
 
 - http://bbs.anhei2.com/diablo/2020new-runewords.html
