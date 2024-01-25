@@ -147,3 +147,18 @@ But the animation would gone as well, your ama would dodge/avoid/evade without a
 ## pachload 红门使用方法
 
 misc 里面的物品指定这个 pspell 然后 param1 参数指定地图 id,右键物品的时候就会创建指定地图的红门了
+
+## MonStats.txt 种怪物无法生成，或者生成后是一堆骷髅
+
+注意查看 MonStats.txt Rarity 列，RARITY：此列也被用来控制怪物的人口数量，用于全局控制该怪物出现的可能性；
+
+例如，假如 Levels.txt 中有这样两个怪物，A 的 Rarity 为 10，B 的为 1，但这里只能出现 1 种怪物，那么选择机制如下：首先游戏会将两者的 Rarity 值相加，然后分别计算这两种怪物的出现几率，A 为 10/11 = 91%，而 B 为 1/11 = 9%，于是 A 出现的几率将远大于 B；如果在此列写入 0，则 Levels.txt 将不会选中此怪物（不过我敢说……假如该怪物是这个区域可能出现的唯一一种怪物的话，游戏显然会出错，因为它进行了一个除数为零的运算……除非暴雪在此加入了额外的检测机制）
+
+## 用 win_ds1edit 在地图中精确位置添加超级怪物
+
+- 在 SuperUniques.txt 中添加你的超级怪物，例如 MySuperMonsterA
+- 在 MonPreset.txt 中对应关卡中添加 MySuperMonsterA，记下它的 ID，记着 id 是从 0 开始数的，比如 ID 为 ACT1 的 48
+- 记着每个关卡 ID 都是从 0 开始
+- 在 win_ds1edit 的 obj.txt 中对应关卡找到对应的 ID 为 48 的 行，填上 MySuperMonsterA 名称即可
+
+需要注意 ID 问题，ID 不对应，会导致怪物无法在地图中出现
