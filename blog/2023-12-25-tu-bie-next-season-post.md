@@ -1,8 +1,8 @@
 ---
-slug: blog-ann-restart
-title: 12 月 29 日晚上九点开荒
-authors: buuug7
-tags: [damage, resist]
+slug: blog-next-season-20231225
+title: 土鳖暗黑 2023-12-29 晚上九点开荒
+authors: buuug8
+tags: [season, 土鳖暗黑, 开荒]
 ---
 
 - 土鳖微变，进群体验
