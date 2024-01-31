@@ -5,6 +5,49 @@
 - https://tieba.baidu.com/p/7535244240?see_lz=1
 - https://tieba.baidu.com/p/6842844899
 - https://forums.pvpgn.pro/viewtopic.php?id=2059
+- https://forums.pvpgn.pro/viewtopic.php?id=2059
+
+## 最新的
+
+```
+# Blocking overhead messages
+
+D2Game.dll 0XD00A08B 31C0C2080090909090901
+
+# Red Gate Second Forward, Reduce TCP/IP Reader Loading Time
+
+D2Client.dll 0X14D6E FA 001
+
+# Little monster only drops gold.
+
+D2Game.dll 0XFD9D 7F0F 909090 1
+
+# A full-blown script
+
+D2Game.dll 0XDE705 7602 7402 1
+
+# Close Exp for Punishment
+
+D2Game.dll 0XDAA7A 740A EB0A 1
+
+# Equipped with air-accumulating skills for unlimited use
+
+D2Game.dll 0X9F593 7C02 90901
+
+
+# Box gold coin cap supports 30 million
+
+D2common.dll 0X2E9C1 A0252600 80C3C901
+
+# Individual gold coin cap supports 30 million
+
+D2common.dll 0X3198E 10270000 E0930400 1
+
+#manaburn BUG Fix
+D2Game.dll 0X222DD C1E608 909090 1
+D2Game.dll 0X222F2 C1E708 909090 1
+
+```
 
 ```
 #本修改全部是113c
