@@ -1,6 +1,6 @@
 ---
 slug: blog-next-season-20240126
-title: 土鳖暗黑 2024-01-26 晚上八点开荒
+title: 土鳖暗黑第二赛季 2024-01-26 开荒
 authors: buuug7
 tags: [season, 土鳖暗黑, 开荒]
 ---

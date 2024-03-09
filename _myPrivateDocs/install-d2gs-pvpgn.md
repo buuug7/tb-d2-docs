@@ -2,14 +2,9 @@
 
 - [pvpgn](https://pvpgn.pro/d2gs_installation.html)
 
-## install.bat
+## install d2gs
 
-在 d2gs 目录中新建 install.bat 然后将下面的这些内容粘贴进去, 点击右键, 以管理员的身份运行
-
-```
-start d2gs.reg
-d2gssvc.exe -i
-```
+编辑 d2gs.reg，在 d2gs 目录中运行 d2gs_install.bat, 记着以管理员身份运行。
 
 ## install and uninstall PVPGN
 
