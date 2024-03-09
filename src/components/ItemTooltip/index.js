@@ -12,8 +12,11 @@ export default function ItemTooltip({ itemInfo, width = "400px" }) {
           )}
         </div>
         <div className={styles.other}>{itemInfo.other}</div>
+
         <div className={styles.require}>
-          <div>需要等级: {itemInfo.require.level}</div>
+          {itemInfo.require.showLevel && (
+            <div>需要等级: {itemInfo.require.level}</div>
+          )}
         </div>
         <div className={styles.properties}>
           {itemInfo.properties.map((it) => (

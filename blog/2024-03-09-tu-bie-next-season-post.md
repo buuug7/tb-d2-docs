@@ -1,9 +1,9 @@
 ---
-title: 开荒公告
-sidebar_position: 3
+slug: blog-next-season-20240309
+title: 土鳖暗黑 2024-03-09 晚上八点开荒
+authors: buuug7
+tags: [season, 土鳖暗黑, 开荒]
 ---
-
-# 土鳖暗黑开荒公告
 
 - 土鳖微变，进群体验
 - 小站直达，简约方便

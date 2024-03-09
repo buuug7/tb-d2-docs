@@ -1,0 +1,32 @@
+import ItemTooltip from "@site/src/components/ItemTooltip";
+
+<ItemTooltip
+  itemInfo={{
+    name: "数据记录 Data Record",
+    baseName: "小护身符",
+    other: "留在物品栏中有较多额外的好处",
+    require: {
+      level: 1,
+      showLevel: false
+    },
+    properties: [
+      {
+        text: "+1 所有技能",
+        range: null,
+      },
+      {
+        text: "您击杀的怪物个数为：+1",
+        range: null,
+      },
+      {
+        text: "您被怪物击杀的次数为：+1",
+        range: null,
+      },
+      {
+        text: "+461% 转为经验值获得",
+        range: '100-461',
+      },
+
+    ],
+  }}
+/>
