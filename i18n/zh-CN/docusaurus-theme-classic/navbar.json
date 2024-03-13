@@ -16,7 +16,7 @@
     "description": "Navbar item with label 博客"
   },
   "item.label.diablo2knowledge": {
-    "message": "暗黑 II 资料库",
-    "description": "Navbar item with label 暗黑 II 资料库"
+    "message": "暗黑资料库",
+    "description": "Navbar item with label 暗黑资料库"
   }
 }
