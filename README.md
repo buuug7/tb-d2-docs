@@ -8,4 +8,4 @@
 ## 部署
 
 - `npm run build` 后将生成的 build 文件夹放到部署服务器
-- 通过 NPM 安装 server 包，用 serve 命令启动 `serve -l 8082 .`
+- 通过 NPM 安装 server 包，用 serve 命令启动 `serve -l 8082 .` 或者用 NGINX 部署
