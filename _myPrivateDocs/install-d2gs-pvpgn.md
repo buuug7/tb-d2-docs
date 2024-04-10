@@ -50,3 +50,19 @@ sc delete pvpgn
 sc delete d2cs
 sc delete d2dbs
 ```
+
+## 备份数据
+
+备份 `pvpgn\var` 整个目录或者它下面的
+
+- `pvpgn\var\charinfo`
+- `pvpgn\var\charsave`
+- `pvpgn\var\users`
+- `pvpgn\var\charsave-d2x`
+
+## 清理天梯数据
+
+情况下面两个文件夹中的数据
+
+- `pvpgn\var\ladders`
+- `pvpgn\var\status`

@@ -4,7 +4,7 @@
 
 ```
 "BNET\\auth\\admin"="true"
-"BNET\\auth\\command_groups"="2"
+"BNET\\auth\\command_groups"="255"
 ```
 
 ## d2gs 部分命令
