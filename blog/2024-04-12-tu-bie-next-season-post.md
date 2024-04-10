@@ -1,9 +1,9 @@
 ---
-title: 开荒公告
-sidebar_position: 3
+slug: blog-next-season-20240412
+title: 土鳖暗黑第四赛季 2024-04-12 开荒
+authors: buuug7
+tags: [土鳖暗黑, 开荒，赛季, 第四赛季]
 ---
-
-# 土鳖暗黑第四赛季开荒公告
 
 - 土鳖微变,进群体验
 - 小站直达,简约方便

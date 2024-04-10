@@ -2,7 +2,7 @@
 slug: blog-next-season-20231225
 title: 土鳖暗黑第一赛季 2023-12-29 开荒
 authors: buuug8
-tags: [season, 土鳖暗黑, 开荒]
+tags: [土鳖暗黑, 开荒，赛季, 第一赛季]
 ---
 
 - 土鳖微变，进群体验

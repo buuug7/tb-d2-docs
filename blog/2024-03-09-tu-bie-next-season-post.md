@@ -2,7 +2,7 @@
 slug: blog-next-season-20240309
 title: 土鳖暗黑第三赛季 2024-03-09 开荒
 authors: buuug7
-tags: [season, 土鳖暗黑, 开荒]
+tags: [土鳖暗黑, 开荒，赛季, 第三赛季]
 ---
 
 - 土鳖微变，进群体验
