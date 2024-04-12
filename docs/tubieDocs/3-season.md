@@ -22,12 +22,14 @@ sidebar_position: 3
 - 第一个 PASS 地狱的 VIP4 护符
 - 第二个 PASS 地狱的 VIP3 护符
 - 第三个 PASS 地狱的 VIP2 护符
+- 第四个 PASS 地狱的 VIP1 护符
 
 ## 升级奖励
 
 - 第一个 99 级的奖励 Vip4 护符
 - 第二个 99 级的奖励 Vip3 护符
 - 第三个 99 级的奖励 Vip2 护符
+- 第四个 99 级的奖励 Vip1 护符
 
 ## 其他
 
