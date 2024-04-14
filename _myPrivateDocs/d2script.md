@@ -5,7 +5,6 @@
 - https://tieba.baidu.com/p/7535244240?see_lz=1
 - https://tieba.baidu.com/p/6842844899
 - https://forums.pvpgn.pro/viewtopic.php?id=2059
-- https://forums.pvpgn.pro/viewtopic.php?id=2059
 
 ## 最新的
 

@@ -6,6 +6,7 @@
   - https://d2mods.info/forum/kb/viewarticle?a=177
 - 其他资源
   - https://d2mods.info/forum/viewtopic.php?t=59373
+  - https://d2mods.info/forum/viewtopic.php?t=62508
 
 ## PVPGN 清理角色数据
 
