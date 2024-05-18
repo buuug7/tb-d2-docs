@@ -379,3 +379,264 @@ D2Common.dll 0x48B19 0C 13 1#变量所有技能+7技能
 D2Common.dll 0x48B1C 08 13 1#变量所有技能+7技能
 D2Common.dll 0x48A7F 08 07 1#防御511%ED
 ```
+
+## d2gs-沈沦没
+
+#put this script together with the loader, and the
+#loader will read it automatically at startup.
+#Any line begin with '#' are ignored
+#all digits here should be hex
+#use tab or space to separate two items
+#Format:
+#Module Name Offset(RVA) Source Data(for check) Destnation Data(Change to) Method
+#Offset Format: RVA[:Offset, Pattern]
+#You can use pattern searching to get the RVA result now
+#Method:
+#0X00: replace source with dest
+#0X01: relocate src
+#0X02: relocate dest
+#0X20: relocate call address
+#you may add your own hack below freely
+#==================================游戏 BUG 修复补丁================================ #遗忘骑士诅咒 BUG
+#D2Game.dll 0xFB454 42 E917F5FFFF909090570000005B00000000000000 1
+#D2Game.dll 0xFA970 00 420000004800000052000000E9DB0A0000 1 #红门秒进，降低 TCP/IP 读条 Loading 时间
+#D2Client.dll 0X14D6E FA 00 1
+#32k 生命/法力/耐力显示错误 Fix
+D2Game.dll 0X8B81A 6A0F 6A10 1
+D2Game.dll 0X8B82C 6A0F 6A10 1
+D2Game.dll 0X8B83E 6A0F 6A10 1
+D2Client.dll 0XAC1CE 6A0F 6A10 1
+D2Client.dll 0XAC1DA 6A0F 6A10 1
+D2Client.dll 0XAC1EA 6A0F 6A10 1 #解决过快加入多个角色卡死或者提示进入游戏失败 BUG
+Fog.dll 0X118FD A3 9090909090 1 #提高 FPS
+#D2Client.dll 0X44E51 391D9034BD6F7535 9090909090909090 1
+#D2Client.dll 0X5AB43 85C00F8595000000 9090909090909090 1 #仓库金币上限支持 3000 万
+D2Common.dll 0X2E9C1 A0252600 80C3C901 1 #背包金币上限支持 3000 万
+D2Common.dll 0X3194A 10270000 E0930400 1
+D2Common.dll 0X3195E 10270000 E0930400 1
+D2Common.dll 0X3198E 10270000 E0930400 1 #修正具备法力燃烧的近战怪物导致玩家法力一刀归零的 BUG
+D2Game.dll 0X222DD C1E608 909090 1
+D2Game.dll 0X222F2 C1E708 909090 1 #大箱子按钮 Fix
+#D2Client.dll 0X997A1 8D8C1021FFFFFF 8D8C109BFFFFFF 1
+#D2Client.dll 0X8B626 8DB40821FFFFFF 8DB4089EFFFFFF 1
+#D2Client.dll 0X8B631 8D840849FFFFFF 8D8408C3FFFFFF 1
+#D2Client.dll 0X99678 8D8C1044FFFFFF 8D8C10BEFFFFFF 1
+#D2Client.dll 0X8B611 81C1B8000000 81C1B3000000 1 #血魔法诅咒状态修复
+D2Common.dll 0X37D54 8B401C 909090 1
+D2Game.dll 0XBE7E 8B 909090909090 1 #死亡公式计算-比原始更好一点
+D2Game.dll 0XDE255 3D 83F8019090 1 #赌博窗口显示更多装备
+#D2Game.dll 0XBE611 83 837C241414 1
+#Random Boss Base Class Pick Fix
+D2Game.dll 0XDF4BF 8A486D84C9755D 90909090909090 1 #修复 RandTransforms 错误
+D2Client.dll 0XA7B1C 1E 26 1
+#Anya Fix Bug Set Resistance
+D2Game.dll 0X5A03B 53E8A106FBFF 56E83104FBFF 1
+D2Game.dll 0X5A046 53E89606FBFF 56E82604FBFF 1
+D2Game.dll 0X5A051 53E88B06FBFF 56E81B04FBFF 1
+D2Game.dll 0X5A05C 53E88006FBFF 56E81004FBFF 1 #修正具备法力燃烧的近战怪物导致玩家法力一刀归零的 BUG
+D2Game.dll 0X222DD C1E608 909090 1
+D2Game.dll 0X222F2 C1E708 909090 1
+#==================================游戏设置补丁=================================== #传送小站默认全开
+D2Common.dll 0X67C69 0FB7C0 31C0486689410289410489410889410CC208006F660904518D0C51C20800 1 #小站自动点亮（另外一个版本）
+#D2Common.dll 0X67C76 668B805A9CDE6F B8FFFFFFFF9090090451908D0C51C20800 1 #城中可以使用传送技能（客户端也需要修改）
+#D2Common.dll 0X52379 8A4305 834B05019090 1 #任务全部显示已经完成（测试）
+#D2Common.dll 0X2D0F0 8B442404 31C040C20C00 1 #符文之语全底材可用-孔数不限-底材装备类型不限
+#D2Common.dll 0X26BC2 7C05 EB05 1
+#D2Common.dll 0X26C3B 751D 9090 1
+#D2Common.dll 0X26CAB 7C5A 9090 1
+#D2common.dll 0X26CF8 7536 EB36 1 #小怪只掉落亮金\暗金
+#D2Game.dll 0XFD9D 7F0F 9090 1 #打怪直接升级到 99 级
+#D2Game.dll 0XDE705 7602 7402 1
+#(箭支\投掷武器\书\钥匙)数量无限
+D2Game.dll 0XA16BE 4D 48 1
+D2Game.dll 0X13033 4D 48 1
+D2Game.dll 0XDA280 6AFF 6A00 1
+D2Game.dll 0XD9D22 6AFF 6A00 1
+D2Game.dll 0XD41D4 6AFF 6A00 1 #装备带有的聚气技能无限用
+D2Game.dll 0X9F593 7C02 9090 1 #关闭 Exp 获取惩罚(mlvl/clvl)
+#D2Game.dll 0XDAA7A 740A EB0A 1
+#A5 古代人任务取消经验上限(可升级几级)
+#D2Game.dll 0X5BFFA 7E04 EB04 1
+#BOSS 永远是首杀掉落
+#D2Game.dll 0X75858 743D 9090 1
+#D2Game.dll 0X7586D 7428 9090 1
+#D2Game.dll 0X75888 740D 9090 1 #所有怪可掉落 99 级物品
+#D2Game.dll 0XE5D0 56 B87F000000C2040090 1 #所有难度按地狱难度掉落物品
+#D2Game.dll 0X75719 0F 31FF4747 1 #装备随便穿
+#D2Common.dll 0X27076 33C0 B001 1
+#D2Common.dll 0X27080 33C0 B001 1 #掉落属性满变量
+#D2Common.dll 0X4837D 85C0 01C0 1
+#D2Common.dll 0X48391 85DB 01DB 1
+#D2Common.dll 0X48122 8B7B08 8B7B0C 1
+#D2Common.dll 0X481B2 8B7B08 8B7B0C 1
+#D2Common.dll 0X48242 8B7B08 8B7B0C 1
+#D2Common.dll 0X482D2 8B7B08 8B7B0C01FF9090 1
+#D2Common.dll 0X48A7D 8B7B08 8B7B0C 1
+#D2Common.dll 0X48B1A 8B7B08 8B7B0C 1
+#D2Common.dll 0X492DC 8B7008 8B700C 1
+#D2Common.dll 0X4923D 56 50 1
+#D2Common.dll 0X465B1 8BF9 8BF8 1 #所有技能没有 CD 时间
+#D2Game.dll 0XA1CAC 8B BAFFFFFFFF90 1
+#D2Common.dll 0X5229D 8B BAFFFFFFFF90 1
+#D2Client.dll 0XA2EDE 8B BAFFFFFFFF90 1 #开启 127PP 难度(战网无效,命令:/Players (1-127))
+#D2Game.dll 0X37434 83F908 83F97F 1
+#D2Client.dll 0X70A88 83F808 83F87F 1
+#D2Client.dll 0X70A8F BF08 BF7F 1 #获取经验按 8PP
+D2Game.dll 0XAF5D0 83 909090EB088B0485F0B5D16FC3B85E01000090909090C3 1 #游戏怪物血量按 8PP
+D2Game.dll 0XAF5F0 83 909090EB088B048514B6D16FC3B85E01000090C3 1 #游戏默认 PP 数（掉落、经验、血量）都会按照 8PP 执行
+#D2Game.dll 0X379A0 51 B808000000C3909090 1 #死亡装备不掉落
+#D2Game.dll 0X793FC 8B95 E9F6020000 1 #死亡装备不掉落(更好的版本)
+D2Game.dll 0X79237 7613 EB08 1 #死亡不进行金币惩罚
+D2Game.dll 0X383A4 578BF153 909090909090909090 1 #绿色套装一件顶一套
+#D2Common.dll 0X23F90 8B4C240485C955 31C0B03FC20C00 1
+#1 级就能学所有技能
+#D2Common.dll 0X4FB30 51558B6C2410 31C040C20800 1
+#D2Common.dll 0X4F510 8B54240885D2 31C0C2080090 1 #传送可以隔墙用
+#D2Client.dll 0XA1D2E 8A888F01000084C9 29C988888F010000 1 #所有东西掉落必是无形-不建议开启（包括箭袋、药）
+#D2Game.dll 0XEBBD 6A2D EB48 1
+#D2Game.dll 0XEC12 B864 B800000000 1 #掉落无形装备几率（16 进制，修改为 14，代表 20%几率为无形）
+#D2Game.dll 0X0EC1E 05 14 1 #设置为 20% #马拉给的“抵抗卷轴”+20 抗性修改（16 进制，修改为 14，代表 20）
+#D2Game.dll 0X5B0CD BF0A BF14 1 #普通+20 抗性
+#D2Game.dll 0X5B0E9 83C70A 83C714 1 #噩梦+20 抗性
+#D2Game.dll 0X5B103 83C70A 83C714 1 #地狱+20 抗性 #超级暗金怪物 lv 加层(默认+3,过高导致非 99 场景下掉落 99 品质装备,谨慎使用)
+#D2Game.dll 0X21E98 83C003 83C003 1 #超级暗金怪被玩家杀死后玩家经验获取倍数(默认 5 倍)
+#D2Game.dll 0X21EB0 8D0480 8D04C0 1 #本条设置为+9 倍（最多 9 倍，超过 9 会溢出） #取消跑步防御降低机制
+#D2Game.dll 0XDE5F7 BB01 BB00 1 #技能任务点数赠送设置
+#D2Game.dll 0X653D3 01 02 1 #A1 邪恶之穴的任务奖励 2 技能点数
+#D2Game.dll 0XD9E9B 01 02 1 #A2 下水道的技能书奖励 2 技能点数
+#D2Game.dll 0XBA742 02 04 1 #杀死衣卒尔奖励 4 技能点数
+#NPC 出售白色装备\武器带镶嵌孔几率（默认 33%，16 进制，本条为修改为 50%）
+#D2Game.dll 0XED5A 83F821 83F832 1 #杀死母牛王可继续进入母牛关卡
+D2Game.dll 0X67508 85C0 31C0 1 #非固定暗金怪的爪牙数量-单项最大 64
+#D2Game.dll 0X24CA8 6A06 6A08 1 #默认 PUSH 6 - max minions
+#D2Game.dll 0X24CAA 6A03 6A03 1 #默认 PUSH 3 - min minions
+#D2Game.dll 0X479E3 6A06 6A08 1 #默认 PUSH 6 - max minions
+#D2Game.dll 0X479E5 6A03 6A03 1 #默认 PUSH 3 - min minions
+#A1 点数重置任务永远不能完成（永远可以重置）
+D2Game.dll 0XC0592 8B 909090909090909090 1
+#A1 武器注入永远不能完成（永远可以注入）
+D2Game.dll 0XC04F6 8B 909090909090909090 1 #跳过任务完成判断代码，任务返回未完成
+#A5 打孔任务永远不能完成（永远可以打孔）
+D2Game.dll 0XC075D 8B 909090909090909090 1 #跳过任务完成判断代码，任务返回未完成 #物品掉落就已经辨识
+#D2Game.dll 0XF6BD 6A00 6A01 1 #暗金
+#D2Game.dll 0X104C0 6A00 6A01 1 #绿色套装
+#D2Game.dll 0X15442 6A00 6A01 1 #亮金物品
+#D2Game.dll 0X13DA9 6A00 6A01 1 #魔法物品 #物品掉落倍率本条代表 2 倍（16 进制）
+#D2Game.dll 0XF79B8 00 BB02000000FF742420FF742420FF742420FF742420FF742420FF742420FF742420FF742420E87EB3F1FF4B75D8C22000 1
+#D2Game.dll 0X758C0 E8 E8F3200800 1 #物品掉落倍率+属性词缀挂钩
+#D2Game.dll 0XF7C98 00 6A0068A9010000FF7208E88327F1FF8BD8FF742420FF742420FF742420FF742420FF742420FF742420FF742420FF742420E892B0F1FF4B7DD8C22000 1
+#D2Game.dll 0X758C0 E8 E8D3230800 1
+#USC/ULC/UGC 窗口交易
+D2Game.dll 0X63680 740A EB0A 1
+#==================================未测试验证，不知道是否会带来其它 BUG========================== #经典阻止
+#D2Common.dll 0X31E4E 742F EB2F 1
+#==================================16K Save=======================================
+D2Game.dll 0XF782 20 40 1
+D2Game.dll 0XF7F6 20 40 1
+D2Game.dll 0XF80B 20 40 1
+D2Game.dll 0XF812 20 40 1
+D2Game.dll 0XF819 20 40 1
+D2Game.dll 0XF821 20 40 1
+D2Game.dll 0XF832 20 40 1
+D2Game.dll 0XF88E 20 40 1
+D2Game.dll 0XF8DB 20 40 1
+D2Game.dll 0XF8EA 20 40 1
+D2Game.dll 0XF8F2 20 40 1
+D2Game.dll 0XF954 20 40 1
+D2Game.dll 0XF95B 20 40 1
+D2Game.dll 0XF963 20 40 1
+D2Game.dll 0XF974 20 40 1
+D2Game.dll 0XF9CD 20 40 1
+D2Game.dll 0XFA1C 20 40 1
+D2Game.dll 0XFA2A 20 40 1
+D2Game.dll 0XFA32 20 40 1
+D2Game.dll 0XFA94 20 40 1
+D2Game.dll 0XFA9B 20 40 1
+D2Game.dll 0XFAA3 20 40 1
+D2Game.dll 0XFAB4 20 40 1
+D2Game.dll 0XFB0D 20 40 1
+D2Game.dll 0XFB5C 20 40 1
+D2Game.dll 0XFB6A 20 40 1
+D2Game.dll 0X537D2 20 40 1
+D2Game.dll 0X537DF 20 40 1
+D2Game.dll 0X537FD 20 40 1
+D2Game.dll 0X53840 20 40 1
+D2Game.dll 0X53888 20 40 1
+D2Game.dll 0X538AC 20 40 1
+D2Game.dll 0X538D2 20 40 1
+D2Game.dll 0X538EE 20 40 1
+D2Game.dll 0X53900 20 40 1
+D2Game.dll 0X5391E 20 40 1
+D2Game.dll 0X5396D 20 40 1
+D2Game.dll 0X539C2 20 40 1
+D2Game.dll 0X53A35 20 40 1
+D2Game.dll 0X53A7E 20 40 1
+D2Game.dll 0X53ABA 20 40 1
+D2Game.dll 0X53AFD 20 40 1
+D2Game.dll 0X53B39 20 40 1
+D2Game.dll 0X53E52 20 40 1
+D2Game.dll 0X53E7B 20 40 1
+D2Game.dll 0X53E83 20 40 1
+D2Game.dll 0X53E8F 20 40 1
+D2Game.dll 0X53E9B 20 40 1
+D2Game.dll 0X53F01 20 40 1
+D2Game.dll 0X53F12 25 45 1
+D2Game.dll 0X53F3D 26 46 1
+D2Game.dll 0X53F5C 26 46 1
+D2Game.dll 0X53F63 26 46 1
+D2Game.dll 0X53F6F 26 46 1
+D2Game.dll 0X53F74 20 40 1
+D2Game.dll 0X53F80 26 46 1
+D2Game.dll 0X53FD8 25 45 1
+D2Game.dll 0X53FF5 25 45 1
+D2Game.dll 0X54002 20 40 1
+D2Game.dll 0X5401D 20 40 1
+D2Game.dll 0X54024 20 40 1
+D2Game.dll 0X54030 20 40 1
+D2Game.dll 0X54052 20 40 1
+D2Game.dll 0X54246 20 40 1
+D2Game.dll 0X5424D 20 40 1
+D2Game.dll 0X54255 20 40 1
+D2Game.dll 0X5425E 20 40 1
+D2Game.dll 0X5426D 20 40 1
+D2Game.dll 0X54277 20 40 1
+D2Game.dll 0X542C5 20 40 1
+D2Game.dll 0X542D0 20 40 1
+D2Game.dll 0X542D8 20 40 1
+D2Game.dll 0X542EB 20 40 1
+D2Game.dll 0X5430C 20 40 1
+D2Game.dll 0X56252 25 45 1
+D2Game.dll 0X5625E 26 46 1
+D2Game.dll 0X56284 26 46 1
+D2Game.dll 0X562BE 20 40 1
+D2Game.dll 0X5630B 25 45 1
+D2Game.dll 0X5631A 26 46 1
+D2Game.dll 0X56321 26 46 1
+D2Game.dll 0X56328 26 46 1
+D2Game.dll 0X56330 26 46 1
+D2Game.dll 0X56338 26 46 1
+D2Game.dll 0X56355 26 46 1
+D2Game.dll 0X5635C 26 46 1
+D2Game.dll 0X56363 26 46 1
+D2Game.dll 0X5636D 26 46 1
+D2Game.dll 0X56379 26 46 1
+D2Game.dll 0X5639D 26 46 1
+D2Game.dll 0X563B2 25 45 1
+D2Game.dll 0X70FEF 20 40 1
+D2Game.dll 0X71001 20 40 1
+D2Game.dll 0X7167F 20 40 1
+D2Game.dll 0XCB0DF 20 40 1
+#==================================Game Config==================================== #死亡装备不掉落
+D2Game.dll 0X79237 7613 EB08 1 #获取经验按 8PP
+D2Game.dll 0XAF5D0 83 909090EB088B0485F0B5D16FC3B85E01000090909090C3 1 #传送小站默认全开
+D2Common.dll 0X67C69 0FB7C0 31C0486689410289410489410889410CC208006F660904518D0C51C20800 1
+#A1 点数重置任务永远不能完成（永远可以重置）
+D2Game.dll 0XC0592 8B 909090909090909090 1
+#A1 武器注入永远不能完成（永远可以注入）
+D2Game.dll 0XC04F6 8B 909090909090909090 1
+#A5 打孔任务永远不能完成（永远可以打孔）
+D2Game.dll 0XC075D 8B 909090909090909090 1 #物品掉落倍率本条代表 2 倍（16 进制）
+D2Game.dll 0XF79B8 00 BB02000000FF742420FF742420FF742420FF742420FF742420FF742420FF742420FF742420E87EB3F1FF4B75D8C22000 1
+D2Game.dll 0X758C0 E8 E8F3200800 1 #修正一个近战怪物的法力燃烧 BUG
+D2Game.dll 0X222DD C1E608 909090 1
+D2Game.dll 0X222F2 C1E708 909090 1
