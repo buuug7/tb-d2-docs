@@ -1,0 +1,237 @@
+https://d2mods.info/forum/kb/viewarticle?a=49
+
+
+This resource originally appeared as a thread in the Phrozen Forums and we would also like
+to thank Sir_General, Myhrginoc and Ruvanal for their contributions to the list.
+
+item quality params
+
+nor=normal
+
+hiq=superior
+
+
+eth=ethereal
+
+rar=rare
+
+mag=magic
+
+uni=unique
+
+set=set
+
+crf=crafted
+
+low=low quality
+
+any=any item
+
+
+
+
+others
+
+noe=not ethereal
+
+nos=no socket (for input)
+
+sock=#sockets (eg: sock=4)
+
+pre=prefix (row # -2 from magicprefix)
+
+suf=suffix (row # -2 from magicsuffix)
+
+usetype=uses base type of input1 for output
+
+useitem=uses item from input 1
+
+qty=amount of same item (eg: hpot,qty=3 means 3 hp potions)
+
+
+upg=upgrades item normal>exceptional>elite
+
+
+For additional information, an abbreviated replica of the aforementioned thread has been provided below:
+
+
+NefariusDX:
+
+item quality params:
+
+nor=normal
+
+hiq=superior
+
+eth=ethereal
+
+
+rar=rare
+
+mag=magic
+
+uni=unique
+
+set=set
+
+crf=crafted
+
+low=low quality
+
+any=any item
+
+others
+
+noe=not ethereal
+
+
+nos=no socket (for input)
+
+sock=#sockets (eg: sock=4)
+
+pre=prefix (row # -2 from magicprefix)
+
+suf=suffix (row # -2 from magicsuffix)
+
+usetype=uses base type of input1 for output
+
+useitem=uses item from input 1
+
+qty=amount of same item (eg: hpot,qty=3 means 3 hp potions)
+
+upg=upgrades item normal>exceptional>elite
+
+
+Defeater:
+
+
+dont forget to add ''s when you use params
+
+
+NefariusDX:
+
+params are used like this no ' its ,
+
+eg. uar,set,eth,sock=1 would create a set sacred armor which is ethereal and had one socket
+
+
+dectgap:
+
+Would you really be able to create a ethereal set item, or was it just an example? I have never got the ethereal part working anyway...
+
+
+
+
+NefariusDX:
+
+the order is important (how ever sets can never spawn as ethereal)
+blizzard did this since if u would have 1 ethereal set item u would
+need to have all the other parts of that set as ethereal to in order
+to complete it how ever try it this way xh9,uni,eth,sock=1 will
+create a ethereal socket vamp gaze (make the level for the stuff match!)
+now xh9,sock=1,eth,uni would not work to my knowledge the code must
+be ORDERED
+
+
+
+ShadowTalon:
+
+what i would like to know is all the output formulas for cubemain
+such as the formulas that Sir_General uses on his rune mod
+i know you can add prefixes to items ,but i want to know if you can
+add the properties of the rune or gem in my case without typing up a
+**** load of new prefixes and suffixes
+so they would work the way i wanted them to
+
+
+NefariusDX:
+
+i didnt understand ur q, if u mean having them 'built in' to a item u just make a crafted item
+
+
+Sir_General:
+
+If you type 'useitem' in the output column and then put some stuff
+
+in the mod1, mod2, etc. columns you'll get the same item you put in,
+
+only with the added attributes in the mod1, mod2, etc. columns.
+
+
+ShadowTalon:
+
+
+thx Sir_General, thats exactly what i wanted to hear
+
+
+Myhrginoc:
+
+One more output code for your list, 'hiq' to make an item superior.
+And it gets the random affixes that go with superior grade. If 'hiq'
+doesn't work by itself, use 'nor,hiq'.
+
+
+NefariusDX:
+
+thx Myhrginoc, if there is a hiq code then maybe there is a nor,low or loq
+
+
+Ruvanal:
+
+Yes, there is 'low' quality mod. edit:
+Do not use with the 'nor' mod because you would be trying to apply 2
+different quality levels to an item. I can't rember for sure but I
+think there is a 'noe' mod for 'not ethereal'. I need to try
+checking a lot of scattered notes to see if there are any other odd
+ones out there.
+
+
+NefariusDX:
+
+tell me when your sure these are correct ill add em for now
+
+
+
+Ruvanal:
+
+Double-checked the lists that I have. The 'noe' is for 'not
+ethereal' and is normally used on the input tests. I only see 2
+other that you did not have in your list 'any' and 'upg'. From the
+various reports that I have heard from other I cannot recommend
+using the 'any' modifier as it usually causes more problems than it
+will help with. The 'upg' is for 'upgrade' and is used on the inputs
+to allow the upgrade forms of a specific item to be used also (e.g.
+an input of mbt,mag,upg would allow the mag Chain boots, mag Mesh
+boots or mag Boneweave boots to be used as valid inputs).
+Also a note on the outputs. If you don't specify a quality type
+(low, nor, hiq, mag, rar, crf, set, uni) then the game will spawn
+the item similar to an item drop and you can get an unplanned
+magical quality level. I do not know if the magic find you are
+equipped with will effect this type of drop or not. I ran into this
+when I was trying to test something and neglected to put a 'nor'
+quality in the output line and ended up with an ethereal magical
+version of what I was trying to test (I did not want either
+attribute and had to start the test run over again).
+Also a note on the 'sock=#' output code for those that are not aware
+of it. When this is used in the output column, you will be limited
+in the number of sockets as specified by the item, the ilvl (using
+the MaxSockX columns from itemtypes.txt) and the max sockets based
+on the magical quality of the item (magic MaxSock=3; set, rare,
+crafted and unique will get a MaxSock=1). If you need to exceed this
+amount you will need to put the socket value in one of the sets on
+mod columns instead (you still will not be able to exceed the values
+for the item and the itemtype limits).
+If your output code specifies a condition that is not possible for
+then the formula will not work in that case. Example: input code
+weap with an out put code of usetype,nor,sock=6, using a sword would
+work, but if you used a javelin then the formula would be
+non-functional (assuming you have not enabled sockets on this type
+of item). This type of problem is probably what has caused a lot of
+difficulties when modders are trying to use 'any' code.
+
+
+NefariusDX:
+
+i didnt add any due to that reason
+
+i didnt know about the other 1 though for upgrade
