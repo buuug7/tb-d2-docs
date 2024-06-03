@@ -58,3 +58,7 @@ sidebar_position: 5
 - SGD2FreeResolution.json
 
 如果默认的 D2HD.dll 有问题, 可以用这个最新的高分辨率补丁, 编辑 d2gl.ini, 在 load_dlls_late 后面把 D2HD.dll 更换为 SGD2FreeRes.dll 即可
+
+#### 存档损坏
+
+一般是用聚气铁魔导致坏档
