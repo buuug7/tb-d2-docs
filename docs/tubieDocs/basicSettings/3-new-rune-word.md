@@ -1,9 +1,3 @@
-import ItemRuneWordPunishment from '../partial/_item-rune-word-punishment.mdx'
-import ItemRuneWordKnowledge from '../partial/_item-rune-word-knowledge.mdx'
-import ItemRuneWordTerror from '../partial/_item-rune-word-terror.mdx'
-import ItemRuneWordDeception from '../partial/_item-rune-word-deception.mdx'
-import ItemRuneWordHatred from '../partial/_item-rune-word-hatred.mdx'
-
 # 符文之语
 
 ## 原版符文之语
@@ -24,9 +18,16 @@ import ItemRuneWordHatred from '../partial/_item-rune-word-hatred.mdx'
 - 所需符文: 33 + 26 + 14
 - 材料要求: 3 孔法师专用仗(如次元碎片, 涡流水晶)
 
-> 属性颜色显示为灰色的为底材附带的属性
+#### 物品属性
 
-<ItemRuneWordPunishment />
+- 无法破坏
+- 赋予等级 0~5 信念 (Conviction) 灵气
+- +1~4 法师技能等级
+- +20~30%快速施法速度 (FCR)
+- 7% 法力于击中时偷取 (LM)
+- 击中使怪物逃跑 (Flee) 25%
+- +100% 增强防御 (ED)
+- 所有抗性 (RES) +20~30
 
 ### 2 知识 Knowledge
 
@@ -36,9 +37,18 @@ import ItemRuneWordHatred from '../partial/_item-rune-word-hatred.mdx'
 - 材料要求: 3 孔法师专用仗(如次元碎片, 涡流水晶等)
 - 其他说明: 如果不做为正手武器, 召唤物很容易消失
 
-> 属性颜色显示为灰色的为底材附带的属性
+#### 物品属性
 
-<ItemRuneWordKnowledge />
+- +0~3 法师技能等级
+- 忽视目标防御力(ITD)
+- 20% 额外的攻击准确率(AR)加成
+- +0~10 致 影子大师(Shadow Master)
+- +0~10 致 橡木智者(Oak Sage)
+- +0~10 致 战斗体制(Battle Orders)
+- +0~10 致 冥思(Meditation)
+- +0~10 致 白骨装甲(Bone Armor)
+- +0~10 致 女武神(Valkyrie)
+- +10 精力(ENG)
 
 ### 3 恐怖/恐惧 Terror
 
@@ -47,9 +57,17 @@ import ItemRuneWordHatred from '../partial/_item-rune-word-hatred.mdx'
 - 所需符文: 27 + 22
 - 材料要求: 2 孔死灵法师专用盾(如血王之骨等)
 
-> 属性颜色显示为灰色的为底材附带的属性
+#### 物品属性
 
-<ItemRuneWordTerror />
+- 被击中时有 20% 机会施展等级 5 恐惧(Terror)
+- +0~2 死灵法师技能等级
+- +20~30% 快速施法速度(FCR)
+- -10~-20% 敌人的毒素系抗性(-PR)
+- +0~3 致 白骨之魂(Bone Spirit)
+- +0~3 致 骨矛(Bone Spear)
+- +5% 最大冰冻抵抗
+- 所有抗性(RES)+22
+- +20~30%增加格档机率(CTB)
 
 ### 4 欺暪 Deception
 
@@ -58,9 +76,17 @@ import ItemRuneWordHatred from '../partial/_item-rune-word-hatred.mdx'
 - 所需符文: 30 + 26
 - 材料要求: 2 孔死灵法师专用盾(如血王之骨等)
 
-> 属性颜色显示为灰色的为底材附带的属性
+#### 物品属性
 
-<ItemRuneWordDeception />
+- 赋予等级 1~10 狂热(Fanaticism)灵气
+- +0~3 死灵法师技能等级
+- +0~2 致 钢铁石魔(Iron Golem)
+- +0~2 致 复苏骷髅法师(Raise Skeletal Mage)
+- +0~2 致 骷髅复苏(Raise Skeleton)
+- +0~2 致 传送(Teleport)
+- +5% 最大火焰抵抗
+- 所有抗性(RES)+10~30
+- 物理伤害减少(DR)8%
 
 ### 5 憎恨 Hatred
 
@@ -69,9 +95,21 @@ import ItemRuneWordHatred from '../partial/_item-rune-word-hatred.mdx'
 - 所需符文: 29 + 26 + 23 + 19
 - 材料要求: 4 孔圣骑士专用盾(如圣神小盾, 旋风盾等)
 
-> 属性颜色显示为灰色的为底材附带的属性
+#### 物品属性
 
-<ItemRuneWordHatred />
+- 击中敌人时有 10% 机会施展等级 2 衰老(Decrepify)
+- 伤害(DAM)+100~200
+- 加 100 的魔法伤害
+- 增加 1-500 的火焰伤害(FD)
+- 增加 1-500 的闪电伤害(LD)
+- 增加 1-500 的冰冷伤害(CD)
+- 25% 机率撕开敌人伤口(OW)
+- +3 致 复仇(Vengeance)
+- 使目标减慢 33%
+- +10 力量(STR)
+- +50 法力(Mana)
+- +5% 最大火焰抵抗
+- 法术伤害减少(MDR)7
 
 ### 6 星光 Starlight
 
