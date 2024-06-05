@@ -60,7 +60,7 @@ sidebar_position: 1
 - [场景设置](basicSettings/7-area-custom.md)
 - [技能调整](basicSettings/1-skill-change.md)
 - [物品合成](basicSettings/2-cube-change.md)
-- [符文之语](basicSettings/3-new-rune-word.mdx)
+- [符文之语](basicSettings/3-new-rune-word.md)
 - [新增暗金](basicSettings/4-new-unique-item.mdx)
 - [史诗暗金](basicSettings/5-epic-unique-item.mdx)
 - [护符附魔](basicSettings/6-charm-enhance.md)
