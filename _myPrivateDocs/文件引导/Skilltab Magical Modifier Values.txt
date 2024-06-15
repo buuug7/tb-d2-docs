@@ -9,7 +9,7 @@ Description: by 54x
 
 Categories: References Charts and Tables
 
-Here's a resource on which number to put in the param column when you are using the 'skilltab' modifier.
+Here's a resource on which number to put in the param column when you are using the skilltab modifier.
 
 Skilltab numbers :
 
@@ -56,7 +56,6 @@ Barbarian
 
 12 - Masteries
 
-
 13 - Combat Skills
 
 14 - Warcries
@@ -76,7 +75,6 @@ Assassin
 18 - Traps
 
 19 - Shadow Disciplines
-
 
 20 - Martial Arts
 
