@@ -67,4 +67,15 @@
   padding: 4px 4px;
 }
 
+.homeShowCase {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 8px;
+}
+
+@media (max-width: 1200px) {
+  .homeShowCase {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 

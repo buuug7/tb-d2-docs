@@ -2,12 +2,16 @@ import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
-import HomepageFeatures from "@site/src/components/HomepageFeatures";
-
+import FeatureCarousel from "@site/src/components/FeatureCarousel";
 import Heading from "@theme/Heading";
 import styles from "./index.module.css";
-
-const qqLink = `http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=HP7dQ70YSL68fqFuWh3O7wwsR2pdPKTG&authKey=xGD25yNcClpTeoFl8ZP1ZRpeCl%2Bhfq5eHcXBOY0T%2BSxRm0jLubwbdTPKj2mLN7eu&noverify=0&group_code=1016899678`;
+import {
+  qqLink,
+  feature1,
+  feature2,
+  feature3,
+  feature4,
+} from "../config/index.js";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -43,28 +47,28 @@ function HomepageHeader() {
   );
 }
 
+function Features() {
+  return (
+    <div className={styles.homeShowCase}>
+      <FeatureCarousel features={feature3} />
+      <FeatureCarousel features={feature1} />
+      <FeatureCarousel features={feature2} />
+      <FeatureCarousel features={feature4} />
+    </div>
+  );
+}
+
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout
-      title={`${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
-    >
-      <div style={{position: 'relative'}}>
-      <HomepageHeader />
-
+    <Layout title={siteConfig.title} description={siteConfig.tagline}>
+      <div style={{ position: "relative" }}>
+        <HomepageHeader />
       </div>
       <main>
-        <div className={styles.charList}>
-          <img src="/img/char-ama.gif" />
-          <img src="/img/char-sor.gif" />
-          <img src="/img/char-nec.gif" />
-          <img src="/img/char-pal.gif" />
-          <img src="/img/char-bar.gif" />
-          <img src="/img/char-druid.gif" />
-          <img src="/img/char-ass.gif" />
-        </div>
-        <HomepageFeatures />
+        <section className="container my-4">
+          <Features />
+        </section>
       </main>
     </Layout>
   );

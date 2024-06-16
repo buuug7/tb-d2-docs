@@ -23,7 +23,9 @@
     "prism-react-renderer": "^2.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sass": "^1.69.7"
+    "react-responsive-carousel": "^3.2.23",
+    "sass": "^1.69.7",
+    "utilities-css": "^5.0.0"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.2.1",

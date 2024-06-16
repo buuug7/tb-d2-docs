@@ -53,7 +53,10 @@ const config = {
           editUrl: "https://gitee.com/buuug7/tb-d2-docs/tree/main",
         },
         theme: {
-          customCss: "./src/css/custom.css",
+          customCss: [
+            "./src/css/custom.css",
+            "node_modules/utilities-css/dist/utilities-css.css",
+          ],
         },
       }),
     ],
@@ -151,7 +154,7 @@ const config = {
     ],
   ],
 
-  plugins: ['docusaurus-plugin-sass'],
+  plugins: ["docusaurus-plugin-sass"],
 };
 
 export default config;
