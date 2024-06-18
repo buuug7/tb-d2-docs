@@ -54,8 +54,9 @@ const config = {
         },
         theme: {
           customCss: [
-            "./src/css/custom.css",
             "node_modules/utilities-css/dist/utilities-css.css",
+            "node_modules/react-responsive-carousel/lib/styles/carousel.min.css",
+            "./src/css/custom.css",
           ],
         },
       }),

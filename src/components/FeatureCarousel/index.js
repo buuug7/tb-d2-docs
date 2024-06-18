@@ -1,4 +1,3 @@
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import styles from "./styles.module.css";
 
@@ -14,7 +13,7 @@ export default function FeatureCarousel({ features = [] }) {
       style={{ width: "100%" }}
     >
       {features.map((it) => (
-        <div>
+        <div key={it.path}>
           <div
             className={styles.carouselItem}
             style={{
