@@ -11,6 +11,7 @@
   - https://d2mods.info/forum/kb/viewarticle?a=205
   - https://d2mods.info/forum/viewtopic.php?f=8&t=67065&p=501144&hilit=red+portal+act#p501144
   - https://d2mods.info/forum/viewtopic.php?f=4&t=67571&p=502991&hilit=splash+damage#p502991
+  - https://d2mods.info/forum/viewtopic.php?t=29549
 
 ## PVPGN 清理角色数据
 

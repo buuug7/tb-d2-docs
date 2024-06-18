@@ -10,6 +10,10 @@ export const feature1 = [
     path: "/features/epic/2.png",
     description: "深度死亡 Death's Fathom【史詩】",
   },
+  {
+    path: "/features/epic/3.png",
+    description: "祖父 The Grandfather[史诗]",
+  },
 ];
 
 // 符文之语
