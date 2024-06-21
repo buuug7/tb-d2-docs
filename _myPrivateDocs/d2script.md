@@ -640,3 +640,20 @@ D2Game.dll 0XF79B8 00 BB02000000FF742420FF742420FF742420FF742420FF742420FF742420
 D2Game.dll 0X758C0 E8 E8F3200800 1 #修正一个近战怪物的法力燃烧 BUG
 D2Game.dll 0X222DD C1E608 909090 1
 D2Game.dll 0X222F2 C1E708 909090 1
+
+# remote stash
+
+D2Game.dll 0xcf154 75 EB 1
+D2Game.dll 0xd63bc 75 EB 1
+
+# Pick up range
+
+D2Game.dll 0xd035d 04 49 1
+
+# 辨识不消耗
+
+D2Game.dll 0xda281 ff 00 1
+
+# 回城不消耗
+
+D2Game.dll 0xd9d23 ff 00 1
