@@ -1,5 +1,5 @@
 ---
-slug: tutorial-huo-de-xin-de-20240513
+slug: tutorial-dru-fire-20240513
 title: 我的火德一点心得
 authors: dddiablo
 tags: [土鳖暗黑, 教程, 心得, 德鲁伊]
