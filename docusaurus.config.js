@@ -100,6 +100,10 @@ const config = {
                 label: "siteIntro",
                 to: "/docs/tubieDocs/intro",
               },
+              {
+                label: "特别感谢",
+                to: "/docs/tubieDocs/thanks",
+              },
             ],
           },
           {
