@@ -5,7 +5,7 @@ export default function FeatureCarousel({ features = [] }) {
   return (
     <Carousel
       showArrows={true}
-      showStatus={true}
+      showStatus={false}
       showThumbs={false}
       dynamicHeight={true}
       infiniteLoop={true}
