@@ -51,9 +51,9 @@ function Features() {
   return (
     <div className={styles.homeShowCase}>
       <FeatureCarousel features={feature3} />
+      <FeatureCarousel features={feature4} />
       <FeatureCarousel features={feature1} />
       <FeatureCarousel features={feature2} />
-      <FeatureCarousel features={feature4} />
     </div>
   );
 }

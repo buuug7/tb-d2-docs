@@ -39,20 +39,32 @@ export const feature2 = [
 // 主要特殊
 export const feature3 = [
   {
-    path: "/features/main/0.png",
-    description: "高清画质",
+    path: "/features/main/1.png",
+    description: "憎恨的牢房第二层",
   },
   {
-    path: "/features/main/1.png",
-    description: "自定义红门",
+    path: "/features/main/2.png",
+    description: "石墨矿业",
   },
   {
     path: "/features/main/3.png",
-    description: "储物箱分页",
+    description: "神罚之城",
   },
   {
     path: "/features/main/4.png",
-    description: "大背包",
+    description: "混沌避难所",
+  },
+  {
+    path: "/features/main/5.png",
+    description: "亚瑞特山脉之巅",
+  },
+  {
+    path: "/features/main/6.png",
+    description: "魔门",
+  },
+  {
+    path: "/features/main/7.png",
+    description: "地穴二层",
   },
 ];
 
@@ -60,6 +72,14 @@ export const feature3 = [
 export const feature4 = [
   {
     path: "/features/others/1.png",
-    description: "物品袋子",
+    description: "自定义红门",
+  },
+  {
+    path: "/features/others/2.png",
+    description: "储物箱分页",
+  },
+  {
+    path: "/features/others/3.png",
+    description: "大背包",
   },
 ];
