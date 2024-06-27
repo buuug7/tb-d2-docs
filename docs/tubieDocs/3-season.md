@@ -15,9 +15,9 @@ sidebar_position: 3
 土鳖暗黑, 经典, 微变, 怀旧, 各职业平衡, 长久耐玩, 基于暗黑 1.13C 纯净版做了大量优化, 修复原版中诸多不合理的设定, 在保持暗黑 II 原汁原味玩法的同时简化玩家操作, 明确清晰的人物装备成长路线, 有趣的 MF, 还有更多东西期待你们探索. **2024 年 06 月 20 日 20 点** 土鳖暗黑邀你一起开荒, 到时候罗格营地我们不见不散.
 
 - 网站: d2.yoursoups.com
-- 群号: 1016899678
+- 群号: 590555330
 
-点击链接加入群聊 [土鳖暗黑 1.13C 优化版交流群](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=HP7dQ70YSL68fqFuWh3O7wwsR2pdPKTG&authKey=xGD25yNcClpTeoFl8ZP1ZRpeCl%2Bhfq5eHcXBOY0T%2BSxRm0jLubwbdTPKj2mLN7eu&noverify=0&group_code=1016899678)
+点击链接加入群聊【土鳖暗黑 1.13C 微变交流群】：https://qm.qq.com/q/gRThDzcCdO
 
 ## 这次开荒修改了什么?
 
@@ -83,5 +83,5 @@ sidebar_position: 3
 - 版本简介: 基于暗黑 1.13C 纯净版做了大量优化, 经典, 微变, 怀旧, 平衡, 长久耐玩
 - 开荒时间: 2024 年 06 月 20 日 20 点开放
 - 赛季时长: 1 - 3 个月
-- qq 群号: 1016899678
+- qq 群号: 590555330
 - 游戏主页: http://d2.yoursoups.com
