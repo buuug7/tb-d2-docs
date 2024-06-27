@@ -11,6 +11,7 @@ import {
   feature2,
   feature3,
   feature4,
+  qqGroupNumber,
 } from "../config/index.js";
 
 function HomepageHeader() {
@@ -24,7 +25,7 @@ function HomepageHeader() {
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <p className="hero__">
-          <span>QQ 群号 1016899678</span>{" "}
+          <span>QQ 群号 {qqGroupNumber}</span>{" "}
           <span className="margin-horiz--sm">d2.yoursoups.com</span>
         </p>
         <hr />

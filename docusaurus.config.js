@@ -8,7 +8,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "土鳖暗黑 1.13C 优化版",
+  title: "土鳖暗黑 1.13C 微变",
   tagline:
     "土鳖暗黑, 微变经典怀旧, 各职业平衡, 基于暗黑 1.13C 纯净版做了大量优化, 修复原版中很多不合理的设定, 在保持暗黑 II 原汁原味玩法的同时简化玩家操作, 明确清晰的人物装备成长路线, 有趣的 MF, 还有更多的东西等待你们探索.",
   favicon: "img/ama-64x64.PNG",

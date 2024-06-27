@@ -1,4 +1,6 @@
-export const qqLink = `http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=HP7dQ70YSL68fqFuWh3O7wwsR2pdPKTG&authKey=xGD25yNcClpTeoFl8ZP1ZRpeCl%2Bhfq5eHcXBOY0T%2BSxRm0jLubwbdTPKj2mLN7eu&noverify=0&group_code=1016899678`;
+export const qqLink = `https://qm.qq.com/q/gRThDzcCdO`;
+
+export  const qqGroupNumber = '590555330';
 
 // 史诗暗金
 export const feature1 = [
