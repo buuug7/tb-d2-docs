@@ -4,7 +4,7 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import Heading from "@theme/Heading";
 import styles from "./index.module.css";
-import { qqLink, qqGroupNumber } from "../config/index.js";
+import { qqLink, qqGroupNumber, websiteAddress } from "../config/index.js";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -18,7 +18,7 @@ function HomepageHeader() {
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <p className="hero__">
           <span>QQ 群号 {qqGroupNumber}</span>{" "}
-          <span className="margin-horiz--sm">d2.yoursoups.com</span>
+          <span className="margin-horiz--sm">{websiteAddress}</span>
         </p>
         <hr />
         <div className={styles.buttons}>
