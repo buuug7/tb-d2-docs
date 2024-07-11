@@ -64,7 +64,7 @@ export default function Home() {
               <div
                 className={styles.row1RightInner}
                 style={{
-                  backgroundImage: `url(/features/index/2.png)`,
+                  backgroundImage: `url(/features/index/2.jpg)`,
                   backgroundPosition: "center center",
                 }}
               ></div>
@@ -76,7 +76,7 @@ export default function Home() {
               <div
                 className={styles.row1RightInner}
                 style={{
-                  backgroundImage: `url(/features/index/3.png)`,
+                  backgroundImage: `url(/features/index/3.jpg)`,
                   backgroundPosition: "center center",
                 }}
               />
@@ -106,7 +106,7 @@ export default function Home() {
               <div
                 className={styles.row1RightInner}
                 style={{
-                  backgroundImage: `url(/features/index/5.png)`,
+                  backgroundImage: `url(/features/index/5.jpg)`,
                   backgroundPosition: "center center",
                 }}
               />
@@ -118,7 +118,7 @@ export default function Home() {
               <div
                 className={styles.row1RightInner}
                 style={{
-                  backgroundImage: `url(/features/index/4.png)`,
+                  backgroundImage: `url(/features/index/4.jpg)`,
                   backgroundPosition: "center bottom",
                 }}
               />
@@ -150,7 +150,7 @@ export default function Home() {
               <div
                 className={styles.row1RightInner}
                 style={{
-                  backgroundImage: `url(/features/index/1.png)`,
+                  backgroundImage: `url(/features/index/1.jpg)`,
                   backgroundPosition: "center bottom",
                 }}
               />
