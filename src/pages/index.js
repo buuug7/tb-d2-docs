@@ -18,7 +18,7 @@ function HomepageHeader() {
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <p className="hero__">
           <span>QQ 群号 {qqGroupNumber}</span>{" "}
-          <span className="margin-horiz--sm">{websiteAddress}</span>
+          {/* <span className="margin-horiz--sm">{websiteAddress}</span> */}
         </p>
         <hr />
         <div className={styles.buttons}>

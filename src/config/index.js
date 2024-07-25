@@ -2,7 +2,7 @@ export const qqLink = `https://qm.qq.com/q/gRThDzcCdO`;
 
 export const qqGroupNumber = "590555330";
 
-export const websiteAddress = "http://d2mod.yoursoups.com";
+export const websiteAddress = "http://d2.yoursoups.com:92";
 
 // 史诗暗金
 export const feature1 = [
