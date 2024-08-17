@@ -101,3 +101,7 @@
 - +10 强壮
 - +1 光明度
 - 每杀一个敌人 +2 Mana
+
+
+更多原版符文之语  请参考这里
+http://www.shitieshou.com/diablo2/RuneWords.html
