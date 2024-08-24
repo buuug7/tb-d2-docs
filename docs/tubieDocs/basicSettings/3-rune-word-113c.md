@@ -1,6 +1,7 @@
 # 原版符文之语
 
-- [原版符文之语参考链接](http://www.anhei3.net/diablo/runewords.html)
+- [原版符文之语参考](http://www.anhei3.net/diablo/runewords.html)
+- [更多原版符文之语](http://www.shitieshou.com/diablo2/RuneWords.html)
 
 ## 对原版符文之语的部分修改
 
@@ -105,7 +106,3 @@
 - +10 强壮
 - +1 光明度
 - 每杀一个敌人 +2 Mana
-
-
-更多原版符文之语  请参考这里
-http://www.shitieshou.com/diablo2/RuneWords.html
