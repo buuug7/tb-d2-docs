@@ -47,6 +47,7 @@ const config = {
           editUrl: "https://gitee.com/buuug7/tb-d2-docs/tree/main",
         },
         blog: {
+          blogSidebarCount: 'ALL',
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
