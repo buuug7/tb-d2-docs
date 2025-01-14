@@ -11,7 +11,7 @@ sidebar_position: 5
 
 ## UNHANDLED EXCEPTION: ACCESS_VIOLATION(c000005)
 
-- 关闭 window 数据保护
+- 手动关闭 window 数据保护或者运行`去除数据执行保护.bat`(右键以管理员身份运行)
 - 查看杀毒软件是否拦截隔离部分文件,把客户端目录加入白名单
 
 ## WE GOT A BIG ERROR

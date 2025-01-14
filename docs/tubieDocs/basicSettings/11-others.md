@@ -1,44 +1,50 @@
 # 其他设置
 
+## 地图设置
+
+// 自定义物品
+Item Colours[2152]: -1,0x20,0x20,0x20 // 技能书
+
+Item Colours[2153]: -1,0x20,0x20,0x20 // 暗金箭袋
+Item Colours[2154]: -1,0x20,0x20,0x20 // 暗金箭袋
+
+Item Colours[2155]: 8,0x20,0x20,0x20 // 红门传送卷
+Item Colours[2156]: 8,0x20,0x20,0x20 // 红门传送卷
+Item Colours[2157]: 8,0x20,0x20,0x20 // 红门传送卷
+Item Colours[2158]: 8,0x20,0x20,0x20 // 红门传送卷
+Item Colours[2159]: 8,0x20,0x20,0x20 // 红门传送卷
+Item Colours[2160]: 8,0x20,0x20,0x20 // 红门传送卷
+Item Colours[2161]: 8,0x20,0x20,0x20 // 红门传送卷
+Item Colours[2162]: 8,0x20,0x20,0x20 // 红门传送卷
+Item Colours[2163]: 8,0x60,0x60,0x60 // 物品袋子
+Item Colours[2164]: 8,0x20,0x20,0x20 // 红门传送卷
+Item Colours[2165]: 8,0x20,0x20,0x20 // 红门传送卷
+
+Item Colours[2166]: 11,0x20,0x20,0x20 // 灵魂碎片
+Item Colours[2167]: 11,0x20,0x20,0x20 // 灵魂宝石
+
+Item Colours[2171]: 11,0x20,0x20,0x20 // 世界之石碎片
+
+// 米山的救赎
+Item Colours[1081][5]: 2,0x84,0x84,0x84 // 米山的鞋子
+Item Colours[1089][5]: 2,0x84,0x84,0x84 // 米山的腰
+Item Colours[2015][5]: 2,0x84,0x84,0x84 // 米山的戒指
+
+// 自定义怪物
+Monster Colours[734+] : 0x62 //
+
+// 其他配置
+OpenStashKey: VK_Z //一键打开储物箱，城外也可以打开存取物品
+
+> 建议在 `d2hackmap.cfg` 开启地图照亮, 可以体验巫毒显卡独享的光影效果, 部分场景特效非常震撼
+
+```
+Light Radius Toggle : 0, -1	//照亮开关 0开启照亮 1关闭照亮
+```
+
 ## 第五幕雇佣兵
 
 第五幕雇佣兵,分为用斧的和用剑的,用斧的用不了剑, 用剑的用不了斧
-
-## 地图额外配置
-
-```
-//  自定义怪物
-Monster Colours[734-760] : 0x84	//
-
-
-//  自定义物品
-Item Colours[2152]:		  -1,0x20,0x20,0x20	// 技能书
-Item Colours[2153]:		  -1,0x20,0x20,0x20	// 暗金箭袋
-Item Colours[2154]:		  -1,0x20,0x20,0x20	// 暗金箭袋
-
-Item Colours[2155]:		  -1,0x20,0x20,0x20	// 红门传送卷
-Item Colours[2156]:		  -1,0x20,0x20,0x20	// 红门传送卷
-Item Colours[2157]:		  -1,0x20,0x20,0x20	// 红门传送卷
-Item Colours[2158]:		  -1,0x20,0x20,0x20	// 红门传送卷
-Item Colours[2159]:		  -1,0x20,0x20,0x20	// 红门传送卷
-Item Colours[2160]:		  -1,0x20,0x20,0x20	// 红门传送卷
-Item Colours[2161]:		  -1,0x20,0x20,0x20	// 红门传送卷
-Item Colours[2162]:		  -1,0x20,0x20,0x20	// 红门传送卷
-Item Colours[2163]:		  -1,0x60,0x60,0x60	// 物品袋子
-Item Colours[2164]:		  -1,0x20,0x20,0x20	// 红门传送卷
-Item Colours[2165]:		  -1,0x20,0x20,0x20	// 红门传送卷
-
-
-// 米山的救赎
-
-Item Colours[1076][5]:      2,0x84,0x84,0x84  // 米山的手套
-Item Colours[1089][5]:      2,0x84,0x84,0x84  // 米山的腰带
-Item Colours[2015][5]:      2,0x84,0x84,0x84  // 米山的戒指
-
-
-//  其他配置
-OpenStashKey: VK_Z  //一键打开储物箱，城外也可以打开存取物品
-```
 
 ## 为什么不建议开启自动捡取物品
 
