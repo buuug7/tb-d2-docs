@@ -29,40 +29,6 @@ sidebar_position: 5
 
 请在群文件中下载 **微软常用运行库合集 2020.12.10.exe** 安装运行库
 
-## 高清模式下调整分辨率报错
-
-请手动重置 `SGD2FreeResolution.json` 文件中 `Ingame Resolution Mode` 为 0， 再次进入游戏重新设置分辨率。
-
-## 普通模式启动 Could not determine the game version from the file signature
-
-高分辨率插件报错，在 BaseMod.ini 中将 `SGD2FreeRes.dll` 替换为 `D2HD.dll` 即可
-
-## 非高清模式下 调整分辨率报错
-
-请手动重置 `D2HD.ini` 文件中 `Resolution Mode` 为 0， 再次进入游戏重新设置分辨率。
-
-## 为了兼容性, 客户端默认高分辨率插件是 D2HD.dll
-
-#### 上古高清补丁, 针对有些使用不了高清客户端的用户
-
-> 客户端已经内置补丁, 使用 D2Loader-high.exe 创建快捷方式启动即可
-
-- D2MultiRes.dll
-- D2MultiRes.mpq
-- D2Loader-high.exe
-
-使用 D2Loader-high.exe 创建快捷方式, 在目标中添加 `-w -direct -pdir map`
-
-#### 新版高分辨率补丁
-
-> 客户端已经内置补丁, 只需要修改配置文件即可
-
-- SGD2FreeRes.dll
-- SGD2FreeRes.mpq
-- SGD2FreeResolution.json
-
-如果默认的 D2HD.dll 有问题, 可以用这个最新的高分辨率补丁, 编辑 d2gl.ini, 在 load_dlls_late 后面把 D2HD.dll 更换为 SGD2FreeRes.dll 即可
-
-#### 存档损坏
+## 存档损坏
 
 NEC 玩家存档损坏， 一般原因是用物品带聚气铁魔技能或者物品属性中有`+1 致 钢铁石魔`，但是自己技能树中对铁魔技能没有分配点数导致的
