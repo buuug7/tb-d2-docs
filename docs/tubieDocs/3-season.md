@@ -1,5 +1,5 @@
 ---
-title: 开荒公告 s14
+title: 开荒公告 s15
 sidebar_position: 3
 ---
 
