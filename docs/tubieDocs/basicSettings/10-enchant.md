@@ -14,6 +14,10 @@
 
 附魔公式: 物品 + 1 灵魂宝石 + 26# 符文
 
+注意事项:
+
+- 针对符文之语, 请附魔地材后在做符文之语, 不要用做好的符文之语附魔会导致物品消失
+
 #### 武器附魔属性组(主要针对物理系)
 
 1. socket 1, 随机 1 孔
@@ -34,63 +38,59 @@
 
 > 注意法系武器附魔公式跟通用的不一样, 附魔公式: 物品 + 1 灵魂宝石 + 27# 符文
 
-1. socket 1, 随机 1 孔
-2. 2 random skill +2 随机职业技能
-3. aura Conviction 5-10 信念灵气
-4. cast2 快速施法速度%
-5. mana-kill 杀敌回蓝
-6. extra-fire 增加火系技能伤害%
-7. extra-ltng 增加电系技能伤害%
-8. extra-cold 增加冰系技能伤害
-9. extra-pois 增加毒系技能伤害
-10. new-extra-magic 魔法伤害
-11. pierce-fire 减少敌人火系抗性%
-12. pierce-ltng 减少敌人电系抗性%
-13. pierce-cold 减少敌人冰系抗性%
-14. pierce-pois 减少敌人毒系抗性%
-15. new-pierce-magic 减少敌人魔法抗性%
+1. 2 random skill +2 随机职业技能
+2. aura Conviction 5-10 信念灵气
+3. cast2 快速施法速度%
+4. mana-kill 杀敌回蓝
+5. extra-fire 增加火系技能伤害%
+6. extra-ltng 增加电系技能伤害%
+7. extra-cold 增加冰系技能伤害
+8. extra-pois 增加毒系技能伤害
+9. new-extra-magic 魔法伤害
+10. pierce-fire 减少敌人火系抗性%
+11. pierce-ltng 减少敌人电系抗性%
+12. pierce-cold 减少敌人冰系抗性%
+13. pierce-pois 减少敌人毒系抗性%
+14. new-pierce-magic 减少敌人魔法抗性%
 
 #### 护甲附魔属性
 
-1.  socket 1, 随机 1 孔
-2.  random single tab skill +2 随机单系技能
-3.  aura Defiance 5-10 反抗光环赋予
-4.  hp% 生命上限百分比 5-10
-5.  ac% 增加防御% 50-100
-6.  balance1 快速打击恢复% 10-20
-7.  cast2 快速施法速度% 10-20
-8.  res-all 所有抗性 10-20
-9.  res-all-max 最大抗性上限 5-10
-10. red-dmg% 物理伤害减少% 5-10
-11. red-mag 魔法伤害减少 5-10
+1.  random single tab skill +2 随机单系技能
+2.  aura Defiance 5-10 反抗光环赋予
+3.  hp% 生命上限百分比 5-10
+4.  ac% 增加防御% 50-100
+5.  balance1 快速打击恢复% 10-20
+6.  cast2 快速施法速度% 10-20
+7.  res-all 所有抗性 10-20
+8.  res-all-max 最大抗性上限 5-10
+9.  red-dmg% 物理伤害减少% 5-10
+10. red-mag 魔法伤害减少 5-10
 
 #### 盾牌附魔属性
 
-1. socket 1, 随机 1 孔
-2. aura Conviction 5-10 信念灵气赋予
-3. ac% 增加防御%
-4. cast2 快速施法速度%
-5. hp% 生命上限百分比
-6. block 增加格挡率%
-7. block2 快速格挡%
-8. balance1 快速打击恢复%
-9. res-all 所有抗性
-10. res-all-max 最大抗性上限
-11. red-dmg% 物理伤害减少%
-12. red-mag 魔法伤害减少
+1. aura Conviction 5-10 信念灵气赋予
+2. ac% 增加防御%
+3. cast2 快速施法速度%
+4. hp% 生命上限百分比
+5. block 增加格挡率%
+6. block2 快速格挡%
+7. balance1 快速打击恢复%
+8. res-all 所有抗性
+9. res-all-max 最大抗性上限
+10. red-dmg% 物理伤害减少%
+11. red-mag 魔法伤害减少
 
 #### 头盔附魔属性
 
-1. socket 1, 随机 1 孔
-2. 3 random single tab skill +2 随机单系技能
-3. aura Meditation 5-10 冥思光环
-4. ac% 增加防御%
-5. balance1 快速打击恢复%
-6. red-dmg% 物理伤害减少%
-7. res-all 所有抗性
-8. mana-kill 杀敌回蓝
-9. heal-kill 杀敌回血
-10. hp% 生命上限百分比
+1. 3 random single tab skill +2 随机单系技能
+2. aura Meditation 5-10 冥思光环
+3. ac% 增加防御%
+4. balance1 快速打击恢复%
+5. red-dmg% 物理伤害减少%
+6. res-all 所有抗性
+7. mana-kill 杀敌回蓝
+8. heal-kill 杀敌回血
+9. hp% 生命上限百分比
 
 #### 鞋子附魔属性
 
