@@ -10,7 +10,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 const config = {
   title: "土鳖暗黑 1.13C 微变",
   tagline:
-    "土鳖暗黑, 经典, 微变, 怀旧, 各职业平衡, 长久耐玩, 基于暗黑 1.13C 纯净版做了适度修改, 在保持暗黑 II 原汁原味玩法的同时简化玩家操作, 明确清晰的人物装备成长路线, 有趣的 MF, 还有更多东西期待你们探索.",
+    "土鳖暗黑, 经典, 微变, 怀旧, 各职业平衡, 长久耐玩, 基于暗黑 1.13C 纯净版做了适度修改, 在保留原版核心玩法的基础上，通过精心设计的改动优化游戏体验。我们致力于打造一个职业平衡、玩法丰富、长期耐玩的暗黑 MOD。",
   favicon: "img/ama-64x64.PNG",
 
   // Set the production url of your site here
