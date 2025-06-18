@@ -1,6 +1,8 @@
 ---
-title: 开荒公告 s16
-sidebar_position: 3
+slug: blog-next-season-20250620
+title: 土鳖暗黑第十六赛季 2025/06/20 开荒
+authors: buuug7
+tags: [土鳖暗黑, 暗黑, 开荒, 第十五赛季]
 ---
 
 ## 《长河吟·土鳖赛季赋》
