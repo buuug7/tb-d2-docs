@@ -48,12 +48,11 @@
 6. extra-ltng 增加电系技能伤害%
 7. extra-cold 增加冰系技能伤害
 8. extra-pois 增加毒系技能伤害
-9. new-extra-magic 魔法伤害
-10. pierce-fire 减少敌人火系抗性%
-11. pierce-ltng 减少敌人电系抗性%
-12. pierce-cold 减少敌人冰系抗性%
-13. pierce-pois 减少敌人毒系抗性%
-14. new-pierce-magic 减少敌人魔法抗性%
+9. pierce-fire 减少敌人火系抗性%
+10. pierce-ltng 减少敌人电系抗性%
+11. pierce-cold 减少敌人冰系抗性%
+12. pierce-pois 减少敌人毒系抗性%
+13. new-pierce-magic 减少敌人魔法抗性%
 
 #### 护甲附魔属性
 
