@@ -86,7 +86,11 @@
   margin-bottom: 2rem;
   background-color: #f7f7f7;
   padding: 1rem;
-  border-radius: 1rem;;
+  border-radius: 1rem;
+}
+
+[data-theme="dark"] .row1 {
+  background-color: transparent;
 }
 
 @media (max-width: 1200px) {
