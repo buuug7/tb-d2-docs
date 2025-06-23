@@ -187,6 +187,28 @@ export default function Home() {
               />
             </div>
           </div>
+
+          <div className={styles.row1}>
+            <div className={styles.row1Right}>
+              <div
+                className={styles.row1RightInner}
+                style={{
+                  backgroundImage: `url(/features/index/9.jpg)`,
+                  backgroundPosition: "center bottom",
+                }}
+              />
+            </div>
+
+            <div className={styles.row1Left}>
+              <h1>现代化游戏体验</h1>
+              <p>
+                集D2DX/D2GL等顶尖插件于一身，带来高清画质与丝滑帧率。以松岗的繁体中文版为核心,
+                完美开启还原了当年巫毒显卡独享的光影效果, 原生, 纯净,
+                主打原汁原味的体验.
+                大箱包大背包、远程存取和伤害显示优化游戏体验，佣兵全装备和城内传送提升便利性。修复尼拉塞克红门等经典BUG，优化掉率系统，无形装备掉落翻倍。支持无限打孔注入，BOSS首杀机制确保公平。从画质到玩法，全面进化的暗黑体验就此开启。
+              </p>
+            </div>
+          </div>
         </section>
       </main>
     </Layout>
